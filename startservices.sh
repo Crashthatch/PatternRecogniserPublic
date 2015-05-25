@@ -18,4 +18,4 @@ cd /vagrant
 redisPassword=`cat config-vagrant.json | jq -r '.redisPassword'`
 redisHost=`cat config-vagrant.json | jq -r '.redisHost'`
 redisPort=`cat config-vagrant.json | jq -r '.redisPort'`
-resque-web -r "redis://redis:$redisPassword@$redisHost:$redisPort"
+#resque-web -r "redis://redis:$redisPassword@$redisHost:$redisPort"
