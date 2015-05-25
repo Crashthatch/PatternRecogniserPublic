@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="fibonacci40.dat" encoding="windows-1252">
+  <attribute name="a" sourcecol="1" valuetype="integer"/>
+</attributeset>

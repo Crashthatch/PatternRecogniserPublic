@@ -1,0 +1,4 @@
+case "babyid": babyid = fieldValue; break;
+case "membershipnumber": membershipnumber = fieldValue; break;
+case "importdate": importdate = fieldValue; break;
+case "registrationdate": registrationdate = fieldValue; break;

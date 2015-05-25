@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="regtest-Incomplete.dat" encoding="windows-1252">
+  <attribute name="A" sourcecol="1" valuetype="integer"/>
+  <attribute name="B" sourcecol="2" valuetype="integer"/>
+  <attribute name="C" sourcecol="3" valuetype="integer"/>
+  <attribute name="D" sourcecol="4" valuetype="integer"/>
+  <attribute name="E" sourcecol="5" valuetype="real"/>
+  <attribute name="F" sourcecol="6" valuetype="real"/>
+</attributeset>

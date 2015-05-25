@@ -1,0 +1,5 @@
+Aluminium Foil	6	7	3	0	2
+Cans (Aluminium)	78	70	82	93	110
+Cans (Steel)	440	484	484	499	524
+Car Batteries	39	19	17	9	10
+Cardboard (included with Garden waste up to Dec 09)	0	0	758	2,205	2,353

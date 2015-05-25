@@ -1,0 +1,16 @@
+Aluminium Foil	6	7	3	0	2
+Cans (Aluminium)	78	70	82	93	110
+Cans (Steel)	440	484	484	499	524
+Car Batteries	39	19	17	9	10
+Cardboard (included with Garden waste up to Dec 09)	0	0	758	2,205	2,353
+Clothing & Footwear	178	155	139	141	126
+Engine Oil	9	5	5	6	5
+Fridges & Freezers	49.98	29	24	21	15
+Food Waste	 	 	 	2,389	4,296
+Garden Waste & Cardboard (excludes garden waste from Dec 09 onwards)	7,397	8,171	7,048	5,612	6,202
+Glass	4,538	4,603	4,375	4,489	4,943
+Household Batteries	6	7	7	9	6
+Leaf litter from street sweepings	533	637	819	228	303
+Paper/Mixed paper	7,302	6,758	6,279	5,943	5,646
+Plastic Bottles	689	752	522	0	0
+Plastic (mixed)	0	0	372	1,015	1,265

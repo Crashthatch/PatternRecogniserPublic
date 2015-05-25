@@ -1,0 +1,258 @@
+6046168,05/18/2011 14:14:05,543315,09/17/2010 10:15:06,1,2,For Mongodb is it better to reference an object or use a natural String key?,"I am building a corpus of indexed sentences in different languages. I have a collection of Languages which have both an ObjectId and the ISO code as a key. Is it better to use a reference to the Language collection or store a key like ""en"" or ""fr""?
+
+I suppose it's a compromise between:
+
+ - ease of referencing the Language
+ - object in that collection
+ - speed in doing queries where the sentence has a certain language
+ - the size of the data on disk
+
+Any best practices that I should know of?",mongodb,,,,,,open
+4873911,02/02/2011 11:30,465076,10/03/2010 09:30,192,24,How to insert schemalocation in a xml document via DOM,"i create a xml document with JAXP and search a way to insert the schemalocation.
+At the moment my application produces:
+
+    <?xml version=""1.0"" encoding=""UTF-8""?>
+    <root>
+    ...
+    </root>
+
+But i need:
+
+    <?xml version=""1.0"" encoding=""UTF-8""?>
+    <root xmlns=""namespaceURL"" 
+    xmlns:xs=""http://www.w3.org/2001/XMLSchema-instance""
+    xs:schemaLocation=""namespaceURL pathToMySchema.xsd"">
+    ...
+    </root>
+
+My code:
+
+    StreamResult result = new StreamResult(writer);
+    Document doc = getDocument();
+
+    Transformer trans = transfac.newTransformer();
+    trans.setOutputProperty(OutputKeys.INDENT, ""yes"");
+    trans.setOutputProperty(OutputKeys.METHOD, ""xml"");
+    trans.setOutputProperty(OutputKeys.VERSION, ""1.0"");
+    trans.setOutputProperty(OutputKeys.ENCODING, ""UTF-8"");
+
+    DOMSource source = new DOMSource(depl.getAsElement(doc));
+    trans.transform(source, result);
+
+
+Thanks for your time,  
+Kasten",dom,xsd,jaxp,,,,open
+3311559,07/22/2010 17:21:54,406143,07/22/2010 16:58:20,1,0,Too many lookup tables ,"What are the adverse effects of having too many lookup tables in the database?
+
+ I have to incorportate too many Enumerations, based on the applications. 
+
+What would experts advice?",sql-server,database-design,enums,,,,open
+9990413,04/03/2012 09:18,851755,07/19/2011 10:22:40,4,1,What is this PHP code in VB.net,"I am looking for the vb.net equivalent of this function: I have no experience of PHP but came across this code which apparently gives you a random image url from google images 
+
+        function GetRandomImageURL($topic='', $min=0, $max=100)
+    {
+      // get random image from Google
+      if ($topic=='') $topic='image';
+      $ofs=mt_rand($min, $max);
+      $geturl='http://www.google.ca/images?q=' . $topic . '&start=' . $ofs . '&gbv=1';
+      $data=file_get_contents($geturl);
+     
+      $f1='<div id=""center_col"">';
+      $f2='<a href=""/imgres?imgurl=';
+      $f3='&amp;imgrefurl=';
+     
+      $pos1=strpos($data, $f1)+strlen($f1);
+      if ($pos1==FALSE) return FALSE;
+      $pos2=strpos($data, $f2, $pos1)+strlen($f2);
+      if ($pos2==FALSE) return FALSE;
+      $pos3=strpos($data, $f3, $pos2);
+      if ($pos3==FALSE) return FALSE;
+      return substr($data, $pos2, $pos3-$pos2);
+    }",php,vb.net,,,,04/15/2012 21:12:48,too localized
+10421966,05/02/2012 21:25,603588,02/04/2011 18:05,334,14,Spring-Data mongodb querying multiple classes stored in the same collection,"With Spring-Data, you can use the @Document annotation to specify which collection to save the object to.  Say i have two classes, Student and Teacher, both persisted into the people collection.  When I execute the following code:
+
+    mongo.find(new Query(), Teacher.class);
+
+result contains both Student and Teacher.  Looking in the data created by Spring-Data, each document contains a ""_class"" field which indicate which class it is persisted from.  
+
+This is field not used in find as an filter to return only Teacher?  How do I query if I only want to return Teacher saved in the people collection?",mongodb,spring-data,,,,,open
+8616154,12/23/2011 12:36:28,787158,06/07/2011 09:13,20,0,stop ajax function in midway when other element is clicked,"Hi have a page which has List data. 
+
+When I click on an element of the list, an Ajax function is called which populates some date in the right column.
+
+Now wat's working:-
+
+i click on element -> i see the loading.gif a few seconds -> data gets loaded.
+
+When i click on other element midway, the first function completes and only then the second request is taken.
+
+What I want:-
+
+when i click and the ajax is loading, I click again in between, the previous function should stop, and my new request should be taken. ",jquery,ajax,,,,,open
+1520973,10/05/2009 16:10,80229,03/19/2009 21:13:16,95,10,Regex to detect Javascript In a string,"I am trying to detect JavaScript in my querystrings value.
+
+I have the following c# code
+
+        private bool checkForXSS(string value) 
+        {
+            Regex regex = new Regex(@""/((\%3C)|<)[^\n]+((\%3E)|>)/I""); 
+
+            if (regex.Match(value).Success) return true; 
+            
+            return false; 
+        }
+
+This works for detecting `<script></script>` tags but unfortunately if there were no tags a match is not reached.
+
+Is it possible for a regex to match on JavaScript keywords and semi-colons etc?
+
+Thanks",regex,xss,c#,javascript,,,open
+5528942,04/03/2011 10:12,667355,03/19/2011 14:04:57,32,0,List of all .txt file,"I want to write a program that give a path in my system and goes to that path and search in that path and sub-directory of path and list all of .txt file . 
+please help me .
+thanks .",c++,c,qt,qt4,,04/07/2011 05:46,not a real question
+4344698,12/03/2010 10:37,447244,09/01/2010 09:10,1,0,I want to design an invitation card for my wedding in silverlight ,"I want to make an Application in Silverlight for invitation of marriage 
+
+Showing some Animation stuff",silverlight-4.0,,,,,01/08/2012 21:15,too localized
+7910832,10/27/2011 01:37:33,1015681,10/27/2011 01:28:41,1,0,VB Script To Delete Header and Footer plus Append Text while exporting to new text file,"Hi All VB Script Gurus,
+
+I am new to VB script world.
+
+I need some help on creating new VB script for the text file changes:
+
+I am receiving below sample text file data and needs to modify (append data) and export to new text file.
+
+OP01AMS06902APECS 20110905154741 2 T.M.FINAP033.00120110905034752 (header portion of the text file needs to validated and removed while exporting to new file)
+6301405159509 0000000700 20110504 110.00 USD 0000077191 US Auto Fo US Auto Fo 100000 ABC Fort Worth TX 76137
+6301405159509 0009000015 20110726 200.00 USD 0000077897OL00000001Vamsi Vamsi vamsi house 123 
+CL99AMS06902APECS 20110905154741 2 T.M.FINAP033.00120110905034752 (trailer portion of the file needs to validated and removed while exporting to new file)
+
+And while exporting to new file I need to append constant records data in each single row.
+
+For instance for the first above record apart of the existing data I need to append 58 constant record data for reach row.
+
+000001(constant) 0000000 (constant) 6301405159509 0000000700 20110504 110.00 USD 0000077191 US Auto Fo US Auto Fo 100000 ABC Fort Worth TX 76137
+
+All constants are fixed values with specifc length.
+
+Any help or sample scripts will be greatly appreciated.
+
+Thanks
+Shakee",vb,,,,,10/27/2011 03:24:58,too localized
+11610237,07/23/2012 09:56:46,1283414,03/21/2012 12:58:03,1,1,"In GEF bendpoints, how can i retrieve point from first and second dimension?","i have two dimensions, first (width, height) and second(width1, height1). how can i retrieve a Point(x,y) from dimensions???",eclipse-plugin,eclipse-rcp,,,,,open
+9131744,02/03/2012 16:12,1146408,01/12/2012 20:44,1,0,Is It Possible to Create CSV File with Multiple Tabs in Command Prompt?,"I'm looking to create a .csv file that can be opened in Excel that displays 2 tabs. However, the catch is that the script that I write has to be in a batch file (command prompt). I've seen a few ways to do this online, but they're all JAVA programs. I'm not sure about doing this in command prompt
+
+Is this even possible?",shell,command-line,csv,batch,,02/06/2012 18:30,off topic
+2047987,01/12/2010 09:50,27840,10/14/2008 13:22:02,79,5,How to write shellextension contextmenuitem in codegear c++ 2010,"I'm looking for some examples for writing a shell extension in codegear 2010 (2007 and 2009 would also probably be relevant) so I can rightclick a file in explorer and get the filepath in my vcl program.
+I have followed [this][1] tutorial but it's from 2001 and I have some trouble to get it to work. With that means I cant get it to call my methods (initialize , QueryContextMenu etc.).
+
+
+  [1]: http://edn.embarcadero.com/article/26650",codegear,shell-extensions,contextmenu,c++,c++builder,,open
+8341885,12/01/2011 13:05,416552,08/10/2010 19:51,251,3,How to add special character's like & > in xml file using java-script,"I am generating a xml code using java script, it works file if there is no special character in xml, otherwise it will generate message ""invalid xml"",
+
+I tried to **replace some special character's like 
+
+**xmlData=xmlData.replaceAll("">"",""&gt;"");
+xmlData=xmlData.replaceAll(""&"",""&amp;"");
+but it doesn't work.**
+
+for example:
+<category label='ARR Builders & Developers'>
+
+please reply me if anyone have some solution for this
+
+thanks",javascript,xml,,,,,open
+11200627,06/26/2012 04:05:14,1436488,06/05/2012 04:13,1,0,How VPN spliting Done in .Net Using C#,"I wants to use a certain browser or an application to send and receive traffic through VPN tunnel while the rest of the traffic is required to travel through the local ISP.
+
+
+Please Help me",c#,.net,vpn,,,06/27/2012 11:45:19,off topic
+6984871,08/08/2011 15:55,884395,08/08/2011 15:54,1,0,Cell colors in a GWT CellTable,"I'm using a CellTable and would like to programatically change the background color of certain cells in some situations. I tried it with an Custom Cell as described in the documentation and changed the background color with
+
+    sb.appendHtmlConstant (""<div style=\""background-color:blue;\"">"");
+    sb.append (safeValue);
+    sb.appendHtmlConstant (""</div>"");
+
+This basically works, but seems to be quite slow. Is there a better way to do this?",gwt,gwt-2.2-celltable,,,,,open
+8589517,12/21/2011 12:03:43,383731,07/05/2010 13:30,76,20,Sequential CSS3 animation,"I'm wondering if it is possible to fade in a list of items sequentially using CSS3 only?
+
+HTML would be something like this: 
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+        <li>item 9</li>
+        <li>item 10</li>
+
+        <li>item 11</li>
+        <li>item 12</li>
+        <li>item 13</li>
+        <li>item 14</li>
+        <li>item 15</li>
+    </ul>
+
+And when the UL gets the class ""fadeout"" it would be cool if first ""item1"" fades out (during 2 seconds) once this is finished fade out the next one(""item2"") and so on until all items are faded out.
+
+I know how to do this using jQuery but it would be nice if this was possible using CSS3 only? Any ideas if this could be possible?
+
+Thx! ",animation,css3,sequential,,,,open
+8784855,01/09/2012 06:55,281839,02/26/2010 06:30:28,407,3,can a strong name assambly be used only by a strongly name assambly?,"Can a strongly name assembly be used by a strongly name assembly ? I want to know if I signed an asambly as strongly named will it not possible to be used by a simple assambly ?  Please guide how to sign a assambly as strongly named ?
+
+thanks",c#,.net,visual-studio,visual-studio-2008,,01/09/2012 10:39,not a real question
+8548243,12/17/2011 22:06:37,224907,12/04/2009 16:31,244,21,ARC error: init methods must return a type related to the receiver type [4],"Whats wrong with this code under ARC? I get above error:
+
+    
+    - (Moment *)initMoment:(BOOL)insert {
+    
+    if (insert) {
+        self.moment = [NSEntityDescription insertNewObjectForEntityForName:@""Moment"" inManagedObjectContext:self.managedObjectContext];
+      } else {
+        self.moment = [NSEntityDescription insertNewObjectForEntityForName:@""Moment"" inManagedObjectContext:nil];
+      }
+    return self.moment;
+    }",ios5,initialization,arc,,,,open
+5182954,03/03/2011 15:40,512002,11/18/2010 10:56:50,81,5,Problem with deploying django application on mod_wsgi,"I seem to have a problem deploying django with mod_wsgi. In the past I've used mod_python but I want to make the change. I have been using Graham Dumpleton notes here [http://code.google.com/p/modwsgi/wiki/IntegrationWithDjango][1][1], but it still seem to not work. I get a Internal Server Error.
+
+
+`django.wsgi file:`
+
+    import os
+    import sys
+    
+    sys.path.append('/var/www/html')
+    sys.path.append('/var/www/html/c2duo_crm')
+    
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'c2duo_crm.settings'
+    import django.core.handlers.wsgi
+    application = django.core.handlers.wsgi.WSGIHandler()
+
+    WSGIScriptAlias / /var/www/html/c2duo_crm/apache/django.wsgi
+ 
+`Apache httpd file:`   
+
+    <Directory /var/www/html/c2duo_crm/apache>
+    Order allow,deny
+    Allow from all
+    </Directory>
+
+In my apache error log, it says I have this error This is not all of it, but I've got the most important part:
+
+    [Errno 13] Permission denied: '/.python-eggs'
+    [Thu Mar 03 14:59:25 2011] [error] [client 127.0.0.1]
+    [Thu Mar 03 14:59:25 2011] [error] [client 127.0.0.1] The Python egg cache directory is currently set to:
+    [Thu Mar 03 14:59:25 2011] [error] [client 127.0.0.1]
+    [Thu Mar 03 14:59:25 2011] [error] [client 127.0.0.1]   /.python-eggs
+    [Thu Mar 03 14:59:25 2011] [error] [client 127.0.0.1]
+    [Thu Mar 03 14:59:25 2011] [error] [client 127.0.0.1] Perhaps your account does not have write access to this directory?  You can
+    [Thu Mar 03 14:59:25 2011] [error] [client 127.0.0.1] change the cache directory by setting the PYTHON_EGG_CACHE environment
+    [Thu Mar 03 14:59:25 2011] [error] [client 127.0.0.1] variable to point to an accessible directory.
+
+ 
+
+
+  [1]: http://code.google.com/p/modwsgi/wiki/IntegrationWithDjango][1",python,django,apache,deployment,mod-wsgi,11/22/2011 07:59:36,off topic

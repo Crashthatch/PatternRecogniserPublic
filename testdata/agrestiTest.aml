@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="agrestiTest.dat" encoding="windows-1252">
+  <attribute name="input" sourcecol="1" valuetype="integer"/>
+  <attribute name="color spine" sourcecol="2" valuetype="integer"/>
+  <attribute name="width" sourcecol="3" valuetype="real"/>
+  <attribute name="satell" sourcecol="4" valuetype="integer"/>
+  <attribute name="weight" sourcecol="5" valuetype="integer"/>
+</attributeset>

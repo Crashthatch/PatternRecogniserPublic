@@ -1,0 +1,1 @@
+A version of "names from friendwheel jsonp" with the jsonp wrapper removed so a decodeJson processor can be applied directly.

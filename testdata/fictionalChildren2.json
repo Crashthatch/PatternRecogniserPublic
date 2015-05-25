@@ -1,0 +1,6 @@
+[
+{"name": "Scrooge", "children": []},
+{"name": "Walter", "children": ["Junior", "Molly"]},
+{"name": "Molly", "children": ["Ron", "Ginny", "Fred", "George", "Percy", "Bill", "Charlie"]},
+{"name": "Elizabeth", "children": ["Charles","Anne", "Edward", "Andrew"]}
+]

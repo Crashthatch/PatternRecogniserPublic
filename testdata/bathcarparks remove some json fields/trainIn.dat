@@ -1,0 +1,58 @@
+[{
+"id" : "9ccbd729fd0d4ce7c32622151f5c26e3",
+"lastupdate" : "2014-11-25T00:00:00",
+"location" : {
+"needs_recoding" : false,
+"longitude" : "-2.36860892385",
+"latitude" : "51.3843384358",
+"human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+},
+"percentage" : "6",
+"status" : "Emptying",
+"description" : "Charlotte Street CP / A4 Charlotte Street / Marlbourgh Buildings / CP / Bath",
+"name" : "Charlotte Street CP",
+"capacity" : "1056",
+"occupancy" : "59",
+"dateuploaded" : "2014-11-25T00:00:01",
+"northing" : "165097",
+"easting" : "374445"
+}
+, {
+"id" : "d546fc6129490cef4ef3bfbc1086b550",
+"lastupdate" : "2014-11-25T00:00:00",
+"location" : {
+"needs_recoding" : false,
+"longitude" : "-2.36225609279",
+"latitude" : "51.3787114813",
+"human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+},
+"percentage" : "3",
+"status" : "Static",
+"description" : "Avon Street CP / A367 Green Park Road / Corn Street / CP / Bath",
+"name" : "Avon Street CP",
+"capacity" : "630",
+"occupancy" : "19",
+"dateuploaded" : "2014-11-25T00:00:01",
+"northing" : "164469",
+"easting" : "374884"
+}
+, {
+"id" : "8c9bb941b4b4cc1bdd42e51db1eedced",
+"lastupdate" : "2014-11-25T00:04:25",
+"location" : {
+"needs_recoding" : false,
+"longitude" : "-2.38389427175",
+"latitude" : "51.352935229",
+"human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+},
+"percentage" : "0",
+"status" : "Static",
+"description" : "Odd Down P+R / A367 / P+R / Bath",
+"name" : "Odd Down P+R",
+"capacity" : "1252",
+"occupancy" : "6",
+"dateuploaded" : "2014-11-25T00:05:01",
+"northing" : "161610",
+"easting" : "373363"
+}
+]

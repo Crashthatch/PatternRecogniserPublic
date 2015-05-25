@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="andornotxor.dat" encoding="windows-1252">
+  <attribute name="x" sourcecol="1" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+  <attribute name="y" sourcecol="2" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+    <attribute name="z" sourcecol="3" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+  <attribute name="a" sourcecol="4" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+  <attribute name="b" sourcecol="5" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>  
+  <attribute name="c" sourcecol="6" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+  <attribute name="d" sourcecol="7" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+  <attribute name="e" sourcecol="8" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>  
+</attributeset>

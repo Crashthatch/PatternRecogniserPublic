@@ -1,0 +1,5 @@
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAB2KR9eJ3C4TTVCWhMstA0ItlZAPXEQ1W' WHERE fbid='3553723118';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAFdknv4KMDpzBMVHUfUiXZB' WHERE fbid='14558236489';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAAZBEYoTcONpC8SydOak3gb' WHERE fbid='85922088935';

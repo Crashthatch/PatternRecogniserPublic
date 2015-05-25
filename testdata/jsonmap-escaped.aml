@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="jsonmap-escaped.dat" encoding="windows-1252">
+  <attribute name="x" sourcecol="1" valuetype="nominal">
+    <value>{"first":"A","second":"B","third":"A","fourth":"B","fifth":"A","sixth":"B","seventh":"A","eighth":"B"}</value>
+  </attribute>
+</attributeset>

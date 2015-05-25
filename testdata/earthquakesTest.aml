@@ -1,0 +1,2403 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="earthquakesTest.dat" encoding="windows-1252">
+  <attribute name="Src" sourcecol="1" valuetype="nominal">
+    <value>nn</value>
+    <value>ci</value>
+    <value>nc</value>
+    <value>ak</value>
+    <value>us</value>
+    <value>hv</value>
+    <value>nm</value>
+    <value>se</value>
+    <value>pr</value>
+    <value>uw</value>
+    <value>uu</value>
+    <value>ld</value>
+    <value>mb</value>
+  </attribute>
+  <attribute name="Eqid" sourcecol="2" valuetype="nominal">
+    <value>00313848</value>
+    <value>10754581</value>
+    <value>00313847</value>
+    <value>10754573</value>
+    <value>00313845</value>
+    <value>00313843</value>
+    <value>00313842</value>
+    <value>00313840</value>
+    <value>00313839</value>
+    <value>71426730</value>
+    <value>10060690</value>
+    <value>2010yvau</value>
+    <value>2010yvas</value>
+    <value>2010yvat</value>
+    <value>60165906</value>
+    <value>71426680</value>
+    <value>2010yvan</value>
+    <value>10060676</value>
+    <value>10060674</value>
+    <value>2010yvag</value>
+    <value>10754469</value>
+    <value>10754461</value>
+    <value>10754453</value>
+    <value>10754437</value>
+    <value>10754421</value>
+    <value>10754413</value>
+    <value>60165826</value>
+    <value>71426625</value>
+    <value>00313834</value>
+    <value>71426620</value>
+    <value>71426615</value>
+    <value>10754397</value>
+    <value>71426595</value>
+    <value>71426590</value>
+    <value>71426580</value>
+    <value>71426570</value>
+    <value>2010yvad</value>
+    <value>10754373</value>
+    <value>00313831</value>
+    <value>10754365</value>
+    <value>10754341</value>
+    <value>10754333</value>
+    <value>00313829</value>
+    <value>71426505</value>
+    <value>10754325</value>
+    <value>71426500</value>
+    <value>10060617</value>
+    <value>10754293</value>
+    <value>10754285</value>
+    <value>10754277</value>
+    <value>10754261</value>
+    <value>10754245</value>
+    <value>10754237</value>
+    <value>10754221</value>
+    <value>10754213</value>
+    <value>10754205</value>
+    <value>10754197</value>
+    <value>10754181</value>
+    <value>60165691</value>
+    <value>10754173</value>
+    <value>10754165</value>
+    <value>10754157</value>
+    <value>10754149</value>
+    <value>10754141</value>
+    <value>10754125</value>
+    <value>10754117</value>
+    <value>10754101</value>
+    <value>10754109</value>
+    <value>71426405</value>
+    <value>71426400</value>
+    <value>10754093</value>
+    <value>10754085</value>
+    <value>10754077</value>
+    <value>10754069</value>
+    <value>10060564</value>
+    <value>10754061</value>
+    <value>34645759</value>
+    <value>10060562</value>
+    <value>10754045</value>
+    <value>2010yubx</value>
+    <value>2010yucg</value>
+    <value>2010yucj</value>
+    <value>10754037</value>
+    <value>10754029</value>
+    <value>10754013</value>
+    <value>10754005</value>
+    <value>10753997</value>
+    <value>10753989</value>
+    <value>1049</value>
+    <value>34669759</value>
+    <value>10753973</value>
+    <value>10060545</value>
+    <value>10753957</value>
+    <value>71426335</value>
+    <value>10753941</value>
+    <value>10753933</value>
+    <value>10753925</value>
+    <value>10753901</value>
+    <value>71426285</value>
+    <value>hnw0716b</value>
+    <value>71426275</value>
+    <value>10753893</value>
+    <value>10753877</value>
+    <value>10197000</value>
+    <value>10753861</value>
+    <value>71426255</value>
+    <value>10753813</value>
+    <value>10060540</value>
+    <value>10753789</value>
+    <value>10753781</value>
+    <value>07161133</value>
+    <value>10753765</value>
+    <value>10753757</value>
+    <value>10753741</value>
+    <value>10060537</value>
+    <value>71426230</value>
+    <value>10060535</value>
+    <value>07161057</value>
+    <value>71426215</value>
+    <value>hnw0716a</value>
+    <value>10753725</value>
+    <value>07161015</value>
+    <value>10753709</value>
+    <value>10753701</value>
+    <value>10060533</value>
+    <value>10753693</value>
+    <value>10753685</value>
+    <value>1026767</value>
+    <value>10060530</value>
+    <value>2010yua6</value>
+    <value>10753677</value>
+    <value>10753653</value>
+    <value>71426210</value>
+    <value>71426200</value>
+    <value>10753645</value>
+    <value>10060524</value>
+    <value>2010yua4</value>
+    <value>10060521</value>
+    <value>71426175</value>
+    <value>10753629</value>
+    <value>10753621</value>
+    <value>71426160</value>
+    <value>71426150</value>
+    <value>10753605</value>
+    <value>10753597</value>
+    <value>71426145</value>
+    <value>07160650</value>
+    <value>10753589</value>
+    <value>34637759</value>
+    <value>10753581</value>
+    <value>71426120</value>
+    <value>10753565</value>
+    <value>2010yua1</value>
+    <value>71426115</value>
+    <value>2010yuaz</value>
+    <value>10753549</value>
+    <value>71426105</value>
+    <value>10753541</value>
+    <value>2010yuax</value>
+    <value>10753533</value>
+    <value>71426100</value>
+    <value>10753525</value>
+    <value>10753517</value>
+    <value>10753509</value>
+    <value>2010yuau</value>
+    <value>10753501</value>
+    <value>60165596</value>
+    <value>10753477</value>
+    <value>10753469</value>
+    <value>10753445</value>
+    <value>10753413</value>
+    <value>10197001</value>
+    <value>2010yuas</value>
+    <value>2010yuar</value>
+    <value>00313797</value>
+    <value>10753389</value>
+    <value>00313795</value>
+    <value>10753349</value>
+    <value>2010yuak</value>
+    <value>10753317</value>
+    <value>10753325</value>
+    <value>71426005</value>
+    <value>10753285</value>
+    <value>10753277</value>
+    <value>07160114</value>
+    <value>10753269</value>
+    <value>10753261</value>
+    <value>71425965</value>
+    <value>10060495</value>
+    <value>2010yuag</value>
+    <value>71425935</value>
+    <value>07160024</value>
+    <value>71425905</value>
+    <value>10197002</value>
+    <value>2010yuab</value>
+    <value>10753197</value>
+    <value>71425875</value>
+    <value>10753189</value>
+    <value>71425835</value>
+    <value>71425825</value>
+    <value>10753173</value>
+    <value>07152334</value>
+    <value>10753165</value>
+    <value>10060665</value>
+    <value>10753157</value>
+    <value>10060490</value>
+    <value>71425800</value>
+    <value>2010ytb1</value>
+    <value>10753141</value>
+    <value>34613767</value>
+    <value>34613759</value>
+    <value>10753133</value>
+    <value>10060356</value>
+    <value>71425765</value>
+    <value>10060354</value>
+    <value>10060352</value>
+    <value>10060660</value>
+    <value>2010ytbu</value>
+    <value>10753069</value>
+    <value>71425740</value>
+    <value>71425725</value>
+    <value>2010ytbm</value>
+    <value>60165441</value>
+    <value>10060659</value>
+    <value>hnw0715a</value>
+    <value>71425685</value>
+    <value>10060348</value>
+    <value>10753037</value>
+    <value>71425660</value>
+    <value>71425645</value>
+    <value>07151912</value>
+    <value>10060347</value>
+    <value>10060346</value>
+    <value>10753013</value>
+    <value>10060345</value>
+    <value>10752989</value>
+    <value>10060342</value>
+    <value>10752957</value>
+    <value>71425570</value>
+    <value>10752917</value>
+    <value>10060341</value>
+    <value>10752893</value>
+    <value>10060337</value>
+    <value>10060651</value>
+    <value>10752885</value>
+    <value>71425510</value>
+    <value>10060336</value>
+    <value>10752877</value>
+    <value>34597759</value>
+    <value>34605759</value>
+    <value>10752853</value>
+    <value>10752821</value>
+    <value>71425435</value>
+    <value>10060334</value>
+    <value>10752813</value>
+    <value>71425415</value>
+    <value>10060333</value>
+    <value>71425385</value>
+    <value>71425360</value>
+    <value>71425350</value>
+    <value>71425345</value>
+    <value>71425340</value>
+    <value>10752765</value>
+    <value>71425335</value>
+    <value>10060332</value>
+    <value>10752749</value>
+    <value>2010ytaz</value>
+    <value>10752725</value>
+    <value>71425325</value>
+    <value>71425310</value>
+    <value>10060331</value>
+    <value>10060330</value>
+    <value>10752709</value>
+    <value>07151336</value>
+    <value>10752693</value>
+    <value>10752677</value>
+    <value>10752669</value>
+    <value>10060642</value>
+    <value>71425240</value>
+    <value>10752645</value>
+    <value>60165036</value>
+    <value>60165021</value>
+    <value>10060641</value>
+    <value>10752613</value>
+    <value>10060328</value>
+    <value>71425190</value>
+    <value>10752597</value>
+    <value>10752589</value>
+    <value>71425185</value>
+    <value>10060325</value>
+    <value>10752549</value>
+    <value>71425165</value>
+    <value>10060323</value>
+    <value>10752533</value>
+    <value>10752525</value>
+    <value>10060321</value>
+    <value>10752509</value>
+    <value>71425130</value>
+    <value>10752477</value>
+    <value>07150656</value>
+    <value>10752453</value>
+    <value>10752445</value>
+    <value>10752437</value>
+    <value>00313755</value>
+    <value>10752429</value>
+    <value>10060319</value>
+    <value>10196000</value>
+    <value>71425115</value>
+    <value>10752381</value>
+    <value>10752365</value>
+    <value>10752357</value>
+    <value>71425095</value>
+    <value>10752349</value>
+    <value>10060318</value>
+    <value>10752341</value>
+    <value>10752333</value>
+    <value>10060316</value>
+    <value>71425475</value>
+    <value>10060631</value>
+    <value>71425090</value>
+    <value>10060314</value>
+    <value>10060629</value>
+    <value>2010ytai</value>
+    <value>10060628</value>
+    <value>10060313</value>
+    <value>10060309</value>
+    <value>10752301</value>
+    <value>71425070</value>
+    <value>10752285</value>
+    <value>10752269</value>
+    <value>10060340</value>
+    <value>10752245</value>
+    <value>10060305</value>
+    <value>10752237</value>
+    <value>10752229</value>
+    <value>10752221</value>
+    <value>10060304</value>
+    <value>2010ytag</value>
+    <value>10060620</value>
+    <value>10060619</value>
+    <value>2010ytae</value>
+    <value>2010ytab</value>
+    <value>10060302</value>
+    <value>10195002</value>
+    <value>10752157</value>
+    <value>10752149</value>
+    <value>71425010</value>
+    <value>10752141</value>
+    <value>71425005</value>
+    <value>10060301</value>
+    <value>07142315</value>
+    <value>07142245</value>
+    <value>10752133</value>
+    <value>10752125</value>
+    <value>71424990</value>
+    <value>10060299</value>
+    <value>10060298</value>
+    <value>10060296</value>
+    <value>10752101</value>
+    <value>71424980</value>
+    <value>71424975</value>
+    <value>10752085</value>
+    <value>10752077</value>
+    <value>34565775</value>
+    <value>10752069</value>
+    <value>10195001</value>
+    <value>71424950</value>
+    <value>71424945</value>
+    <value>10751997</value>
+    <value>10751989</value>
+    <value>10751973</value>
+    <value>71424935</value>
+    <value>10060294</value>
+    <value>10751925</value>
+    <value>10060293</value>
+    <value>10060481</value>
+    <value>10060480</value>
+    <value>10060479</value>
+    <value>71424905</value>
+    <value>10060478</value>
+    <value>10751917</value>
+    <value>10751893</value>
+    <value>10751877</value>
+    <value>10751869</value>
+    <value>10060265</value>
+    <value>07141804</value>
+    <value>71424890</value>
+    <value>10751837</value>
+    <value>10060475</value>
+    <value>71424850</value>
+    <value>10060264</value>
+    <value>71424840</value>
+    <value>71424835</value>
+    <value>10751821</value>
+    <value>10751813</value>
+    <value>10060473</value>
+    <value>10060472</value>
+    <value>71424825</value>
+    <value>71424820</value>
+    <value>10751781</value>
+    <value>10751773</value>
+    <value>2010ysa7</value>
+    <value>71424810</value>
+    <value>10060261</value>
+    <value>10060260</value>
+    <value>10751749</value>
+    <value>10060259</value>
+    <value>10060258</value>
+    <value>07141325</value>
+    <value>71424795</value>
+    <value>10751741</value>
+    <value>10060467</value>
+    <value>71424785</value>
+    <value>10060256</value>
+    <value>2010ysa3</value>
+    <value>10060253</value>
+    <value>10195000</value>
+    <value>10751725</value>
+    <value>10060464</value>
+    <value>71424760</value>
+    <value>10751717</value>
+    <value>00313712</value>
+    <value>10751701</value>
+    <value>10751693</value>
+    <value>2010ysaw</value>
+    <value>10751661</value>
+    <value>10751645</value>
+    <value>10060460</value>
+    <value>10060459</value>
+    <value>10751629</value>
+    <value>10060233</value>
+    <value>10060457</value>
+    <value>00313709</value>
+    <value>71424695</value>
+    <value>07140917</value>
+    <value>10060455</value>
+    <value>10060454</value>
+    <value>10751613</value>
+    <value>10751605</value>
+    <value>10751589</value>
+    <value>2010ysas</value>
+    <value>10751581</value>
+    <value>2010ysar</value>
+    <value>71424680</value>
+    <value>71424660</value>
+    <value>71424665</value>
+    <value>71424655</value>
+    <value>10751525</value>
+    <value>10060453</value>
+    <value>10060227</value>
+    <value>10751509</value>
+    <value>10060451</value>
+    <value>10751501</value>
+    <value>10751493</value>
+    <value>10751485</value>
+    <value>10060225</value>
+    <value>10060224</value>
+    <value>10060448</value>
+    <value>10751469</value>
+    <value>10060447</value>
+    <value>07140549</value>
+    <value>10751453</value>
+    <value>10751445</value>
+    <value>10751437</value>
+    <value>60164586</value>
+    <value>10751429</value>
+    <value>10751421</value>
+    <value>2010ysam</value>
+    <value>10060446</value>
+    <value>10060223</value>
+    <value>10060219</value>
+    <value>71424565</value>
+    <value>10060216</value>
+    <value>10751405</value>
+    <value>71424550</value>
+    <value>10060441</value>
+    <value>10751397</value>
+    <value>07140318</value>
+    <value>10751381</value>
+    <value>07140304</value>
+    <value>10060214</value>
+    <value>10751373</value>
+    <value>10751357</value>
+    <value>71424520</value>
+    <value>10751349</value>
+    <value>10751341</value>
+    <value>71424510</value>
+    <value>10060438</value>
+    <value>10060212</value>
+    <value>10751317</value>
+    <value>10751309</value>
+    <value>10060211</value>
+    <value>10751293</value>
+    <value>10751277</value>
+    <value>10060435</value>
+    <value>10751261</value>
+    <value>10060209</value>
+    <value>10060433</value>
+    <value>10751253</value>
+    <value>10060432</value>
+    <value>10060603</value>
+    <value>10751237</value>
+    <value>10751221</value>
+    <value>2010yrbs</value>
+    <value>10194002</value>
+    <value>10751197</value>
+    <value>71424445</value>
+    <value>71424435</value>
+    <value>34493759</value>
+    <value>10060163</value>
+    <value>10751157</value>
+    <value>10751149</value>
+    <value>10751133</value>
+    <value>10060602</value>
+    <value>71424415</value>
+    <value>2010yrbn</value>
+    <value>10060149</value>
+    <value>10751061</value>
+    <value>10060601</value>
+    <value>10060147</value>
+    <value>10060600</value>
+    <value>10060146</value>
+    <value>10751029</value>
+    <value>10060145</value>
+    <value>10060286</value>
+    <value>2010yrbl</value>
+    <value>71424395</value>
+    <value>10060599</value>
+    <value>10750997</value>
+    <value>2010yrbf</value>
+    <value>07132019</value>
+    <value>10750981</value>
+    <value>10060598</value>
+    <value>10060128</value>
+    <value>71424385</value>
+    <value>10750973</value>
+    <value>10750957</value>
+    <value>10750965</value>
+    <value>10060596</value>
+    <value>2010yrbe</value>
+    <value>71424370</value>
+    <value>2010yra6</value>
+    <value>10750925</value>
+    <value>10750917</value>
+    <value>60164511</value>
+    <value>07131756</value>
+    <value>10750845</value>
+    <value>10750805</value>
+    <value>10750733</value>
+    <value>10750725</value>
+    <value>10060074</value>
+    <value>71424280</value>
+    <value>10750685</value>
+    <value>71424270</value>
+    <value>10750621</value>
+    <value>10750613</value>
+    <value>10060592</value>
+    <value>71424250</value>
+    <value>10060591</value>
+    <value>10060590</value>
+    <value>10060073</value>
+    <value>71424240</value>
+    <value>10750557</value>
+    <value>10750541</value>
+    <value>10750525</value>
+    <value>10060067</value>
+    <value>10750517</value>
+    <value>71424235</value>
+    <value>10060589</value>
+    <value>71424230</value>
+    <value>10750501</value>
+    <value>10750493</value>
+    <value>10060587</value>
+    <value>71424225</value>
+    <value>71424220</value>
+    <value>10060064</value>
+    <value>10750429</value>
+    <value>10750421</value>
+    <value>10060585</value>
+    <value>71424210</value>
+    <value>10750397</value>
+    <value>10750381</value>
+    <value>10750373</value>
+    <value>10750365</value>
+    <value>71424205</value>
+    <value>10060063</value>
+    <value>10060584</value>
+    <value>10060061</value>
+    <value>10750333</value>
+    <value>71424195</value>
+    <value>10060583</value>
+    <value>10750325</value>
+    <value>10750309</value>
+    <value>71424185</value>
+    <value>10060059</value>
+    <value>10750293</value>
+    <value>10060582</value>
+    <value>10060581</value>
+    <value>10060580</value>
+    <value>60164426</value>
+    <value>71424165</value>
+    <value>71424160</value>
+    <value>10060058</value>
+    <value>10060578</value>
+    <value>10750229</value>
+    <value>10060577</value>
+    <value>10750213</value>
+    <value>71424145</value>
+    <value>2010yral</value>
+    <value>10193001</value>
+    <value>10750173</value>
+    <value>10750165</value>
+    <value>10060056</value>
+    <value>10060576</value>
+    <value>2010yraj</value>
+    <value>10750157</value>
+    <value>2010yrai</value>
+    <value>10060575</value>
+    <value>07130349</value>
+    <value>10060574</value>
+    <value>10750133</value>
+    <value>10060573</value>
+    <value>2010yraf</value>
+    <value>71424065</value>
+    <value>10060052</value>
+    <value>10060571</value>
+    <value>71424040</value>
+    <value>10750101</value>
+    <value>71424035</value>
+    <value>71424030</value>
+    <value>10750069</value>
+    <value>10060051</value>
+    <value>10750037</value>
+    <value>10060570</value>
+    <value>10749981</value>
+    <value>71424015</value>
+    <value>10749965</value>
+    <value>10060569</value>
+    <value>10749957</value>
+    <value>10749949</value>
+    <value>10749925</value>
+    <value>10060045</value>
+    <value>10749917</value>
+    <value>10060042</value>
+    <value>10060041</value>
+    <value>10060039</value>
+    <value>71423980</value>
+    <value>10749901</value>
+    <value>10060038</value>
+    <value>71423970</value>
+    <value>07122251</value>
+    <value>07122249</value>
+    <value>10749893</value>
+    <value>07122218</value>
+    <value>71423965</value>
+    <value>10749845</value>
+    <value>10059889</value>
+    <value>10749821</value>
+    <value>10749789</value>
+    <value>71423955</value>
+    <value>10749781</value>
+    <value>10749773</value>
+    <value>10749765</value>
+    <value>10749717</value>
+    <value>10059887</value>
+    <value>10749701</value>
+    <value>10749693</value>
+    <value>71423925</value>
+    <value>10749685</value>
+    <value>71423920</value>
+    <value>10749653</value>
+    <value>10060199</value>
+    <value>71423900</value>
+    <value>10060198</value>
+    <value>71423890</value>
+    <value>10749621</value>
+    <value>10749605</value>
+    <value>71423880</value>
+    <value>10749589</value>
+    <value>10193009</value>
+    <value>10059885</value>
+    <value>10060196</value>
+    <value>10193010</value>
+    <value>71041294</value>
+    <value>10060195</value>
+    <value>34469759</value>
+    <value>10060194</value>
+    <value>10749557</value>
+    <value>2010yqbh</value>
+    <value>60164331</value>
+    <value>10749549</value>
+    <value>60164321</value>
+    <value>71423830</value>
+    <value>10060193</value>
+    <value>10749533</value>
+    <value>10059882</value>
+    <value>10749517</value>
+    <value>71423810</value>
+    <value>10749493</value>
+    <value>10749485</value>
+    <value>71423790</value>
+    <value>10059881</value>
+    <value>10749469</value>
+    <value>10749461</value>
+    <value>71423785</value>
+    <value>10059880</value>
+    <value>10749389</value>
+    <value>10749373</value>
+    <value>10749365</value>
+    <value>10749357</value>
+    <value>10749349</value>
+    <value>34453759</value>
+    <value>10059877</value>
+    <value>71424365</value>
+    <value>10749301</value>
+    <value>10749293</value>
+    <value>2010yqa7</value>
+    <value>10059876</value>
+    <value>10749285</value>
+    <value>10059875</value>
+    <value>10749261</value>
+    <value>10749253</value>
+    <value>10749245</value>
+    <value>10749221</value>
+    <value>10749213</value>
+    <value>00313611</value>
+    <value>71423745</value>
+    <value>71423740</value>
+    <value>10749205</value>
+    <value>10059873</value>
+    <value>10060185</value>
+    <value>10749197</value>
+    <value>71423735</value>
+    <value>10060184</value>
+    <value>10060183</value>
+    <value>10060182</value>
+    <value>10193006</value>
+    <value>2010yqaz</value>
+    <value>07121005</value>
+    <value>60164266</value>
+    <value>10749165</value>
+    <value>07121000</value>
+    <value>10749149</value>
+    <value>07120955</value>
+    <value>10060181</value>
+    <value>10193005</value>
+    <value>71423720</value>
+    <value>10749125</value>
+    <value>10193004</value>
+    <value>10749109</value>
+    <value>10193003</value>
+    <value>10749101</value>
+    <value>10193002</value>
+    <value>10059871</value>
+    <value>10749093</value>
+    <value>71423705</value>
+    <value>10059870</value>
+    <value>71423700</value>
+    <value>10749077</value>
+    <value>10749069</value>
+    <value>2010yqat</value>
+    <value>10749061</value>
+    <value>10749053</value>
+    <value>10059869</value>
+    <value>10749045</value>
+    <value>71423695</value>
+    <value>10749029</value>
+    <value>2010yqaq</value>
+    <value>10748997</value>
+    <value>10748981</value>
+    <value>10059868</value>
+    <value>10059867</value>
+    <value>10748965</value>
+    <value>60164231</value>
+    <value>10748957</value>
+    <value>10748949</value>
+    <value>71423660</value>
+    <value>10059866</value>
+    <value>71423655</value>
+    <value>71423650</value>
+    <value>10748925</value>
+    <value>10748917</value>
+    <value>10059864</value>
+    <value>10059862</value>
+    <value>10059860</value>
+    <value>10748861</value>
+    <value>10748853</value>
+    <value>10059859</value>
+    <value>10748845</value>
+    <value>10748837</value>
+    <value>10060170</value>
+    <value>10059857</value>
+    <value>10059855</value>
+    <value>10748757</value>
+    <value>10193007</value>
+    <value>10748733</value>
+    <value>10060167</value>
+    <value>10748709</value>
+    <value>10059852</value>
+    <value>10748701</value>
+    <value>10748693</value>
+    <value>10748677</value>
+    <value>10059850</value>
+    <value>10193008</value>
+    <value>10059848</value>
+    <value>10748629</value>
+    <value>71423535</value>
+    <value>71423520</value>
+    <value>07120048</value>
+    <value>71423515</value>
+    <value>10748597</value>
+    <value>10748573</value>
+    <value>2010yqad</value>
+    <value>10748525</value>
+    <value>71423485</value>
+    <value>10748485</value>
+    <value>10059843</value>
+    <value>10748477</value>
+    <value>10748469</value>
+    <value>10748445</value>
+    <value>10059842</value>
+    <value>71423455</value>
+    <value>71423445</value>
+    <value>71423430</value>
+    <value>00313602</value>
+    <value>10060428</value>
+    <value>10059840</value>
+    <value>00313601</value>
+    <value>10748373</value>
+    <value>10059839</value>
+    <value>10748365</value>
+    <value>2010ypbw</value>
+    <value>71423415</value>
+    <value>10748357</value>
+    <value>10060425</value>
+    <value>71423410</value>
+    <value>10748325</value>
+    <value>07112026</value>
+    <value>10748317</value>
+    <value>07112020</value>
+    <value>10748309</value>
+    <value>10059838</value>
+    <value>10748301</value>
+    <value>10748293</value>
+    <value>10748277</value>
+    <value>10748269</value>
+    <value>10060423</value>
+    <value>10059837</value>
+    <value>10059834</value>
+    <value>10748245</value>
+    <value>10748213</value>
+    <value>10748205</value>
+    <value>10748197</value>
+    <value>10748189</value>
+    <value>10748157</value>
+    <value>10059832</value>
+    <value>07111845</value>
+    <value>10059830</value>
+    <value>10059828</value>
+    <value>10748133</value>
+    <value>10060417</value>
+    <value>25146</value>
+    <value>10059827</value>
+    <value>10060415</value>
+    <value>10748109</value>
+    <value>10059826</value>
+    <value>71423340</value>
+    <value>71423345</value>
+    <value>10748069</value>
+    <value>07111723</value>
+    <value>10748053</value>
+    <value>10748037</value>
+    <value>10060413</value>
+    <value>10060412</value>
+    <value>10748013</value>
+    <value>10748005</value>
+    <value>10060411</value>
+    <value>10060410</value>
+    <value>71423305</value>
+    <value>10747989</value>
+    <value>10060409</value>
+    <value>10060408</value>
+    <value>10747957</value>
+    <value>10060407</value>
+    <value>10060406</value>
+    <value>10059822</value>
+    <value>10747941</value>
+    <value>10747925</value>
+    <value>71423290</value>
+    <value>10747917</value>
+    <value>10059821</value>
+    <value>10747901</value>
+    <value>10747893</value>
+    <value>10747853</value>
+    <value>71423275</value>
+    <value>10060402</value>
+    <value>10060401</value>
+    <value>2010ypbh</value>
+    <value>10060400</value>
+    <value>10747829</value>
+    <value>34541759</value>
+    <value>10060399</value>
+    <value>10747813</value>
+    <value>10060398</value>
+    <value>10747805</value>
+    <value>10059816</value>
+    <value>10747797</value>
+    <value>10060395</value>
+    <value>10060394</value>
+    <value>10747765</value>
+    <value>10060393</value>
+    <value>hnw0711a</value>
+    <value>2010ypba</value>
+    <value>10747757</value>
+    <value>10060391</value>
+    <value>10060390</value>
+    <value>10747749</value>
+    <value>10747741</value>
+    <value>71423235</value>
+    <value>10059810</value>
+    <value>07111107</value>
+    <value>10747709</value>
+    <value>10747701</value>
+    <value>10747685</value>
+    <value>2010ypa6</value>
+    <value>10747661</value>
+    <value>10747653</value>
+    <value>10747645</value>
+    <value>10059808</value>
+    <value>10060385</value>
+    <value>10059807</value>
+    <value>10747621</value>
+    <value>07110946</value>
+    <value>10060383</value>
+    <value>10060382</value>
+    <value>10747605</value>
+    <value>71423195</value>
+    <value>71423190</value>
+    <value>71041419</value>
+    <value>71423175</value>
+    <value>71423170</value>
+    <value>10059806</value>
+    <value>10060380</value>
+    <value>10747597</value>
+    <value>10747589</value>
+    <value>2010ypa3</value>
+    <value>10059803</value>
+    <value>71423140</value>
+    <value>71423125</value>
+    <value>10747557</value>
+    <value>71423120</value>
+    <value>10747525</value>
+    <value>07110727</value>
+    <value>07110725</value>
+    <value>hnw0711b</value>
+    <value>10059801</value>
+    <value>10059800</value>
+    <value>10747501</value>
+    <value>10059794</value>
+    <value>10059793</value>
+    <value>34445759</value>
+    <value>10747477</value>
+    <value>71423100</value>
+    <value>2010ypau</value>
+    <value>71423095</value>
+    <value>10747461</value>
+    <value>71423085</value>
+    <value>10747453</value>
+    <value>10747445</value>
+    <value>07110622</value>
+    <value>2010ypar</value>
+    <value>10060373</value>
+    <value>71423070</value>
+    <value>10747429</value>
+    <value>60164081</value>
+    <value>10060372</value>
+    <value>10747421</value>
+    <value>10060371</value>
+    <value>10060370</value>
+    <value>10060369</value>
+    <value>71423020</value>
+    <value>10747413</value>
+    <value>10747405</value>
+    <value>10060368</value>
+    <value>10060367</value>
+    <value>10747373</value>
+    <value>10747357</value>
+    <value>10747349</value>
+    <value>10747333</value>
+    <value>2010ypan</value>
+    <value>71422990</value>
+    <value>10060366</value>
+    <value>10747293</value>
+    <value>10747285</value>
+    <value>10747277</value>
+    <value>10059783</value>
+    <value>2010ypak</value>
+    <value>10060364</value>
+    <value>2010ypah</value>
+    <value>07110220</value>
+    <value>10747221</value>
+    <value>2010ypac</value>
+    <value>10747205</value>
+    <value>10747197</value>
+    <value>07110140</value>
+    <value>10060362</value>
+    <value>10747189</value>
+    <value>10060361</value>
+    <value>10059781</value>
+    <value>07110106</value>
+    <value>10060359</value>
+    <value>10060358</value>
+    <value>10747149</value>
+    <value>10747141</value>
+    <value>10747133</value>
+    <value>10747101</value>
+    <value>10059779</value>
+    <value>10060126</value>
+    <value>10747085</value>
+    <value>2010ynb7</value>
+    <value>71422905</value>
+    <value>2010ynb4</value>
+    <value>10059775</value>
+    <value>10059774</value>
+    <value>10747053</value>
+    <value>10059772</value>
+    <value>10059771</value>
+    <value>34589759</value>
+    <value>10747005</value>
+    <value>71422895</value>
+    <value>71422890</value>
+    <value>10746989</value>
+    <value>10059769</value>
+    <value>71422880</value>
+    <value>2010ynbx</value>
+    <value>10059768</value>
+    <value>10746949</value>
+    <value>10060118</value>
+    <value>10746941</value>
+    <value>71422870</value>
+    <value>71422875</value>
+    <value>10746917</value>
+    <value>10059766</value>
+    <value>71422865</value>
+    <value>10059762</value>
+    <value>2010ynbu</value>
+    <value>10746901</value>
+    <value>10059757</value>
+    <value>10060113</value>
+    <value>2010ynbp</value>
+    <value>10060112</value>
+    <value>10746861</value>
+    <value>10746853</value>
+    <value>10746837</value>
+    <value>10060111</value>
+    <value>10746821</value>
+    <value>10746805</value>
+    <value>10746789</value>
+    <value>10059754</value>
+    <value>10059752</value>
+    <value>10059750</value>
+    <value>2010ynbi</value>
+    <value>10746717</value>
+    <value>10746709</value>
+    <value>10059744</value>
+    <value>10746701</value>
+    <value>10746693</value>
+    <value>10746685</value>
+    <value>71422785</value>
+    <value>10746629</value>
+    <value>60164011</value>
+    <value>71422775</value>
+    <value>71422760</value>
+    <value>10746613</value>
+    <value>10746605</value>
+    <value>71422750</value>
+    <value>10060105</value>
+    <value>10746589</value>
+    <value>71422730</value>
+    <value>10746557</value>
+    <value>71422720</value>
+    <value>10059742</value>
+    <value>10746493</value>
+    <value>71422710</value>
+    <value>10191001</value>
+    <value>71422700</value>
+    <value>10746357</value>
+    <value>10746365</value>
+    <value>10746349</value>
+    <value>10746341</value>
+    <value>2010yna6</value>
+    <value>10746333</value>
+    <value>34477759</value>
+    <value>10746317</value>
+    <value>10746293</value>
+    <value>10746261</value>
+    <value>10060103</value>
+    <value>10059741</value>
+    <value>10060101</value>
+    <value>10746253</value>
+    <value>34405759</value>
+    <value>10746245</value>
+    <value>10746229</value>
+    <value>10746213</value>
+    <value>10746205</value>
+    <value>10746197</value>
+    <value>10746181</value>
+    <value>10746165</value>
+    <value>10746173</value>
+    <value>10059734</value>
+    <value>10059733</value>
+    <value>2010yna1</value>
+    <value>10746157</value>
+    <value>10746149</value>
+    <value>10746141</value>
+    <value>07101241</value>
+    <value>10059728</value>
+    <value>10746101</value>
+    <value>10059724</value>
+    <value>10746085</value>
+    <value>10746069</value>
+    <value>2010ynaw</value>
+    <value>10746061</value>
+    <value>10059711</value>
+    <value>10746053</value>
+    <value>10746045</value>
+    <value>34357759</value>
+    <value>34373759</value>
+    <value>10746029</value>
+    <value>07101105</value>
+  </attribute>
+  <attribute name="Version" sourcecol="3" valuetype="nominal">
+    <value>7</value>
+    <value>2</value>
+    <value>0</value>
+    <value>1</value>
+    <value>6</value>
+    <value>4</value>
+    <value>C</value>
+    <value>5</value>
+    <value>A</value>
+    <value>3</value>
+    <value>Q</value>
+    <value>8</value>
+    <value>R</value>
+  </attribute>
+  <attribute name="Datetime" sourcecol="4" valuetype="nominal">
+    <value>Saturday, July 17, 2010 10:56:35 UTC</value>
+    <value>Saturday, July 17, 2010 10:53:35 UTC</value>
+    <value>Saturday, July 17, 2010 10:52:07 UTC</value>
+    <value>Saturday, July 17, 2010 10:42:44 UTC</value>
+    <value>Saturday, July 17, 2010 10:13:56 UTC</value>
+    <value>Saturday, July 17, 2010 10:05:28 UTC</value>
+    <value>Saturday, July 17, 2010 10:01:26 UTC</value>
+    <value>Saturday, July 17, 2010 09:52:26 UTC</value>
+    <value>Saturday, July 17, 2010 09:39:38 UTC</value>
+    <value>Saturday, July 17, 2010 09:38:25 UTC</value>
+    <value>Saturday, July 17, 2010 09:31:57 UTC</value>
+    <value>Saturday, July 17, 2010 09:04:17 UTC</value>
+    <value>Saturday, July 17, 2010 08:59:33 UTC</value>
+    <value>Saturday, July 17, 2010 07:01:44 UTC</value>
+    <value>Saturday, July 17, 2010 06:52:26 UTC</value>
+    <value>Saturday, July 17, 2010 06:35:25 UTC</value>
+    <value>Saturday, July 17, 2010 06:07:43 UTC</value>
+    <value>Saturday, July 17, 2010 05:51:13 UTC</value>
+    <value>Saturday, July 17, 2010 05:22:11 UTC</value>
+    <value>Saturday, July 17, 2010 04:34:00 UTC</value>
+    <value>Saturday, July 17, 2010 04:19:41 UTC</value>
+    <value>Saturday, July 17, 2010 04:08:29 UTC</value>
+    <value>Saturday, July 17, 2010 03:42:38 UTC</value>
+    <value>Saturday, July 17, 2010 03:39:23 UTC</value>
+    <value>Saturday, July 17, 2010 03:30:30 UTC</value>
+    <value>Saturday, July 17, 2010 03:26:05 UTC</value>
+    <value>Saturday, July 17, 2010 03:05:06 UTC</value>
+    <value>Saturday, July 17, 2010 02:50:42 UTC</value>
+    <value>Saturday, July 17, 2010 02:50:06 UTC</value>
+    <value>Saturday, July 17, 2010 02:48:06 UTC</value>
+    <value>Saturday, July 17, 2010 02:39:43 UTC</value>
+    <value>Saturday, July 17, 2010 02:36:11 UTC</value>
+    <value>Saturday, July 17, 2010 01:27:07 UTC</value>
+    <value>Saturday, July 17, 2010 01:18:55 UTC</value>
+    <value>Saturday, July 17, 2010 01:15:42 UTC</value>
+    <value>Saturday, July 17, 2010 01:07:06 UTC</value>
+    <value>Saturday, July 17, 2010 01:03:50 UTC</value>
+    <value>Saturday, July 17, 2010 00:39:45 UTC</value>
+    <value>Saturday, July 17, 2010 00:25:20 UTC</value>
+    <value>Saturday, July 17, 2010 00:01:59 UTC</value>
+    <value>Friday, July 16, 2010 23:20:32 UTC</value>
+    <value>Friday, July 16, 2010 22:58:27 UTC</value>
+    <value>Friday, July 16, 2010 22:58:11 UTC</value>
+    <value>Friday, July 16, 2010 22:48:20 UTC</value>
+    <value>Friday, July 16, 2010 22:43:51 UTC</value>
+    <value>Friday, July 16, 2010 22:32:59 UTC</value>
+    <value>Friday, July 16, 2010 22:30:11 UTC</value>
+    <value>Friday, July 16, 2010 22:24:36 UTC</value>
+    <value>Friday, July 16, 2010 22:19:35 UTC</value>
+    <value>Friday, July 16, 2010 22:12:06 UTC</value>
+    <value>Friday, July 16, 2010 22:02:14 UTC</value>
+    <value>Friday, July 16, 2010 22:00:23 UTC</value>
+    <value>Friday, July 16, 2010 21:42:34 UTC</value>
+    <value>Friday, July 16, 2010 21:37:01 UTC</value>
+    <value>Friday, July 16, 2010 21:25:52 UTC</value>
+    <value>Friday, July 16, 2010 21:21:02 UTC</value>
+    <value>Friday, July 16, 2010 21:01:03 UTC</value>
+    <value>Friday, July 16, 2010 20:56:50 UTC</value>
+    <value>Friday, July 16, 2010 20:55:00 UTC</value>
+    <value>Friday, July 16, 2010 20:23:14 UTC</value>
+    <value>Friday, July 16, 2010 20:05:59 UTC</value>
+    <value>Friday, July 16, 2010 19:59:55 UTC</value>
+    <value>Friday, July 16, 2010 19:56:39 UTC</value>
+    <value>Friday, July 16, 2010 19:51:04 UTC</value>
+    <value>Friday, July 16, 2010 19:46:23 UTC</value>
+    <value>Friday, July 16, 2010 19:38:16 UTC</value>
+    <value>Friday, July 16, 2010 19:32:01 UTC</value>
+    <value>Friday, July 16, 2010 19:30:49 UTC</value>
+    <value>Friday, July 16, 2010 19:30:12 UTC</value>
+    <value>Friday, July 16, 2010 19:29:18 UTC</value>
+    <value>Friday, July 16, 2010 19:26:15 UTC</value>
+    <value>Friday, July 16, 2010 19:21:31 UTC</value>
+    <value>Friday, July 16, 2010 19:21:17 UTC</value>
+    <value>Friday, July 16, 2010 19:15:49 UTC</value>
+    <value>Friday, July 16, 2010 19:14:50 UTC</value>
+    <value>Friday, July 16, 2010 19:14:08 UTC</value>
+    <value>Friday, July 16, 2010 19:02:10 UTC</value>
+    <value>Friday, July 16, 2010 19:01:52 UTC</value>
+    <value>Friday, July 16, 2010 18:57:02 UTC</value>
+    <value>Friday, July 16, 2010 18:53:11 UTC</value>
+    <value>Friday, July 16, 2010 18:47:39 UTC</value>
+    <value>Friday, July 16, 2010 18:47:26 UTC</value>
+    <value>Friday, July 16, 2010 18:45:26 UTC</value>
+    <value>Friday, July 16, 2010 18:43:12 UTC</value>
+    <value>Friday, July 16, 2010 18:27:55 UTC</value>
+    <value>Friday, July 16, 2010 18:14:17 UTC</value>
+    <value>Friday, July 16, 2010 17:58:53 UTC</value>
+    <value>Friday, July 16, 2010 17:36:00 UTC</value>
+    <value>Friday, July 16, 2010 17:26:20 UTC</value>
+    <value>Friday, July 16, 2010 16:48:59 UTC</value>
+    <value>Friday, July 16, 2010 16:47:57 UTC</value>
+    <value>Friday, July 16, 2010 16:36:19 UTC</value>
+    <value>Friday, July 16, 2010 16:26:53 UTC</value>
+    <value>Friday, July 16, 2010 16:07:54 UTC</value>
+    <value>Friday, July 16, 2010 16:03:07 UTC</value>
+    <value>Friday, July 16, 2010 15:29:59 UTC</value>
+    <value>Friday, July 16, 2010 15:14:51 UTC</value>
+    <value>Friday, July 16, 2010 14:28:20 UTC</value>
+    <value>Friday, July 16, 2010 14:08:22 UTC</value>
+    <value>Friday, July 16, 2010 13:50:53 UTC</value>
+    <value>Friday, July 16, 2010 13:47:25 UTC</value>
+    <value>Friday, July 16, 2010 13:34:35 UTC</value>
+    <value>Friday, July 16, 2010 12:58:55 UTC</value>
+    <value>Friday, July 16, 2010 12:53:33 UTC</value>
+    <value>Friday, July 16, 2010 12:49:23 UTC</value>
+    <value>Friday, July 16, 2010 12:43:54 UTC</value>
+    <value>Friday, July 16, 2010 12:05:30 UTC</value>
+    <value>Friday, July 16, 2010 11:47:23 UTC</value>
+    <value>Friday, July 16, 2010 11:39:07 UTC</value>
+    <value>Friday, July 16, 2010 11:35:38 UTC</value>
+    <value>Friday, July 16, 2010 11:33:47 UTC</value>
+    <value>Friday, July 16, 2010 11:17:47 UTC</value>
+    <value>Friday, July 16, 2010 11:07:56 UTC</value>
+    <value>Friday, July 16, 2010 11:03:46 UTC</value>
+    <value>Friday, July 16, 2010 11:03:36 UTC</value>
+    <value>Friday, July 16, 2010 11:02:31 UTC</value>
+    <value>Friday, July 16, 2010 11:00:30 UTC</value>
+    <value>Friday, July 16, 2010 10:57:28 UTC</value>
+    <value>Friday, July 16, 2010 10:47:22 UTC</value>
+    <value>Friday, July 16, 2010 10:38:13 UTC</value>
+    <value>Friday, July 16, 2010 10:28:50 UTC</value>
+    <value>Friday, July 16, 2010 10:15:41 UTC</value>
+    <value>Friday, July 16, 2010 10:12:38 UTC</value>
+    <value>Friday, July 16, 2010 09:59:20 UTC</value>
+    <value>Friday, July 16, 2010 09:53:31 UTC</value>
+    <value>Friday, July 16, 2010 09:48:14 UTC</value>
+    <value>Friday, July 16, 2010 09:33:35 UTC</value>
+    <value>Friday, July 16, 2010 09:16:07 UTC</value>
+    <value>Friday, July 16, 2010 09:12:41 UTC</value>
+    <value>Friday, July 16, 2010 09:04:47 UTC</value>
+    <value>Friday, July 16, 2010 08:58:44 UTC</value>
+    <value>Friday, July 16, 2010 08:43:04 UTC</value>
+    <value>Friday, July 16, 2010 08:37:28 UTC</value>
+    <value>Friday, July 16, 2010 08:28:15 UTC</value>
+    <value>Friday, July 16, 2010 08:26:05 UTC</value>
+    <value>Friday, July 16, 2010 08:23:40 UTC</value>
+    <value>Friday, July 16, 2010 08:11:02 UTC</value>
+    <value>Friday, July 16, 2010 08:04:33 UTC</value>
+    <value>Friday, July 16, 2010 07:41:12 UTC</value>
+    <value>Friday, July 16, 2010 07:34:43 UTC</value>
+    <value>Friday, July 16, 2010 07:33:35 UTC</value>
+    <value>Friday, July 16, 2010 07:30:57 UTC</value>
+    <value>Friday, July 16, 2010 07:08:41 UTC</value>
+    <value>Friday, July 16, 2010 07:02:21 UTC</value>
+    <value>Friday, July 16, 2010 07:00:16 UTC</value>
+    <value>Friday, July 16, 2010 06:59:42 UTC</value>
+    <value>Friday, July 16, 2010 06:50:35 UTC</value>
+    <value>Friday, July 16, 2010 06:43:15 UTC</value>
+    <value>Friday, July 16, 2010 06:28:32 UTC</value>
+    <value>Friday, July 16, 2010 06:16:18 UTC</value>
+    <value>Friday, July 16, 2010 06:08:48 UTC</value>
+    <value>Friday, July 16, 2010 05:58:25 UTC</value>
+    <value>Friday, July 16, 2010 05:51:25 UTC</value>
+    <value>Friday, July 16, 2010 05:45:51 UTC</value>
+    <value>Friday, July 16, 2010 05:42:29 UTC</value>
+    <value>Friday, July 16, 2010 05:39:43 UTC</value>
+    <value>Friday, July 16, 2010 05:12:44 UTC</value>
+    <value>Friday, July 16, 2010 05:09:17 UTC</value>
+    <value>Friday, July 16, 2010 05:02:39 UTC</value>
+    <value>Friday, July 16, 2010 04:59:25 UTC</value>
+    <value>Friday, July 16, 2010 04:52:07 UTC</value>
+    <value>Friday, July 16, 2010 04:40:40 UTC</value>
+    <value>Friday, July 16, 2010 04:39:31 UTC</value>
+    <value>Friday, July 16, 2010 04:37:27 UTC</value>
+    <value>Friday, July 16, 2010 04:30:37 UTC</value>
+    <value>Friday, July 16, 2010 04:30:28 UTC</value>
+    <value>Friday, July 16, 2010 04:03:11 UTC</value>
+    <value>Friday, July 16, 2010 03:47:29 UTC</value>
+    <value>Friday, July 16, 2010 03:34:02 UTC</value>
+    <value>Friday, July 16, 2010 03:12:45 UTC</value>
+    <value>Friday, July 16, 2010 03:09:31 UTC</value>
+    <value>Friday, July 16, 2010 03:05:44 UTC</value>
+    <value>Friday, July 16, 2010 03:04:19 UTC</value>
+    <value>Friday, July 16, 2010 03:00:47 UTC</value>
+    <value>Friday, July 16, 2010 03:00:03 UTC</value>
+    <value>Friday, July 16, 2010 02:47:52 UTC</value>
+    <value>Friday, July 16, 2010 02:31:53 UTC</value>
+    <value>Friday, July 16, 2010 02:25:23 UTC</value>
+    <value>Friday, July 16, 2010 02:02:02 UTC</value>
+    <value>Friday, July 16, 2010 01:59:00 UTC</value>
+    <value>Friday, July 16, 2010 01:37:55 UTC</value>
+    <value>Friday, July 16, 2010 01:30:00 UTC</value>
+    <value>Friday, July 16, 2010 01:25:06 UTC</value>
+    <value>Friday, July 16, 2010 01:14:12 UTC</value>
+    <value>Friday, July 16, 2010 01:10:51 UTC</value>
+    <value>Friday, July 16, 2010 01:09:06 UTC</value>
+    <value>Friday, July 16, 2010 01:00:45 UTC</value>
+    <value>Friday, July 16, 2010 00:59:44 UTC</value>
+    <value>Friday, July 16, 2010 00:48:51 UTC</value>
+    <value>Friday, July 16, 2010 00:34:09 UTC</value>
+    <value>Friday, July 16, 2010 00:24:21 UTC</value>
+    <value>Friday, July 16, 2010 00:21:14 UTC</value>
+    <value>Friday, July 16, 2010 00:16:49 UTC</value>
+    <value>Friday, July 16, 2010 00:06:44 UTC</value>
+    <value>Friday, July 16, 2010 00:05:15 UTC</value>
+    <value>Friday, July 16, 2010 00:04:37 UTC</value>
+    <value>Friday, July 16, 2010 00:03:35 UTC</value>
+    <value>Thursday, July 15, 2010 23:56:04 UTC</value>
+    <value>Thursday, July 15, 2010 23:54:20 UTC</value>
+    <value>Thursday, July 15, 2010 23:36:45 UTC</value>
+    <value>Thursday, July 15, 2010 23:34:10 UTC</value>
+    <value>Thursday, July 15, 2010 23:13:51 UTC</value>
+    <value>Thursday, July 15, 2010 23:08:26 UTC</value>
+    <value>Thursday, July 15, 2010 23:08:15 UTC</value>
+    <value>Thursday, July 15, 2010 23:05:40 UTC</value>
+    <value>Thursday, July 15, 2010 23:01:15 UTC</value>
+    <value>Thursday, July 15, 2010 22:57:05 UTC</value>
+    <value>Thursday, July 15, 2010 22:43:01 UTC</value>
+    <value>Thursday, July 15, 2010 22:39:56 UTC</value>
+    <value>Thursday, July 15, 2010 22:39:41 UTC</value>
+    <value>Thursday, July 15, 2010 22:39:20 UTC</value>
+    <value>Thursday, July 15, 2010 22:30:30 UTC</value>
+    <value>Thursday, July 15, 2010 21:54:07 UTC</value>
+    <value>Thursday, July 15, 2010 21:52:52 UTC</value>
+    <value>Thursday, July 15, 2010 21:50:25 UTC</value>
+    <value>Thursday, July 15, 2010 21:34:56 UTC</value>
+    <value>Thursday, July 15, 2010 21:18:37 UTC</value>
+    <value>Thursday, July 15, 2010 20:57:37 UTC</value>
+    <value>Thursday, July 15, 2010 20:55:48 UTC</value>
+    <value>Thursday, July 15, 2010 20:45:56 UTC</value>
+    <value>Thursday, July 15, 2010 20:28:10 UTC</value>
+    <value>Thursday, July 15, 2010 20:10:02 UTC</value>
+    <value>Thursday, July 15, 2010 20:00:50 UTC</value>
+    <value>Thursday, July 15, 2010 19:55:34 UTC</value>
+    <value>Thursday, July 15, 2010 19:43:28 UTC</value>
+    <value>Thursday, July 15, 2010 19:41:48 UTC</value>
+    <value>Thursday, July 15, 2010 19:39:13 UTC</value>
+    <value>Thursday, July 15, 2010 19:29:07 UTC</value>
+    <value>Thursday, July 15, 2010 19:14:14 UTC</value>
+    <value>Thursday, July 15, 2010 19:12:55 UTC</value>
+    <value>Thursday, July 15, 2010 19:10:26 UTC</value>
+    <value>Thursday, July 15, 2010 18:55:46 UTC</value>
+    <value>Thursday, July 15, 2010 18:48:13 UTC</value>
+    <value>Thursday, July 15, 2010 18:44:11 UTC</value>
+    <value>Thursday, July 15, 2010 18:25:00 UTC</value>
+    <value>Thursday, July 15, 2010 18:12:50 UTC</value>
+    <value>Thursday, July 15, 2010 18:08:14 UTC</value>
+    <value>Thursday, July 15, 2010 18:02:37 UTC</value>
+    <value>Thursday, July 15, 2010 18:00:51 UTC</value>
+    <value>Thursday, July 15, 2010 17:59:29 UTC</value>
+    <value>Thursday, July 15, 2010 17:56:26 UTC</value>
+    <value>Thursday, July 15, 2010 17:38:32 UTC</value>
+    <value>Thursday, July 15, 2010 17:19:42 UTC</value>
+    <value>Thursday, July 15, 2010 17:13:19 UTC</value>
+    <value>Thursday, July 15, 2010 16:51:24 UTC</value>
+    <value>Thursday, July 15, 2010 16:47:07 UTC</value>
+    <value>Thursday, July 15, 2010 16:32:40 UTC</value>
+    <value>Thursday, July 15, 2010 16:14:52 UTC</value>
+    <value>Thursday, July 15, 2010 16:14:17 UTC</value>
+    <value>Thursday, July 15, 2010 16:13:53 UTC</value>
+    <value>Thursday, July 15, 2010 16:00:06 UTC</value>
+    <value>Thursday, July 15, 2010 15:57:21 UTC</value>
+    <value>Thursday, July 15, 2010 15:56:20 UTC</value>
+    <value>Thursday, July 15, 2010 15:50:37 UTC</value>
+    <value>Thursday, July 15, 2010 15:46:49 UTC</value>
+    <value>Thursday, July 15, 2010 15:44:14 UTC</value>
+    <value>Thursday, July 15, 2010 15:42:04 UTC</value>
+    <value>Thursday, July 15, 2010 15:35:12 UTC</value>
+    <value>Thursday, July 15, 2010 15:33:25 UTC</value>
+    <value>Thursday, July 15, 2010 15:31:43 UTC</value>
+    <value>Thursday, July 15, 2010 15:31:00 UTC</value>
+    <value>Thursday, July 15, 2010 15:23:38 UTC</value>
+    <value>Thursday, July 15, 2010 15:14:49 UTC</value>
+    <value>Thursday, July 15, 2010 15:11:03 UTC</value>
+    <value>Thursday, July 15, 2010 15:02:31 UTC</value>
+    <value>Thursday, July 15, 2010 14:42:44 UTC</value>
+    <value>Thursday, July 15, 2010 14:41:44 UTC</value>
+    <value>Thursday, July 15, 2010 14:39:06 UTC</value>
+    <value>Thursday, July 15, 2010 14:10:03 UTC</value>
+    <value>Thursday, July 15, 2010 14:03:21 UTC</value>
+    <value>Thursday, July 15, 2010 13:59:37 UTC</value>
+    <value>Thursday, July 15, 2010 13:56:37 UTC</value>
+    <value>Thursday, July 15, 2010 13:36:04 UTC</value>
+    <value>Thursday, July 15, 2010 13:32:07 UTC</value>
+    <value>Thursday, July 15, 2010 12:59:41 UTC</value>
+    <value>Thursday, July 15, 2010 12:43:07 UTC</value>
+    <value>Thursday, July 15, 2010 12:25:31 UTC</value>
+    <value>Thursday, July 15, 2010 12:13:49 UTC</value>
+    <value>Thursday, July 15, 2010 11:58:54 UTC</value>
+    <value>Thursday, July 15, 2010 11:37:19 UTC</value>
+    <value>Thursday, July 15, 2010 11:22:46 UTC</value>
+    <value>Thursday, July 15, 2010 11:19:52 UTC</value>
+    <value>Thursday, July 15, 2010 10:48:40 UTC</value>
+    <value>Thursday, July 15, 2010 10:39:24 UTC</value>
+    <value>Thursday, July 15, 2010 10:38:15 UTC</value>
+    <value>Thursday, July 15, 2010 10:37:46 UTC</value>
+    <value>Thursday, July 15, 2010 10:29:26 UTC</value>
+    <value>Thursday, July 15, 2010 10:20:47 UTC</value>
+    <value>Thursday, July 15, 2010 10:02:43 UTC</value>
+    <value>Thursday, July 15, 2010 09:40:17 UTC</value>
+    <value>Thursday, July 15, 2010 09:33:36 UTC</value>
+    <value>Thursday, July 15, 2010 09:25:01 UTC</value>
+    <value>Thursday, July 15, 2010 08:35:40 UTC</value>
+    <value>Thursday, July 15, 2010 08:23:29 UTC</value>
+    <value>Thursday, July 15, 2010 08:15:44 UTC</value>
+    <value>Thursday, July 15, 2010 08:11:37 UTC</value>
+    <value>Thursday, July 15, 2010 07:46:24 UTC</value>
+    <value>Thursday, July 15, 2010 07:43:09 UTC</value>
+    <value>Thursday, July 15, 2010 06:56:37 UTC</value>
+    <value>Thursday, July 15, 2010 06:44:18 UTC</value>
+    <value>Thursday, July 15, 2010 06:42:29 UTC</value>
+    <value>Thursday, July 15, 2010 06:38:36 UTC</value>
+    <value>Thursday, July 15, 2010 06:33:49 UTC</value>
+    <value>Thursday, July 15, 2010 06:26:08 UTC</value>
+    <value>Thursday, July 15, 2010 06:25:38 UTC</value>
+    <value>Thursday, July 15, 2010 06:18:33 UTC</value>
+    <value>Thursday, July 15, 2010 06:01:16 UTC</value>
+    <value>Thursday, July 15, 2010 05:36:11 UTC</value>
+    <value>Thursday, July 15, 2010 05:31:09 UTC</value>
+    <value>Thursday, July 15, 2010 05:28:59 UTC</value>
+    <value>Thursday, July 15, 2010 05:15:22 UTC</value>
+    <value>Thursday, July 15, 2010 05:14:13 UTC</value>
+    <value>Thursday, July 15, 2010 05:05:10 UTC</value>
+    <value>Thursday, July 15, 2010 05:01:27 UTC</value>
+    <value>Thursday, July 15, 2010 04:47:26 UTC</value>
+    <value>Thursday, July 15, 2010 04:46:38 UTC</value>
+    <value>Thursday, July 15, 2010 04:45:25 UTC</value>
+    <value>Thursday, July 15, 2010 04:41:59 UTC</value>
+    <value>Thursday, July 15, 2010 04:40:31 UTC</value>
+    <value>Thursday, July 15, 2010 04:23:34 UTC</value>
+    <value>Thursday, July 15, 2010 04:21:30 UTC</value>
+    <value>Thursday, July 15, 2010 04:19:24 UTC</value>
+    <value>Thursday, July 15, 2010 04:05:34 UTC</value>
+    <value>Thursday, July 15, 2010 03:56:22 UTC</value>
+    <value>Thursday, July 15, 2010 03:41:15 UTC</value>
+    <value>Thursday, July 15, 2010 03:33:16 UTC</value>
+    <value>Thursday, July 15, 2010 02:49:03 UTC</value>
+    <value>Thursday, July 15, 2010 02:47:21 UTC</value>
+    <value>Thursday, July 15, 2010 02:45:35 UTC</value>
+    <value>Thursday, July 15, 2010 02:32:11 UTC</value>
+    <value>Thursday, July 15, 2010 02:12:44 UTC</value>
+    <value>Thursday, July 15, 2010 02:10:08 UTC</value>
+    <value>Thursday, July 15, 2010 02:08:14 UTC</value>
+    <value>Thursday, July 15, 2010 02:02:29 UTC</value>
+    <value>Thursday, July 15, 2010 01:46:40 UTC</value>
+    <value>Thursday, July 15, 2010 01:31:43 UTC</value>
+    <value>Thursday, July 15, 2010 01:30:31 UTC</value>
+    <value>Thursday, July 15, 2010 01:15:57 UTC</value>
+    <value>Thursday, July 15, 2010 01:07:26 UTC</value>
+    <value>Thursday, July 15, 2010 01:02:15 UTC</value>
+    <value>Thursday, July 15, 2010 00:36:02 UTC</value>
+    <value>Wednesday, July 14, 2010 23:53:15 UTC</value>
+    <value>Wednesday, July 14, 2010 23:47:02 UTC</value>
+    <value>Wednesday, July 14, 2010 23:41:20 UTC</value>
+    <value>Wednesday, July 14, 2010 23:35:04 UTC</value>
+    <value>Wednesday, July 14, 2010 23:22:09 UTC</value>
+    <value>Wednesday, July 14, 2010 23:20:47 UTC</value>
+    <value>Wednesday, July 14, 2010 23:19:42 UTC</value>
+    <value>Wednesday, July 14, 2010 23:16:08 UTC</value>
+    <value>Wednesday, July 14, 2010 23:15:20 UTC</value>
+    <value>Wednesday, July 14, 2010 22:45:28 UTC</value>
+    <value>Wednesday, July 14, 2010 22:39:09 UTC</value>
+    <value>Wednesday, July 14, 2010 22:38:18 UTC</value>
+    <value>Wednesday, July 14, 2010 22:28:41 UTC</value>
+    <value>Wednesday, July 14, 2010 22:13:51 UTC</value>
+    <value>Wednesday, July 14, 2010 22:07:06 UTC</value>
+    <value>Wednesday, July 14, 2010 22:02:31 UTC</value>
+    <value>Wednesday, July 14, 2010 21:38:26 UTC</value>
+    <value>Wednesday, July 14, 2010 21:32:37 UTC</value>
+    <value>Wednesday, July 14, 2010 21:29:27 UTC</value>
+    <value>Wednesday, July 14, 2010 21:08:27 UTC</value>
+    <value>Wednesday, July 14, 2010 20:56:54 UTC</value>
+    <value>Wednesday, July 14, 2010 20:56:34 UTC</value>
+    <value>Wednesday, July 14, 2010 20:49:23 UTC</value>
+    <value>Wednesday, July 14, 2010 20:37:28 UTC</value>
+    <value>Wednesday, July 14, 2010 20:27:54 UTC</value>
+    <value>Wednesday, July 14, 2010 20:24:08 UTC</value>
+    <value>Wednesday, July 14, 2010 20:14:54 UTC</value>
+    <value>Wednesday, July 14, 2010 20:13:36 UTC</value>
+    <value>Wednesday, July 14, 2010 20:05:28 UTC</value>
+    <value>Wednesday, July 14, 2010 20:02:37 UTC</value>
+    <value>Wednesday, July 14, 2010 19:28:27 UTC</value>
+    <value>Wednesday, July 14, 2010 19:24:49 UTC</value>
+    <value>Wednesday, July 14, 2010 19:19:03 UTC</value>
+    <value>Wednesday, July 14, 2010 19:17:43 UTC</value>
+    <value>Wednesday, July 14, 2010 19:05:23 UTC</value>
+    <value>Wednesday, July 14, 2010 18:43:31 UTC</value>
+    <value>Wednesday, July 14, 2010 18:39:43 UTC</value>
+    <value>Wednesday, July 14, 2010 18:37:41 UTC</value>
+    <value>Wednesday, July 14, 2010 18:34:19 UTC</value>
+    <value>Wednesday, July 14, 2010 18:22:17 UTC</value>
+    <value>Wednesday, July 14, 2010 18:10:44 UTC</value>
+    <value>Wednesday, July 14, 2010 18:07:30 UTC</value>
+    <value>Wednesday, July 14, 2010 18:07:11 UTC</value>
+    <value>Wednesday, July 14, 2010 18:04:04 UTC</value>
+    <value>Wednesday, July 14, 2010 17:44:58 UTC</value>
+    <value>Wednesday, July 14, 2010 17:30:32 UTC</value>
+    <value>Wednesday, July 14, 2010 17:15:37 UTC</value>
+    <value>Wednesday, July 14, 2010 16:36:24 UTC</value>
+    <value>Wednesday, July 14, 2010 16:28:08 UTC</value>
+    <value>Wednesday, July 14, 2010 16:22:52 UTC</value>
+    <value>Wednesday, July 14, 2010 16:22:02 UTC</value>
+    <value>Wednesday, July 14, 2010 16:21:49 UTC</value>
+    <value>Wednesday, July 14, 2010 16:19:36 UTC</value>
+    <value>Wednesday, July 14, 2010 16:17:50 UTC</value>
+    <value>Wednesday, July 14, 2010 15:58:46 UTC</value>
+    <value>Wednesday, July 14, 2010 15:43:47 UTC</value>
+    <value>Wednesday, July 14, 2010 15:23:01 UTC</value>
+    <value>Wednesday, July 14, 2010 15:17:26 UTC</value>
+    <value>Wednesday, July 14, 2010 15:16:14 UTC</value>
+    <value>Wednesday, July 14, 2010 15:05:51 UTC</value>
+    <value>Wednesday, July 14, 2010 15:03:13 UTC</value>
+    <value>Wednesday, July 14, 2010 14:09:16 UTC</value>
+    <value>Wednesday, July 14, 2010 13:55:52 UTC</value>
+    <value>Wednesday, July 14, 2010 13:41:16 UTC</value>
+    <value>Wednesday, July 14, 2010 13:40:23 UTC</value>
+    <value>Wednesday, July 14, 2010 13:27:01 UTC</value>
+    <value>Wednesday, July 14, 2010 13:25:36 UTC</value>
+    <value>Wednesday, July 14, 2010 13:09:18 UTC</value>
+    <value>Wednesday, July 14, 2010 13:00:22 UTC</value>
+    <value>Wednesday, July 14, 2010 13:00:18 UTC</value>
+    <value>Wednesday, July 14, 2010 12:58:36 UTC</value>
+    <value>Wednesday, July 14, 2010 12:46:11 UTC</value>
+    <value>Wednesday, July 14, 2010 12:44:19 UTC</value>
+    <value>Wednesday, July 14, 2010 12:38:28 UTC</value>
+    <value>Wednesday, July 14, 2010 12:34:05 UTC</value>
+    <value>Wednesday, July 14, 2010 12:17:07 UTC</value>
+    <value>Wednesday, July 14, 2010 12:12:08 UTC</value>
+    <value>Wednesday, July 14, 2010 12:07:05 UTC</value>
+    <value>Wednesday, July 14, 2010 11:59:13 UTC</value>
+    <value>Wednesday, July 14, 2010 11:27:20 UTC</value>
+    <value>Wednesday, July 14, 2010 11:14:48 UTC</value>
+    <value>Wednesday, July 14, 2010 11:13:40 UTC</value>
+    <value>Wednesday, July 14, 2010 11:01:28 UTC</value>
+    <value>Wednesday, July 14, 2010 10:48:17 UTC</value>
+    <value>Wednesday, July 14, 2010 10:31:35 UTC</value>
+    <value>Wednesday, July 14, 2010 10:19:26 UTC</value>
+    <value>Wednesday, July 14, 2010 09:59:36 UTC</value>
+    <value>Wednesday, July 14, 2010 09:40:43 UTC</value>
+    <value>Wednesday, July 14, 2010 09:40:31 UTC</value>
+    <value>Wednesday, July 14, 2010 09:40:00 UTC</value>
+    <value>Wednesday, July 14, 2010 09:34:27 UTC</value>
+    <value>Wednesday, July 14, 2010 09:18:18 UTC</value>
+    <value>Wednesday, July 14, 2010 09:17:33 UTC</value>
+    <value>Wednesday, July 14, 2010 09:14:02 UTC</value>
+    <value>Wednesday, July 14, 2010 09:10:54 UTC</value>
+    <value>Wednesday, July 14, 2010 08:55:30 UTC</value>
+    <value>Wednesday, July 14, 2010 08:54:25 UTC</value>
+    <value>Wednesday, July 14, 2010 08:35:14 UTC</value>
+    <value>Wednesday, July 14, 2010 08:32:22 UTC</value>
+    <value>Wednesday, July 14, 2010 08:25:17 UTC</value>
+    <value>Wednesday, July 14, 2010 08:21:13 UTC</value>
+    <value>Wednesday, July 14, 2010 08:16:12 UTC</value>
+    <value>Wednesday, July 14, 2010 07:52:29 UTC</value>
+    <value>Wednesday, July 14, 2010 07:51:18 UTC</value>
+    <value>Wednesday, July 14, 2010 07:49:03 UTC</value>
+    <value>Wednesday, July 14, 2010 07:47:48 UTC</value>
+    <value>Wednesday, July 14, 2010 07:23:58 UTC</value>
+    <value>Wednesday, July 14, 2010 07:11:05 UTC</value>
+    <value>Wednesday, July 14, 2010 07:09:32 UTC</value>
+    <value>Wednesday, July 14, 2010 06:55:51 UTC</value>
+    <value>Wednesday, July 14, 2010 06:50:25 UTC</value>
+    <value>Wednesday, July 14, 2010 06:39:18 UTC</value>
+    <value>Wednesday, July 14, 2010 06:33:54 UTC</value>
+    <value>Wednesday, July 14, 2010 06:26:52 UTC</value>
+    <value>Wednesday, July 14, 2010 06:16:21 UTC</value>
+    <value>Wednesday, July 14, 2010 06:14:41 UTC</value>
+    <value>Wednesday, July 14, 2010 06:08:33 UTC</value>
+    <value>Wednesday, July 14, 2010 06:04:25 UTC</value>
+    <value>Wednesday, July 14, 2010 05:49:16 UTC</value>
+    <value>Wednesday, July 14, 2010 05:39:39 UTC</value>
+    <value>Wednesday, July 14, 2010 05:39:10 UTC</value>
+    <value>Wednesday, July 14, 2010 05:38:15 UTC</value>
+    <value>Wednesday, July 14, 2010 05:22:35 UTC</value>
+    <value>Wednesday, July 14, 2010 05:04:14 UTC</value>
+    <value>Wednesday, July 14, 2010 05:03:56 UTC</value>
+    <value>Wednesday, July 14, 2010 04:55:23 UTC</value>
+    <value>Wednesday, July 14, 2010 04:54:32 UTC</value>
+    <value>Wednesday, July 14, 2010 04:51:12 UTC</value>
+    <value>Wednesday, July 14, 2010 04:14:52 UTC</value>
+    <value>Wednesday, July 14, 2010 03:58:45 UTC</value>
+    <value>Wednesday, July 14, 2010 03:54:00 UTC</value>
+    <value>Wednesday, July 14, 2010 03:33:41 UTC</value>
+    <value>Wednesday, July 14, 2010 03:29:33 UTC</value>
+    <value>Wednesday, July 14, 2010 03:26:51 UTC</value>
+    <value>Wednesday, July 14, 2010 03:21:09 UTC</value>
+    <value>Wednesday, July 14, 2010 03:18:09 UTC</value>
+    <value>Wednesday, July 14, 2010 03:12:24 UTC</value>
+    <value>Wednesday, July 14, 2010 03:04:28 UTC</value>
+    <value>Wednesday, July 14, 2010 02:59:49 UTC</value>
+    <value>Wednesday, July 14, 2010 02:54:40 UTC</value>
+    <value>Wednesday, July 14, 2010 02:34:21 UTC</value>
+    <value>Wednesday, July 14, 2010 02:30:56 UTC</value>
+    <value>Wednesday, July 14, 2010 02:30:19 UTC</value>
+    <value>Wednesday, July 14, 2010 02:26:09 UTC</value>
+    <value>Wednesday, July 14, 2010 02:23:36 UTC</value>
+    <value>Wednesday, July 14, 2010 02:00:08 UTC</value>
+    <value>Wednesday, July 14, 2010 01:58:31 UTC</value>
+    <value>Wednesday, July 14, 2010 01:52:37 UTC</value>
+    <value>Wednesday, July 14, 2010 01:45:47 UTC</value>
+    <value>Wednesday, July 14, 2010 01:38:11 UTC</value>
+    <value>Wednesday, July 14, 2010 01:31:20 UTC</value>
+    <value>Wednesday, July 14, 2010 01:26:50 UTC</value>
+    <value>Wednesday, July 14, 2010 01:22:51 UTC</value>
+    <value>Wednesday, July 14, 2010 01:21:43 UTC</value>
+    <value>Wednesday, July 14, 2010 01:04:41 UTC</value>
+    <value>Wednesday, July 14, 2010 00:40:11 UTC</value>
+    <value>Wednesday, July 14, 2010 00:31:43 UTC</value>
+    <value>Wednesday, July 14, 2010 00:28:28 UTC</value>
+    <value>Wednesday, July 14, 2010 00:27:53 UTC</value>
+    <value>Wednesday, July 14, 2010 00:20:21 UTC</value>
+    <value>Wednesday, July 14, 2010 00:02:24 UTC</value>
+    <value>Tuesday, July 13, 2010 23:56:30 UTC</value>
+    <value>Tuesday, July 13, 2010 23:46:22 UTC</value>
+    <value>Tuesday, July 13, 2010 23:38:41 UTC</value>
+    <value>Tuesday, July 13, 2010 23:36:08 UTC</value>
+    <value>Tuesday, July 13, 2010 23:21:47 UTC</value>
+    <value>Tuesday, July 13, 2010 23:21:38 UTC</value>
+    <value>Tuesday, July 13, 2010 23:08:25 UTC</value>
+    <value>Tuesday, July 13, 2010 23:07:00 UTC</value>
+    <value>Tuesday, July 13, 2010 22:59:39 UTC</value>
+    <value>Tuesday, July 13, 2010 22:40:41 UTC</value>
+    <value>Tuesday, July 13, 2010 22:25:09 UTC</value>
+    <value>Tuesday, July 13, 2010 22:23:03 UTC</value>
+    <value>Tuesday, July 13, 2010 22:21:03 UTC</value>
+    <value>Tuesday, July 13, 2010 22:06:18 UTC</value>
+    <value>Tuesday, July 13, 2010 21:54:16 UTC</value>
+    <value>Tuesday, July 13, 2010 21:52:41 UTC</value>
+    <value>Tuesday, July 13, 2010 21:48:27 UTC</value>
+    <value>Tuesday, July 13, 2010 21:29:12 UTC</value>
+    <value>Tuesday, July 13, 2010 21:23:05 UTC</value>
+    <value>Tuesday, July 13, 2010 21:21:20 UTC</value>
+    <value>Tuesday, July 13, 2010 21:20:55 UTC</value>
+    <value>Tuesday, July 13, 2010 21:19:52 UTC</value>
+    <value>Tuesday, July 13, 2010 21:12:31 UTC</value>
+    <value>Tuesday, July 13, 2010 21:09:03 UTC</value>
+    <value>Tuesday, July 13, 2010 21:08:15 UTC</value>
+    <value>Tuesday, July 13, 2010 20:51:41 UTC</value>
+    <value>Tuesday, July 13, 2010 20:36:20 UTC</value>
+    <value>Tuesday, July 13, 2010 20:19:06 UTC</value>
+    <value>Tuesday, July 13, 2010 20:16:47 UTC</value>
+    <value>Tuesday, July 13, 2010 20:10:18 UTC</value>
+    <value>Tuesday, July 13, 2010 20:09:11 UTC</value>
+    <value>Tuesday, July 13, 2010 20:04:10 UTC</value>
+    <value>Tuesday, July 13, 2010 20:02:05 UTC</value>
+    <value>Tuesday, July 13, 2010 19:43:41 UTC</value>
+    <value>Tuesday, July 13, 2010 19:43:38 UTC</value>
+    <value>Tuesday, July 13, 2010 19:41:30 UTC</value>
+    <value>Tuesday, July 13, 2010 19:27:49 UTC</value>
+    <value>Tuesday, July 13, 2010 19:19:08 UTC</value>
+    <value>Tuesday, July 13, 2010 19:15:47 UTC</value>
+    <value>Tuesday, July 13, 2010 18:36:46 UTC</value>
+    <value>Tuesday, July 13, 2010 18:31:17 UTC</value>
+    <value>Tuesday, July 13, 2010 18:29:31 UTC</value>
+    <value>Tuesday, July 13, 2010 17:56:10 UTC</value>
+    <value>Tuesday, July 13, 2010 17:19:19 UTC</value>
+    <value>Tuesday, July 13, 2010 17:05:29 UTC</value>
+    <value>Tuesday, July 13, 2010 15:25:30 UTC</value>
+    <value>Tuesday, July 13, 2010 15:13:57 UTC</value>
+    <value>Tuesday, July 13, 2010 15:04:25 UTC</value>
+    <value>Tuesday, July 13, 2010 15:01:35 UTC</value>
+    <value>Tuesday, July 13, 2010 14:23:30 UTC</value>
+    <value>Tuesday, July 13, 2010 13:56:51 UTC</value>
+    <value>Tuesday, July 13, 2010 13:41:02 UTC</value>
+    <value>Tuesday, July 13, 2010 13:31:23 UTC</value>
+    <value>Tuesday, July 13, 2010 13:04:24 UTC</value>
+    <value>Tuesday, July 13, 2010 12:40:17 UTC</value>
+    <value>Tuesday, July 13, 2010 12:39:30 UTC</value>
+    <value>Tuesday, July 13, 2010 12:23:15 UTC</value>
+    <value>Tuesday, July 13, 2010 12:20:53 UTC</value>
+    <value>Tuesday, July 13, 2010 11:58:27 UTC</value>
+    <value>Tuesday, July 13, 2010 11:56:52 UTC</value>
+    <value>Tuesday, July 13, 2010 11:43:56 UTC</value>
+    <value>Tuesday, July 13, 2010 11:42:20 UTC</value>
+    <value>Tuesday, July 13, 2010 11:24:30 UTC</value>
+    <value>Tuesday, July 13, 2010 11:20:43 UTC</value>
+    <value>Tuesday, July 13, 2010 11:17:46 UTC</value>
+    <value>Tuesday, July 13, 2010 11:06:29 UTC</value>
+    <value>Tuesday, July 13, 2010 11:02:56 UTC</value>
+    <value>Tuesday, July 13, 2010 10:39:52 UTC</value>
+    <value>Tuesday, July 13, 2010 10:36:05 UTC</value>
+    <value>Tuesday, July 13, 2010 10:27:06 UTC</value>
+    <value>Tuesday, July 13, 2010 10:21:03 UTC</value>
+    <value>Tuesday, July 13, 2010 10:20:30 UTC</value>
+    <value>Tuesday, July 13, 2010 10:18:32 UTC</value>
+    <value>Tuesday, July 13, 2010 10:01:09 UTC</value>
+    <value>Tuesday, July 13, 2010 09:53:59 UTC</value>
+    <value>Tuesday, July 13, 2010 09:46:09 UTC</value>
+    <value>Tuesday, July 13, 2010 09:43:41 UTC</value>
+    <value>Tuesday, July 13, 2010 09:39:18 UTC</value>
+    <value>Tuesday, July 13, 2010 09:26:02 UTC</value>
+    <value>Tuesday, July 13, 2010 09:24:06 UTC</value>
+    <value>Tuesday, July 13, 2010 09:03:45 UTC</value>
+    <value>Tuesday, July 13, 2010 09:03:34 UTC</value>
+    <value>Tuesday, July 13, 2010 08:57:53 UTC</value>
+    <value>Tuesday, July 13, 2010 08:39:36 UTC</value>
+    <value>Tuesday, July 13, 2010 08:38:35 UTC</value>
+    <value>Tuesday, July 13, 2010 08:28:43 UTC</value>
+    <value>Tuesday, July 13, 2010 08:24:19 UTC</value>
+    <value>Tuesday, July 13, 2010 08:17:49 UTC</value>
+    <value>Tuesday, July 13, 2010 08:09:38 UTC</value>
+    <value>Tuesday, July 13, 2010 07:56:56 UTC</value>
+    <value>Tuesday, July 13, 2010 07:48:38 UTC</value>
+    <value>Tuesday, July 13, 2010 07:38:29 UTC</value>
+    <value>Tuesday, July 13, 2010 07:37:18 UTC</value>
+    <value>Tuesday, July 13, 2010 07:11:28 UTC</value>
+    <value>Tuesday, July 13, 2010 07:09:51 UTC</value>
+    <value>Tuesday, July 13, 2010 07:09:18 UTC</value>
+    <value>Tuesday, July 13, 2010 06:50:37 UTC</value>
+    <value>Tuesday, July 13, 2010 06:44:18 UTC</value>
+    <value>Tuesday, July 13, 2010 06:43:29 UTC</value>
+    <value>Tuesday, July 13, 2010 06:42:36 UTC</value>
+    <value>Tuesday, July 13, 2010 06:28:34 UTC</value>
+    <value>Tuesday, July 13, 2010 06:24:23 UTC</value>
+    <value>Tuesday, July 13, 2010 06:21:23 UTC</value>
+    <value>Tuesday, July 13, 2010 06:01:49 UTC</value>
+    <value>Tuesday, July 13, 2010 06:00:14 UTC</value>
+    <value>Tuesday, July 13, 2010 05:29:37 UTC</value>
+    <value>Tuesday, July 13, 2010 05:23:08 UTC</value>
+    <value>Tuesday, July 13, 2010 05:17:48 UTC</value>
+    <value>Tuesday, July 13, 2010 05:13:15 UTC</value>
+    <value>Tuesday, July 13, 2010 04:38:20 UTC</value>
+    <value>Tuesday, July 13, 2010 04:27:07 UTC</value>
+    <value>Tuesday, July 13, 2010 04:26:25 UTC</value>
+    <value>Tuesday, July 13, 2010 04:24:43 UTC</value>
+    <value>Tuesday, July 13, 2010 04:24:42 UTC</value>
+    <value>Tuesday, July 13, 2010 04:21:21 UTC</value>
+    <value>Tuesday, July 13, 2010 03:49:31 UTC</value>
+    <value>Tuesday, July 13, 2010 03:43:38 UTC</value>
+    <value>Tuesday, July 13, 2010 03:34:53 UTC</value>
+    <value>Tuesday, July 13, 2010 03:27:58 UTC</value>
+    <value>Tuesday, July 13, 2010 03:18:11 UTC</value>
+    <value>Tuesday, July 13, 2010 03:03:23 UTC</value>
+    <value>Tuesday, July 13, 2010 02:51:19 UTC</value>
+    <value>Tuesday, July 13, 2010 02:33:34 UTC</value>
+    <value>Tuesday, July 13, 2010 02:26:55 UTC</value>
+    <value>Tuesday, July 13, 2010 02:24:33 UTC</value>
+    <value>Tuesday, July 13, 2010 02:22:33 UTC</value>
+    <value>Tuesday, July 13, 2010 02:09:49 UTC</value>
+    <value>Tuesday, July 13, 2010 01:55:22 UTC</value>
+    <value>Tuesday, July 13, 2010 01:21:56 UTC</value>
+    <value>Tuesday, July 13, 2010 01:12:54 UTC</value>
+    <value>Tuesday, July 13, 2010 01:08:46 UTC</value>
+    <value>Tuesday, July 13, 2010 00:41:33 UTC</value>
+    <value>Tuesday, July 13, 2010 00:25:37 UTC</value>
+    <value>Tuesday, July 13, 2010 00:16:12 UTC</value>
+    <value>Tuesday, July 13, 2010 00:13:02 UTC</value>
+    <value>Tuesday, July 13, 2010 00:11:53 UTC</value>
+    <value>Tuesday, July 13, 2010 00:10:43 UTC</value>
+    <value>Tuesday, July 13, 2010 00:04:47 UTC</value>
+    <value>Tuesday, July 13, 2010 00:04:11 UTC</value>
+    <value>Tuesday, July 13, 2010 00:00:38 UTC</value>
+    <value>Monday, July 12, 2010 23:49:49 UTC</value>
+    <value>Monday, July 12, 2010 23:44:11 UTC</value>
+    <value>Monday, July 12, 2010 23:22:46 UTC</value>
+    <value>Monday, July 12, 2010 23:20:23 UTC</value>
+    <value>Monday, July 12, 2010 23:15:43 UTC</value>
+    <value>Monday, July 12, 2010 23:13:29 UTC</value>
+    <value>Monday, July 12, 2010 22:56:04 UTC</value>
+    <value>Monday, July 12, 2010 22:51:01 UTC</value>
+    <value>Monday, July 12, 2010 22:49:39 UTC</value>
+    <value>Monday, July 12, 2010 22:43:14 UTC</value>
+    <value>Monday, July 12, 2010 22:18:48 UTC</value>
+    <value>Monday, July 12, 2010 22:13:13 UTC</value>
+    <value>Monday, July 12, 2010 22:11:38 UTC</value>
+    <value>Monday, July 12, 2010 22:08:58 UTC</value>
+    <value>Monday, July 12, 2010 21:58:12 UTC</value>
+    <value>Monday, July 12, 2010 21:49:51 UTC</value>
+    <value>Monday, July 12, 2010 21:32:39 UTC</value>
+    <value>Monday, July 12, 2010 21:10:12 UTC</value>
+    <value>Monday, July 12, 2010 21:04:35 UTC</value>
+    <value>Monday, July 12, 2010 21:03:18 UTC</value>
+    <value>Monday, July 12, 2010 20:32:13 UTC</value>
+    <value>Monday, July 12, 2010 20:16:09 UTC</value>
+    <value>Monday, July 12, 2010 20:01:39 UTC</value>
+    <value>Monday, July 12, 2010 19:55:11 UTC</value>
+    <value>Monday, July 12, 2010 19:53:42 UTC</value>
+    <value>Monday, July 12, 2010 19:39:26 UTC</value>
+    <value>Monday, July 12, 2010 19:39:09 UTC</value>
+    <value>Monday, July 12, 2010 19:24:58 UTC</value>
+    <value>Monday, July 12, 2010 19:01:48 UTC</value>
+    <value>Monday, July 12, 2010 19:00:57 UTC</value>
+    <value>Monday, July 12, 2010 18:57:02 UTC</value>
+    <value>Monday, July 12, 2010 18:45:04 UTC</value>
+    <value>Monday, July 12, 2010 18:36:00 UTC</value>
+    <value>Monday, July 12, 2010 18:24:51 UTC</value>
+    <value>Monday, July 12, 2010 18:23:34 UTC</value>
+    <value>Monday, July 12, 2010 18:08:22 UTC</value>
+    <value>Monday, July 12, 2010 17:56:48 UTC</value>
+    <value>Monday, July 12, 2010 17:53:06 UTC</value>
+    <value>Monday, July 12, 2010 17:32:39 UTC</value>
+    <value>Monday, July 12, 2010 17:28:28 UTC</value>
+    <value>Monday, July 12, 2010 17:28:03 UTC</value>
+    <value>Monday, July 12, 2010 17:22:15 UTC</value>
+    <value>Monday, July 12, 2010 17:13:19 UTC</value>
+    <value>Monday, July 12, 2010 17:06:25 UTC</value>
+    <value>Monday, July 12, 2010 16:59:16 UTC</value>
+    <value>Monday, July 12, 2010 16:53:06 UTC</value>
+    <value>Monday, July 12, 2010 16:47:52 UTC</value>
+    <value>Monday, July 12, 2010 16:44:02 UTC</value>
+    <value>Monday, July 12, 2010 16:37:48 UTC</value>
+    <value>Monday, July 12, 2010 16:20:52 UTC</value>
+    <value>Monday, July 12, 2010 16:13:23 UTC</value>
+    <value>Monday, July 12, 2010 16:13:16 UTC</value>
+    <value>Monday, July 12, 2010 16:06:26 UTC</value>
+    <value>Monday, July 12, 2010 16:05:48 UTC</value>
+    <value>Monday, July 12, 2010 15:47:40 UTC</value>
+    <value>Monday, July 12, 2010 15:27:13 UTC</value>
+    <value>Monday, July 12, 2010 15:20:03 UTC</value>
+    <value>Monday, July 12, 2010 15:15:12 UTC</value>
+    <value>Monday, July 12, 2010 15:08:25 UTC</value>
+    <value>Monday, July 12, 2010 15:01:57 UTC</value>
+    <value>Monday, July 12, 2010 14:52:09 UTC</value>
+    <value>Monday, July 12, 2010 14:39:29 UTC</value>
+    <value>Monday, July 12, 2010 14:13:44 UTC</value>
+    <value>Monday, July 12, 2010 14:08:46 UTC</value>
+    <value>Monday, July 12, 2010 14:03:01 UTC</value>
+    <value>Monday, July 12, 2010 13:50:20 UTC</value>
+    <value>Monday, July 12, 2010 13:48:33 UTC</value>
+    <value>Monday, July 12, 2010 13:46:42 UTC</value>
+    <value>Monday, July 12, 2010 13:46:27 UTC</value>
+    <value>Monday, July 12, 2010 13:45:18 UTC</value>
+    <value>Monday, July 12, 2010 13:15:53 UTC</value>
+    <value>Monday, July 12, 2010 13:00:06 UTC</value>
+    <value>Monday, July 12, 2010 12:57:59 UTC</value>
+    <value>Monday, July 12, 2010 12:44:47 UTC</value>
+    <value>Monday, July 12, 2010 12:43:42 UTC</value>
+    <value>Monday, July 12, 2010 12:43:10 UTC</value>
+    <value>Monday, July 12, 2010 12:29:37 UTC</value>
+    <value>Monday, July 12, 2010 12:17:40 UTC</value>
+    <value>Monday, July 12, 2010 12:03:15 UTC</value>
+    <value>Monday, July 12, 2010 12:02:47 UTC</value>
+    <value>Monday, July 12, 2010 11:48:16 UTC</value>
+    <value>Monday, July 12, 2010 11:45:20 UTC</value>
+    <value>Monday, July 12, 2010 11:39:16 UTC</value>
+    <value>Monday, July 12, 2010 11:28:02 UTC</value>
+    <value>Monday, July 12, 2010 11:21:57 UTC</value>
+    <value>Monday, July 12, 2010 11:21:56 UTC</value>
+    <value>Monday, July 12, 2010 11:13:52 UTC</value>
+    <value>Monday, July 12, 2010 10:57:58 UTC</value>
+    <value>Monday, July 12, 2010 10:57:50 UTC</value>
+    <value>Monday, July 12, 2010 10:43:27 UTC</value>
+    <value>Monday, July 12, 2010 10:34:01 UTC</value>
+    <value>Monday, July 12, 2010 10:28:41 UTC</value>
+    <value>Monday, July 12, 2010 10:13:16 UTC</value>
+    <value>Monday, July 12, 2010 10:09:10 UTC</value>
+    <value>Monday, July 12, 2010 10:06:43 UTC</value>
+    <value>Monday, July 12, 2010 10:05:11 UTC</value>
+    <value>Monday, July 12, 2010 10:01:24 UTC</value>
+    <value>Monday, July 12, 2010 10:00:28 UTC</value>
+    <value>Monday, July 12, 2010 10:00:17 UTC</value>
+    <value>Monday, July 12, 2010 09:55:58 UTC</value>
+    <value>Monday, July 12, 2010 09:55:21 UTC</value>
+    <value>Monday, July 12, 2010 09:43:21 UTC</value>
+    <value>Monday, July 12, 2010 09:42:51 UTC</value>
+    <value>Monday, July 12, 2010 09:37:57 UTC</value>
+    <value>Monday, July 12, 2010 09:36:48 UTC</value>
+    <value>Monday, July 12, 2010 09:20:14 UTC</value>
+    <value>Monday, July 12, 2010 09:17:46 UTC</value>
+    <value>Monday, July 12, 2010 09:14:47 UTC</value>
+    <value>Monday, July 12, 2010 09:10:54 UTC</value>
+    <value>Monday, July 12, 2010 09:10:02 UTC</value>
+    <value>Monday, July 12, 2010 09:06:56 UTC</value>
+    <value>Monday, July 12, 2010 09:05:50 UTC</value>
+    <value>Monday, July 12, 2010 09:05:39 UTC</value>
+    <value>Monday, July 12, 2010 09:03:26 UTC</value>
+    <value>Monday, July 12, 2010 08:49:37 UTC</value>
+    <value>Monday, July 12, 2010 08:42:15 UTC</value>
+    <value>Monday, July 12, 2010 08:41:34 UTC</value>
+    <value>Monday, July 12, 2010 08:38:17 UTC</value>
+    <value>Monday, July 12, 2010 08:37:50 UTC</value>
+    <value>Monday, July 12, 2010 08:30:11 UTC</value>
+    <value>Monday, July 12, 2010 08:26:49 UTC</value>
+    <value>Monday, July 12, 2010 08:25:01 UTC</value>
+    <value>Monday, July 12, 2010 08:21:27 UTC</value>
+    <value>Monday, July 12, 2010 08:15:57 UTC</value>
+    <value>Monday, July 12, 2010 08:15:55 UTC</value>
+    <value>Monday, July 12, 2010 07:35:53 UTC</value>
+    <value>Monday, July 12, 2010 07:11:39 UTC</value>
+    <value>Monday, July 12, 2010 07:09:02 UTC</value>
+    <value>Monday, July 12, 2010 07:04:58 UTC</value>
+    <value>Monday, July 12, 2010 06:59:24 UTC</value>
+    <value>Monday, July 12, 2010 06:58:57 UTC</value>
+    <value>Monday, July 12, 2010 06:58:40 UTC</value>
+    <value>Monday, July 12, 2010 06:52:24 UTC</value>
+    <value>Monday, July 12, 2010 06:46:45 UTC</value>
+    <value>Monday, July 12, 2010 06:43:41 UTC</value>
+    <value>Monday, July 12, 2010 06:41:33 UTC</value>
+    <value>Monday, July 12, 2010 06:35:32 UTC</value>
+    <value>Monday, July 12, 2010 06:32:02 UTC</value>
+    <value>Monday, July 12, 2010 06:28:58 UTC</value>
+    <value>Monday, July 12, 2010 06:24:44 UTC</value>
+    <value>Monday, July 12, 2010 05:58:50 UTC</value>
+    <value>Monday, July 12, 2010 05:57:55 UTC</value>
+    <value>Monday, July 12, 2010 05:56:32 UTC</value>
+    <value>Monday, July 12, 2010 05:55:46 UTC</value>
+    <value>Monday, July 12, 2010 05:51:27 UTC</value>
+    <value>Monday, July 12, 2010 05:51:09 UTC</value>
+    <value>Monday, July 12, 2010 05:50:29 UTC</value>
+    <value>Monday, July 12, 2010 05:20:32 UTC</value>
+    <value>Monday, July 12, 2010 04:44:04 UTC</value>
+    <value>Monday, July 12, 2010 04:38:05 UTC</value>
+    <value>Monday, July 12, 2010 03:44:01 UTC</value>
+    <value>Monday, July 12, 2010 03:38:16 UTC</value>
+    <value>Monday, July 12, 2010 03:12:27 UTC</value>
+    <value>Monday, July 12, 2010 02:59:41 UTC</value>
+    <value>Monday, July 12, 2010 02:52:29 UTC</value>
+    <value>Monday, July 12, 2010 02:51:25 UTC</value>
+    <value>Monday, July 12, 2010 02:42:58 UTC</value>
+    <value>Monday, July 12, 2010 02:23:24 UTC</value>
+    <value>Monday, July 12, 2010 02:10:06 UTC</value>
+    <value>Monday, July 12, 2010 01:37:01 UTC</value>
+    <value>Monday, July 12, 2010 01:24:41 UTC</value>
+    <value>Monday, July 12, 2010 01:01:38 UTC</value>
+    <value>Monday, July 12, 2010 00:58:59 UTC</value>
+    <value>Monday, July 12, 2010 00:56:21 UTC</value>
+    <value>Monday, July 12, 2010 00:49:19 UTC</value>
+    <value>Monday, July 12, 2010 00:48:32 UTC</value>
+    <value>Monday, July 12, 2010 00:43:10 UTC</value>
+    <value>Monday, July 12, 2010 00:35:20 UTC</value>
+    <value>Monday, July 12, 2010 00:18:09 UTC</value>
+    <value>Monday, July 12, 2010 00:11:18 UTC</value>
+    <value>Sunday, July 11, 2010 23:56:59 UTC</value>
+    <value>Sunday, July 11, 2010 23:37:52 UTC</value>
+    <value>Sunday, July 11, 2010 23:29:38 UTC</value>
+    <value>Sunday, July 11, 2010 23:27:06 UTC</value>
+    <value>Sunday, July 11, 2010 23:17:52 UTC</value>
+    <value>Sunday, July 11, 2010 23:17:17 UTC</value>
+    <value>Sunday, July 11, 2010 23:04:25 UTC</value>
+    <value>Sunday, July 11, 2010 22:53:04 UTC</value>
+    <value>Sunday, July 11, 2010 22:49:35 UTC</value>
+    <value>Sunday, July 11, 2010 22:24:42 UTC</value>
+    <value>Sunday, July 11, 2010 21:42:27 UTC</value>
+    <value>Sunday, July 11, 2010 21:32:16 UTC</value>
+    <value>Sunday, July 11, 2010 21:26:32 UTC</value>
+    <value>Sunday, July 11, 2010 21:24:41 UTC</value>
+    <value>Sunday, July 11, 2010 21:23:20 UTC</value>
+    <value>Sunday, July 11, 2010 21:23:15 UTC</value>
+    <value>Sunday, July 11, 2010 21:18:27 UTC</value>
+    <value>Sunday, July 11, 2010 21:15:25 UTC</value>
+    <value>Sunday, July 11, 2010 21:08:23 UTC</value>
+    <value>Sunday, July 11, 2010 20:52:54 UTC</value>
+    <value>Sunday, July 11, 2010 20:52:37 UTC</value>
+    <value>Sunday, July 11, 2010 20:44:37 UTC</value>
+    <value>Sunday, July 11, 2010 20:37:06 UTC</value>
+    <value>Sunday, July 11, 2010 20:27:17 UTC</value>
+    <value>Sunday, July 11, 2010 20:26:18 UTC</value>
+    <value>Sunday, July 11, 2010 20:23:59 UTC</value>
+    <value>Sunday, July 11, 2010 20:20:51 UTC</value>
+    <value>Sunday, July 11, 2010 20:15:43 UTC</value>
+    <value>Sunday, July 11, 2010 20:07:46 UTC</value>
+    <value>Sunday, July 11, 2010 20:04:43 UTC</value>
+    <value>Sunday, July 11, 2010 20:04:06 UTC</value>
+    <value>Sunday, July 11, 2010 19:48:08 UTC</value>
+    <value>Sunday, July 11, 2010 19:42:54 UTC</value>
+    <value>Sunday, July 11, 2010 19:38:48 UTC</value>
+    <value>Sunday, July 11, 2010 19:24:31 UTC</value>
+    <value>Sunday, July 11, 2010 19:15:33 UTC</value>
+    <value>Sunday, July 11, 2010 19:13:00 UTC</value>
+    <value>Sunday, July 11, 2010 19:08:23 UTC</value>
+    <value>Sunday, July 11, 2010 19:07:52 UTC</value>
+    <value>Sunday, July 11, 2010 19:03:38 UTC</value>
+    <value>Sunday, July 11, 2010 18:57:24 UTC</value>
+    <value>Sunday, July 11, 2010 18:50:17 UTC</value>
+    <value>Sunday, July 11, 2010 18:47:46 UTC</value>
+    <value>Sunday, July 11, 2010 18:45:19 UTC</value>
+    <value>Sunday, July 11, 2010 18:41:39 UTC</value>
+    <value>Sunday, July 11, 2010 18:40:45 UTC</value>
+    <value>Sunday, July 11, 2010 18:30:20 UTC</value>
+    <value>Sunday, July 11, 2010 18:15:29 UTC</value>
+    <value>Sunday, July 11, 2010 18:14:12 UTC</value>
+    <value>Sunday, July 11, 2010 18:10:34 UTC</value>
+    <value>Sunday, July 11, 2010 17:59:15 UTC</value>
+    <value>Sunday, July 11, 2010 17:55:06 UTC</value>
+    <value>Sunday, July 11, 2010 17:50:55 UTC</value>
+    <value>Sunday, July 11, 2010 17:40:17 UTC</value>
+    <value>Sunday, July 11, 2010 17:39:09 UTC</value>
+    <value>Sunday, July 11, 2010 17:30:35 UTC</value>
+    <value>Sunday, July 11, 2010 17:23:45 UTC</value>
+    <value>Sunday, July 11, 2010 17:18:26 UTC</value>
+    <value>Sunday, July 11, 2010 17:10:41 UTC</value>
+    <value>Sunday, July 11, 2010 16:59:03 UTC</value>
+    <value>Sunday, July 11, 2010 16:46:19 UTC</value>
+    <value>Sunday, July 11, 2010 16:33:41 UTC</value>
+    <value>Sunday, July 11, 2010 16:29:38 UTC</value>
+    <value>Sunday, July 11, 2010 16:00:24 UTC</value>
+    <value>Sunday, July 11, 2010 15:56:19 UTC</value>
+    <value>Sunday, July 11, 2010 15:42:20 UTC</value>
+    <value>Sunday, July 11, 2010 15:34:42 UTC</value>
+    <value>Sunday, July 11, 2010 15:29:45 UTC</value>
+    <value>Sunday, July 11, 2010 15:11:28 UTC</value>
+    <value>Sunday, July 11, 2010 15:09:57 UTC</value>
+    <value>Sunday, July 11, 2010 15:08:47 UTC</value>
+    <value>Sunday, July 11, 2010 15:00:59 UTC</value>
+    <value>Sunday, July 11, 2010 14:39:09 UTC</value>
+    <value>Sunday, July 11, 2010 14:32:51 UTC</value>
+    <value>Sunday, July 11, 2010 14:27:29 UTC</value>
+    <value>Sunday, July 11, 2010 14:26:29 UTC</value>
+    <value>Sunday, July 11, 2010 14:24:53 UTC</value>
+    <value>Sunday, July 11, 2010 14:22:29 UTC</value>
+    <value>Sunday, July 11, 2010 14:06:47 UTC</value>
+    <value>Sunday, July 11, 2010 14:04:57 UTC</value>
+    <value>Sunday, July 11, 2010 13:50:36 UTC</value>
+    <value>Sunday, July 11, 2010 13:34:42 UTC</value>
+    <value>Sunday, July 11, 2010 13:34:11 UTC</value>
+    <value>Sunday, July 11, 2010 13:30:49 UTC</value>
+    <value>Sunday, July 11, 2010 13:23:36 UTC</value>
+    <value>Sunday, July 11, 2010 13:23:17 UTC</value>
+    <value>Sunday, July 11, 2010 13:22:03 UTC</value>
+    <value>Sunday, July 11, 2010 13:21:55 UTC</value>
+    <value>Sunday, July 11, 2010 13:15:31 UTC</value>
+    <value>Sunday, July 11, 2010 13:14:42 UTC</value>
+    <value>Sunday, July 11, 2010 13:14:12 UTC</value>
+    <value>Sunday, July 11, 2010 13:08:12 UTC</value>
+    <value>Sunday, July 11, 2010 13:06:37 UTC</value>
+    <value>Sunday, July 11, 2010 13:06:06 UTC</value>
+    <value>Sunday, July 11, 2010 12:42:41 UTC</value>
+    <value>Sunday, July 11, 2010 12:33:34 UTC</value>
+    <value>Sunday, July 11, 2010 12:22:19 UTC</value>
+    <value>Sunday, July 11, 2010 12:11:06 UTC</value>
+    <value>Sunday, July 11, 2010 12:07:51 UTC</value>
+    <value>Sunday, July 11, 2010 11:55:49 UTC</value>
+    <value>Sunday, July 11, 2010 11:54:57 UTC</value>
+    <value>Sunday, July 11, 2010 11:51:54 UTC</value>
+    <value>Sunday, July 11, 2010 11:42:51 UTC</value>
+    <value>Sunday, July 11, 2010 11:36:02 UTC</value>
+    <value>Sunday, July 11, 2010 11:32:45 UTC</value>
+    <value>Sunday, July 11, 2010 11:31:16 UTC</value>
+    <value>Sunday, July 11, 2010 11:07:31 UTC</value>
+    <value>Sunday, July 11, 2010 11:04:02 UTC</value>
+    <value>Sunday, July 11, 2010 10:55:46 UTC</value>
+    <value>Sunday, July 11, 2010 10:52:13 UTC</value>
+    <value>Sunday, July 11, 2010 10:37:52 UTC</value>
+    <value>Sunday, July 11, 2010 10:37:36 UTC</value>
+    <value>Sunday, July 11, 2010 10:31:53 UTC</value>
+    <value>Sunday, July 11, 2010 10:30:03 UTC</value>
+    <value>Sunday, July 11, 2010 10:28:44 UTC</value>
+    <value>Sunday, July 11, 2010 10:21:03 UTC</value>
+    <value>Sunday, July 11, 2010 10:15:29 UTC</value>
+    <value>Sunday, July 11, 2010 10:10:53 UTC</value>
+    <value>Sunday, July 11, 2010 09:46:25 UTC</value>
+    <value>Sunday, July 11, 2010 09:43:31 UTC</value>
+    <value>Sunday, July 11, 2010 09:36:20 UTC</value>
+    <value>Sunday, July 11, 2010 09:34:23 UTC</value>
+    <value>Sunday, July 11, 2010 09:21:48 UTC</value>
+    <value>Sunday, July 11, 2010 09:20:25 UTC</value>
+    <value>Sunday, July 11, 2010 09:11:25 UTC</value>
+    <value>Sunday, July 11, 2010 09:11:09 UTC</value>
+    <value>Sunday, July 11, 2010 09:09:55 UTC</value>
+    <value>Sunday, July 11, 2010 09:07:09 UTC</value>
+    <value>Sunday, July 11, 2010 08:58:38 UTC</value>
+    <value>Sunday, July 11, 2010 08:37:30 UTC</value>
+    <value>Sunday, July 11, 2010 08:36:27 UTC</value>
+    <value>Sunday, July 11, 2010 08:29:52 UTC</value>
+    <value>Sunday, July 11, 2010 08:21:29 UTC</value>
+    <value>Sunday, July 11, 2010 08:11:47 UTC</value>
+    <value>Sunday, July 11, 2010 08:11:09 UTC</value>
+    <value>Sunday, July 11, 2010 08:10:34 UTC</value>
+    <value>Sunday, July 11, 2010 07:29:08 UTC</value>
+    <value>Sunday, July 11, 2010 07:27:21 UTC</value>
+    <value>Sunday, July 11, 2010 07:25:45 UTC</value>
+    <value>Sunday, July 11, 2010 07:23:03 UTC</value>
+    <value>Sunday, July 11, 2010 07:21:12 UTC</value>
+    <value>Sunday, July 11, 2010 07:16:12 UTC</value>
+    <value>Sunday, July 11, 2010 07:14:41 UTC</value>
+    <value>Sunday, July 11, 2010 07:07:29 UTC</value>
+    <value>Sunday, July 11, 2010 07:02:59 UTC</value>
+    <value>Sunday, July 11, 2010 06:48:33 UTC</value>
+    <value>Sunday, July 11, 2010 06:48:22 UTC</value>
+    <value>Sunday, July 11, 2010 06:47:46 UTC</value>
+    <value>Sunday, July 11, 2010 06:41:01 UTC</value>
+    <value>Sunday, July 11, 2010 06:39:53 UTC</value>
+    <value>Sunday, July 11, 2010 06:39:02 UTC</value>
+    <value>Sunday, July 11, 2010 06:35:04 UTC</value>
+    <value>Sunday, July 11, 2010 06:23:30 UTC</value>
+    <value>Sunday, July 11, 2010 06:22:36 UTC</value>
+    <value>Sunday, July 11, 2010 06:22:22 UTC</value>
+    <value>Sunday, July 11, 2010 06:22:06 UTC</value>
+    <value>Sunday, July 11, 2010 06:18:25 UTC</value>
+    <value>Sunday, July 11, 2010 06:10:00 UTC</value>
+    <value>Sunday, July 11, 2010 05:50:52 UTC</value>
+    <value>Sunday, July 11, 2010 05:36:27 UTC</value>
+    <value>Sunday, July 11, 2010 05:20:09 UTC</value>
+    <value>Sunday, July 11, 2010 05:18:13 UTC</value>
+    <value>Sunday, July 11, 2010 05:09:48 UTC</value>
+    <value>Sunday, July 11, 2010 05:05:19 UTC</value>
+    <value>Sunday, July 11, 2010 05:05:07 UTC</value>
+    <value>Sunday, July 11, 2010 04:59:17 UTC</value>
+    <value>Sunday, July 11, 2010 04:53:44 UTC</value>
+    <value>Sunday, July 11, 2010 04:45:53 UTC</value>
+    <value>Sunday, July 11, 2010 04:15:22 UTC</value>
+    <value>Sunday, July 11, 2010 04:05:07 UTC</value>
+    <value>Sunday, July 11, 2010 04:04:40 UTC</value>
+    <value>Sunday, July 11, 2010 03:58:28 UTC</value>
+    <value>Sunday, July 11, 2010 03:51:56 UTC</value>
+    <value>Sunday, July 11, 2010 03:40:27 UTC</value>
+    <value>Sunday, July 11, 2010 03:34:52 UTC</value>
+    <value>Sunday, July 11, 2010 03:29:59 UTC</value>
+    <value>Sunday, July 11, 2010 03:18:10 UTC</value>
+    <value>Sunday, July 11, 2010 03:17:38 UTC</value>
+    <value>Sunday, July 11, 2010 03:13:41 UTC</value>
+    <value>Sunday, July 11, 2010 03:08:02 UTC</value>
+    <value>Sunday, July 11, 2010 03:06:19 UTC</value>
+    <value>Sunday, July 11, 2010 03:00:04 UTC</value>
+    <value>Sunday, July 11, 2010 02:57:28 UTC</value>
+    <value>Sunday, July 11, 2010 02:24:06 UTC</value>
+    <value>Sunday, July 11, 2010 02:20:56 UTC</value>
+    <value>Sunday, July 11, 2010 02:16:26 UTC</value>
+    <value>Sunday, July 11, 2010 02:00:03 UTC</value>
+    <value>Sunday, July 11, 2010 01:45:19 UTC</value>
+    <value>Sunday, July 11, 2010 01:42:39 UTC</value>
+    <value>Sunday, July 11, 2010 01:40:52 UTC</value>
+    <value>Sunday, July 11, 2010 01:32:52 UTC</value>
+    <value>Sunday, July 11, 2010 01:31:26 UTC</value>
+    <value>Sunday, July 11, 2010 01:28:43 UTC</value>
+    <value>Sunday, July 11, 2010 01:25:47 UTC</value>
+    <value>Sunday, July 11, 2010 01:06:42 UTC</value>
+    <value>Sunday, July 11, 2010 00:48:16 UTC</value>
+    <value>Sunday, July 11, 2010 00:47:22 UTC</value>
+    <value>Sunday, July 11, 2010 00:29:21 UTC</value>
+    <value>Sunday, July 11, 2010 00:29:10 UTC</value>
+    <value>Sunday, July 11, 2010 00:28:28 UTC</value>
+    <value>Sunday, July 11, 2010 00:19:54 UTC</value>
+    <value>Saturday, July 10, 2010 23:48:33 UTC</value>
+    <value>Saturday, July 10, 2010 23:33:48 UTC</value>
+    <value>Saturday, July 10, 2010 23:23:55 UTC</value>
+    <value>Saturday, July 10, 2010 23:17:45 UTC</value>
+    <value>Saturday, July 10, 2010 23:05:29 UTC</value>
+    <value>Saturday, July 10, 2010 23:04:23 UTC</value>
+    <value>Saturday, July 10, 2010 22:50:06 UTC</value>
+    <value>Saturday, July 10, 2010 22:42:53 UTC</value>
+    <value>Saturday, July 10, 2010 22:35:55 UTC</value>
+    <value>Saturday, July 10, 2010 22:31:21 UTC</value>
+    <value>Saturday, July 10, 2010 22:20:08 UTC</value>
+    <value>Saturday, July 10, 2010 22:17:00 UTC</value>
+    <value>Saturday, July 10, 2010 22:10:26 UTC</value>
+    <value>Saturday, July 10, 2010 21:58:12 UTC</value>
+    <value>Saturday, July 10, 2010 21:57:38 UTC</value>
+    <value>Saturday, July 10, 2010 21:56:56 UTC</value>
+    <value>Saturday, July 10, 2010 21:40:56 UTC</value>
+    <value>Saturday, July 10, 2010 21:36:55 UTC</value>
+    <value>Saturday, July 10, 2010 21:36:24 UTC</value>
+    <value>Saturday, July 10, 2010 21:32:27 UTC</value>
+    <value>Saturday, July 10, 2010 21:25:25 UTC</value>
+    <value>Saturday, July 10, 2010 21:18:56 UTC</value>
+    <value>Saturday, July 10, 2010 21:04:10 UTC</value>
+    <value>Saturday, July 10, 2010 21:02:39 UTC</value>
+    <value>Saturday, July 10, 2010 21:01:36 UTC</value>
+    <value>Saturday, July 10, 2010 20:53:11 UTC</value>
+    <value>Saturday, July 10, 2010 20:50:21 UTC</value>
+    <value>Saturday, July 10, 2010 20:46:17 UTC</value>
+    <value>Saturday, July 10, 2010 20:42:58 UTC</value>
+    <value>Saturday, July 10, 2010 20:38:10 UTC</value>
+    <value>Saturday, July 10, 2010 20:35:03 UTC</value>
+    <value>Saturday, July 10, 2010 20:27:27 UTC</value>
+    <value>Saturday, July 10, 2010 20:23:40 UTC</value>
+    <value>Saturday, July 10, 2010 20:02:23 UTC</value>
+    <value>Saturday, July 10, 2010 20:00:22 UTC</value>
+    <value>Saturday, July 10, 2010 19:53:51 UTC</value>
+    <value>Saturday, July 10, 2010 19:45:58 UTC</value>
+    <value>Saturday, July 10, 2010 19:43:03 UTC</value>
+    <value>Saturday, July 10, 2010 19:42:03 UTC</value>
+    <value>Saturday, July 10, 2010 19:37:42 UTC</value>
+    <value>Saturday, July 10, 2010 19:19:52 UTC</value>
+    <value>Saturday, July 10, 2010 19:18:32 UTC</value>
+    <value>Saturday, July 10, 2010 19:17:34 UTC</value>
+    <value>Saturday, July 10, 2010 19:15:56 UTC</value>
+    <value>Saturday, July 10, 2010 19:13:57 UTC</value>
+    <value>Saturday, July 10, 2010 18:58:25 UTC</value>
+    <value>Saturday, July 10, 2010 18:40:44 UTC</value>
+    <value>Saturday, July 10, 2010 18:39:52 UTC</value>
+    <value>Saturday, July 10, 2010 18:35:00 UTC</value>
+    <value>Saturday, July 10, 2010 18:34:59 UTC</value>
+    <value>Saturday, July 10, 2010 18:27:40 UTC</value>
+    <value>Saturday, July 10, 2010 18:25:43 UTC</value>
+    <value>Saturday, July 10, 2010 17:48:12 UTC</value>
+    <value>Saturday, July 10, 2010 17:41:13 UTC</value>
+    <value>Saturday, July 10, 2010 17:38:28 UTC</value>
+    <value>Saturday, July 10, 2010 17:30:19 UTC</value>
+    <value>Saturday, July 10, 2010 17:16:26 UTC</value>
+    <value>Saturday, July 10, 2010 17:11:12 UTC</value>
+    <value>Saturday, July 10, 2010 17:06:20 UTC</value>
+    <value>Saturday, July 10, 2010 17:00:31 UTC</value>
+    <value>Saturday, July 10, 2010 16:43:10 UTC</value>
+    <value>Saturday, July 10, 2010 16:32:42 UTC</value>
+    <value>Saturday, July 10, 2010 16:27:55 UTC</value>
+    <value>Saturday, July 10, 2010 16:25:15 UTC</value>
+    <value>Saturday, July 10, 2010 16:17:26 UTC</value>
+    <value>Saturday, July 10, 2010 16:14:42 UTC</value>
+    <value>Saturday, July 10, 2010 16:12:29 UTC</value>
+    <value>Saturday, July 10, 2010 16:11:57 UTC</value>
+    <value>Saturday, July 10, 2010 16:05:06 UTC</value>
+    <value>Saturday, July 10, 2010 16:04:30 UTC</value>
+    <value>Saturday, July 10, 2010 15:01:53 UTC</value>
+    <value>Saturday, July 10, 2010 14:54:20 UTC</value>
+    <value>Saturday, July 10, 2010 14:51:33 UTC</value>
+    <value>Saturday, July 10, 2010 14:49:47 UTC</value>
+    <value>Saturday, July 10, 2010 14:47:04 UTC</value>
+    <value>Saturday, July 10, 2010 14:44:25 UTC</value>
+    <value>Saturday, July 10, 2010 14:39:49 UTC</value>
+    <value>Saturday, July 10, 2010 14:37:27 UTC</value>
+    <value>Saturday, July 10, 2010 14:31:58 UTC</value>
+    <value>Saturday, July 10, 2010 14:29:54 UTC</value>
+    <value>Saturday, July 10, 2010 14:28:53 UTC</value>
+    <value>Saturday, July 10, 2010 14:24:06 UTC</value>
+    <value>Saturday, July 10, 2010 14:23:11 UTC</value>
+    <value>Saturday, July 10, 2010 14:05:50 UTC</value>
+    <value>Saturday, July 10, 2010 14:05:49 UTC</value>
+    <value>Saturday, July 10, 2010 13:55:20 UTC</value>
+    <value>Saturday, July 10, 2010 13:46:51 UTC</value>
+    <value>Saturday, July 10, 2010 13:26:45 UTC</value>
+    <value>Saturday, July 10, 2010 13:24:53 UTC</value>
+    <value>Saturday, July 10, 2010 13:12:43 UTC</value>
+    <value>Saturday, July 10, 2010 13:06:24 UTC</value>
+    <value>Saturday, July 10, 2010 13:00:46 UTC</value>
+    <value>Saturday, July 10, 2010 12:56:36 UTC</value>
+    <value>Saturday, July 10, 2010 12:54:19 UTC</value>
+    <value>Saturday, July 10, 2010 12:53:11 UTC</value>
+    <value>Saturday, July 10, 2010 12:48:21 UTC</value>
+    <value>Saturday, July 10, 2010 12:45:48 UTC</value>
+    <value>Saturday, July 10, 2010 12:41:08 UTC</value>
+    <value>Saturday, July 10, 2010 12:26:22 UTC</value>
+    <value>Saturday, July 10, 2010 12:02:59 UTC</value>
+    <value>Saturday, July 10, 2010 11:59:26 UTC</value>
+    <value>Saturday, July 10, 2010 11:53:16 UTC</value>
+    <value>Saturday, July 10, 2010 11:44:58 UTC</value>
+    <value>Saturday, July 10, 2010 11:43:32 UTC</value>
+    <value>Saturday, July 10, 2010 11:42:23 UTC</value>
+    <value>Saturday, July 10, 2010 11:40:16 UTC</value>
+    <value>Saturday, July 10, 2010 11:39:08 UTC</value>
+    <value>Saturday, July 10, 2010 11:30:46 UTC</value>
+    <value>Saturday, July 10, 2010 11:30:38 UTC</value>
+    <value>Saturday, July 10, 2010 11:29:41 UTC</value>
+    <value>Saturday, July 10, 2010 11:05:14 UTC</value>
+  </attribute>
+  <attribute name="Lat" sourcecol="5" valuetype="real"/>
+  <attribute name="Lon" sourcecol="6" valuetype="real"/>
+  <attribute name="Magnitude" sourcecol="7" valuetype="real"/>
+  <attribute name="Depth" sourcecol="8" valuetype="real"/>
+  <attribute name="NST" sourcecol="9" valuetype="integer"/>
+  <attribute name="Region" sourcecol="10" valuetype="nominal">
+    <value>Nevada</value>
+    <value>Southern California</value>
+    <value>Central California</value>
+    <value>Kenai Peninsula, Alaska</value>
+    <value>Taiwan</value>
+    <value>Anguilla region, Leeward Islands</value>
+    <value>Haiti region</value>
+    <value>Island of Hawaii, Hawaii</value>
+    <value>Northern California</value>
+    <value>Antofagasta, Chile</value>
+    <value>Southern Alaska</value>
+    <value>Central Alaska</value>
+    <value>Fiji region</value>
+    <value>Santa Monica Bay, California</value>
+    <value>San Pedro Channel, California</value>
+    <value>Baja California, Mexico</value>
+    <value>Hawaii region, Hawaii</value>
+    <value>eastern New Guinea region, Papua New Guinea</value>
+    <value>Greater Los Angeles area, California</value>
+    <value>San Diego County urban area, California</value>
+    <value>Aegean Sea</value>
+    <value>Mindanao, Philippines</value>
+    <value>south of the Fiji Islands</value>
+    <value>southeastern Missouri</value>
+    <value>North Carolina</value>
+    <value>Dominican Republic</value>
+    <value>Portland urban area, Oregon</value>
+    <value>northern Alaska</value>
+    <value>Washington</value>
+    <value>Arkansas</value>
+    <value>Utah</value>
+    <value>Potomac-Shenandoah region</value>
+    <value>San Francisco Bay area, California</value>
+    <value>Dodecanese Islands, Greece</value>
+    <value>Sumbawa region, Indonesia</value>
+    <value>Rat Islands, Aleutian Islands, Alaska</value>
+    <value>south of Alaska</value>
+    <value>Isla de Mona, Puerto Rico</value>
+    <value>Molucca Sea</value>
+    <value>Revilla Gigedo Islands region</value>
+    <value>Potosi, Bolivia</value>
+    <value>offshore Baja California, Mexico</value>
+    <value>Yellowstone National Park, Wyoming</value>
+    <value>Gulf of California</value>
+    <value>Kepulauan Sangihe, Indonesia</value>
+    <value>Oregon</value>
+    <value>Puerto Rico region</value>
+    <value>offshore El Salvador</value>
+    <value>Alaska Peninsula</value>
+    <value>offshore Maule, Chile</value>
+    <value>Long Valley area, California</value>
+    <value>Fox Islands, Aleutian Islands, Alaska</value>
+    <value>Unimak Island region, Alaska</value>
+    <value>Hokkaido, Japan region</value>
+    <value>off the east coast of the Kamchatka Peninsula, Russia</value>
+    <value>Southeastern Alaska</value>
+    <value>Southern Yukon Territory, Canada</value>
+    <value>Tonga region</value>
+    <value>offshore Central California</value>
+    <value>Coquimbo, Chile</value>
+    <value>Kodiak Island region, Alaska</value>
+    <value>Myanmar-India border region</value>
+    <value>Bio-Bio, Chile</value>
+    <value>offshore Libertador O'Higgins, Chile</value>
+    <value>Puget Sound region, Washington</value>
+    <value>Virgin Islands region</value>
+    <value>Mount Hood area, Oregon</value>
+    <value>Araucania, Chile</value>
+    <value>Arizona</value>
+    <value>Andreanof Islands, Aleutian Islands, Alaska</value>
+    <value>Solomon Islands</value>
+    <value>Wasatch Front Urban Corridor, Utah</value>
+    <value>Papua, Indonesia</value>
+    <value>Mona Passage, Dominican Republic</value>
+    <value>Nias region, Indonesia</value>
+    <value>Atacama, Chile</value>
+    <value>Kuril Islands</value>
+    <value>south of the Aleutian Islands</value>
+    <value>Peru-Ecuador border region</value>
+    <value>New Guinea, Papua New Guinea</value>
+    <value>Channel Islands region, California</value>
+    <value>British Columbia, Canada</value>
+    <value>southern Greece</value>
+    <value>Moro Gulf, Mindanao, Philippines</value>
+    <value>offshore Northern California</value>
+    <value>southern Peru</value>
+    <value>near the coast of northwestern Sakha, Russia</value>
+    <value>Hawaiian Islands region</value>
+    <value>Flores region, Indonesia</value>
+    <value>Ryukyu Islands, Japan</value>
+    <value>Olympic Peninsula, Washington</value>
+    <value>Nicobar Islands, India region</value>
+    <value>western Montana</value>
+    <value>North Island of New Zealand</value>
+    <value>near the south coast of Chukotskiy Avtonomnyy Okrug, Russia</value>
+    <value>near the west coast of Colombia</value>
+    <value>central Peru</value>
+    <value>Banda Sea</value>
+    <value>Vancouver Island, Canada region</value>
+    <value>Kermadec Islands, New Zealand</value>
+    <value>South Indian Ocean</value>
+    <value>near the east coast of Honshu, Japan</value>
+    <value>Kermadec Islands region</value>
+    <value>Tonga</value>
+    <value>south of the Mariana Islands</value>
+  </attribute>
+</attributeset>

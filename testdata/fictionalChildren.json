@@ -1,0 +1,7 @@
+[
+{"name": "Tywin", "children": ["Cersei", "Jamie", "Tyrion"]},
+{"name": "Ross", "children": ["Ben", "Emily"]},
+{"name": "Robin", "children": []},
+{"name": "Lily", "children": ["Marvin"]},
+{"name": "Anakin", "children": ["Luke","Leia"]}
+]

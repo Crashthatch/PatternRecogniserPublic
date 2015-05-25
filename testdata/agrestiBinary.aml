@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="agrestiBinary.dat" encoding="windows-1252">
+  <attribute name="input_tiny" sourcecol="1" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="input_small" sourcecol="2" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="input_big" sourcecol="3" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="input_huge" sourcecol="4" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="color spine_tiny" sourcecol="5" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="color spine_medium" sourcecol="6" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="color spine_huge" sourcecol="7" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="width_tiny" sourcecol="8" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="width_small" sourcecol="9" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="width_medium" sourcecol="10" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="width_big" sourcecol="11" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="width_huge" sourcecol="12" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="satell_tiny" sourcecol="13" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="satell_small" sourcecol="14" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="satell_medium" sourcecol="15" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="satell_big" sourcecol="16" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="satell_huge" sourcecol="17" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="weight_tiny" sourcecol="18" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="weight_small" sourcecol="19" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="weight_medium" sourcecol="20" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="weight_big" sourcecol="21" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+  <attribute name="weight_huge" sourcecol="22" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </attribute>
+</attributeset>

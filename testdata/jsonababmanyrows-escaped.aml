@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="jsonababmanyrows-escaped.dat" encoding="windows-1252">
+  <attribute name="x" sourcecol="1" valuetype="nominal">
+    <value>["A","B","A","B","A","B","A","B"]</value>
+  </attribute>
+</attributeset>

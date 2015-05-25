@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<operator activated="true" class="discretize_by_bins" compatibility="5.0.11" expanded="true" height="94" name="Discretize" width="90" x="33" y="25">
+    <parameter key="return_preprocessing_model" value="false" confusingatt="attvalue"/>
+    <parameter key="create_view" value="false" confusingatt="attvalue"/>
+    <parameter key="attribute_filter_type" value="all" confusingatt="attvalue"/>
+    <parameter key="attribute" value="" confusingatt="attvalue"/>
+    <parameter key="use_except_expression" value="false" confusingatt="attvalue"/>
+    <parameter key="value_type" value="numeric" confusingatt="attvalue"/>
+    <parameter key="use_value_type_exception" value="false" confusingatt="attvalue"/>
+    <parameter key="except_value_type" value="real" confusingatt="attvalue"/>
+    <parameter key="block_type" value="value_series" confusingatt="attvalue"/>
+    <parameter key="use_block_type_exception" value="false" confusingatt="attvalue"/>
+    <parameter key="except_block_type" value="value_series_end" confusingatt="yellow"/>
+    <parameter key="invert_selection" value="false" confusingatt="attvalue"/>
+    <parameter key="include_special_attributes" value="false" confusingatt="attvalue"/>
+    <parameter key="number_of_bins" value="5" confusingatt="attvalue"/>
+    <parameter key="define_boundaries" value="false" confusingatt="attvalue"/>
+    <parameter key="range_name_type" value="short" confusingatt="attvalue"/>
+    <parameter key="automatic_number_of_digits" value="true" confusingatt="attvalue"/>
+    <parameter key="number_of_digits" value="3" confusingatt="attvalue"/>
+</operator>

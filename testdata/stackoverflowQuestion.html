@@ -1,0 +1,1648 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>java - What Collections.unmodifiableSet does? - Stack Overflow</title>
+    <link rel="shortcut icon" href="//cdn.sstatic.net/stackoverflow/img/favicon.ico?v=038622610830">
+    <link rel="apple-touch-icon image_src" href="//cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=fd7230a85918">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com"/>
+    <meta name="og:type" content="website" />
+    <meta name="og:image" content="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=fde65a5a78c6"/>
+    <meta name="og:title" content="What Collections.unmodifiableSet does?" />
+    <meta name="og:description" content="Here I can see that &quot;Collections.unmodifiableSet&quot; returns an unmodifiable view of the specified set. But I do not understand why we cannot just use final modifier to create an unmodifiable set.
+
+In..." />
+    <meta name="og:url" content="http://stackoverflow.com/questions/2420096/what-collections-unmodifiableset-does"/>
+    <link rel="canonical" href="http://stackoverflow.com/questions/2420096/what-collections-unmodifiableset-does" />
+
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="//cdn.sstatic.net/Js/stub.en.js?v=a085b0b86607"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.sstatic.net/stackoverflow/all.css?v=7dd1e240cf1a">
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;What Collections.unmodifiableSet does?&#39;" href="/feeds/question/2420096">
+    <script>
+        
+        StackExchange.ready(function () {
+            StackExchange.using("postValidation", function () {
+                StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+            });
+
+            
+            StackExchange.question.init({canOpenBounty:true,votesCast:[],totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:2420096});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '2420096');
+            
+                    });
+    </script>
+
+
+    <script>
+        StackExchange.ready(function () {
+            StackExchange.realtime.init('wss://qa.sockets.stackexchange.com,ws://qa.sockets.stackexchange.com');
+            StackExchange.realtime.subscribeToInboxNotifications();
+                    StackExchange.realtime.subscribeToReputationNotifications('1');
+                StackExchange.realtime.subscribeToTopBarNotifications('1');
+        });
+    </script>
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1399027400,"networkMetaHostname":"meta.stackexchange.com","styleCode":true,"enableUserHovercards":true,"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","nonAsciiTags":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"08a9712b065a87f44597dc6f0fc0272b","isRegistered":true,"userType":3,"userId":528263,"accountId":251112,"gravatar":"<div><img src=\"https://www.gravatar.com/avatar/0a316cb7257b3407ac4233633345499c?s=32&d=identicon&r=PG\" alt=\"\" width=\"32\" height=\"32\"></div>","profileUrl":"http://stackoverflow.com/users/528263/crashthatch","notificationsUnviewedCount":2,"inboxUnviewedCount":0,"ab":{"welcome_email":{"v":"3","g":2}}}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"d987e8ba02e8","js/moderator.en.js":"852a9590ae2d","js/full-anon.en.js":"e0135be99202","js/full.en.js":"252aef4827ba","js/wmd.en.js":"d9dc7a9550f9","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"dcf6dd539af8","js/help.en.js":"ceae85b045a1","js/tageditor.en.js":"7f54d0efc81e","js/tageditornew.en.js":"0bf79a6484e0","js/inline-tag-editing.en.js":"d00846e90065","js/revisions.en.js":"9a2b9be85a69","js/review.en.js":"063e88635927","js/tagsuggestions.en.js":"bb4721d888d2","js/post-validation.en.js":"0e52d1a0290c","js/explore-qlist.en.js":"24424eb238e8","js/events.en.js":"203491ffdbd7"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+        
+    </script>
+    
+</head>
+<body class="question-page new-topbar">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+<div class="topbar">
+    <div class="topbar-wrapper">
+        
+        <div class="js-topbar-dialog-corral">
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="//stackoverflow.com">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+            <a href="http://chat.stackoverflow.com"     data-gps-track="site_switcher.click({ item_type:6 })"
+>chat</a>
+                    <a href="http://blog.stackoverflow.com"     data-gps-track="site_switcher.click({ item_type:7 })"
+>blog</a>
+                    <a href="/users/logout"     data-gps-track="site_switcher.click({ item_type:8 })"
+>log out</a>
+    </div>
+
+
+
+
+    <a href="//stackoverflow.com"
+       class="current-site-link site-link js-gps-track"
+       data-id="1"
+       data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.stackoverflow.com"
+       class="site-link js-gps-track"
+       data-id="552"
+       data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                </li>
+                            <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    <a class="site-link"
+                       href="//careers.stackoverflow.com"
+                            data-gps-track="site_switcher.click({ item_type:9 })"
+>
+                        <div class="site-icon favicon favicon-careers" title="Stack Overflow Careers"></div>
+                        Careers 2.0
+                    </a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+                <a href="//stackexchange.com/users/251112/?tab=accounts">your communities</a>
+        </h3>
+            
+            <a href="#" id="edit-pinned-sites">edit</a>
+            <a href="#" id="cancel-pinned-sites" style="display: none;">cancel</a>
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <ul class="my-sites">
+                    <li>
+                        
+
+
+
+    <a href="//stackoverflow.com"
+       class="site-link js-gps-track"
+       data-id="1"
+       data-gps-track="
+            site.switch({ target_site:1, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+            <span class="rep-score">535</span>
+    </a>
+
+                    </li>
+                    <li>
+                        
+
+
+
+    <a href="//stackapps.com"
+       class="site-link js-gps-track"
+       data-id="101"
+       data-gps-track="
+            site.switch({ target_site:101, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-stackapps" title="Stack Apps"></div>
+        Stack Apps
+            <span class="rep-score">143</span>
+    </a>
+
+                    </li>
+                    <li>
+                        
+
+
+
+    <a href="//bitcoin.stackexchange.com"
+       class="site-link js-gps-track"
+       data-id="308"
+       data-gps-track="
+            site.switch({ target_site:308, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-bitcoin" title="Bitcoin"></div>
+        Bitcoin
+            <span class="rep-score">101</span>
+    </a>
+
+                    </li>
+                    <li>
+                        
+
+
+
+    <a href="//crypto.stackexchange.com"
+       class="site-link js-gps-track"
+       data-id="281"
+       data-gps-track="
+            site.switch({ target_site:281, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-crypto" title="Cryptography"></div>
+        Cryptography
+            <span class="rep-score">101</span>
+    </a>
+
+                    </li>
+                    <li>
+                        
+
+
+
+    <a href="//dba.stackexchange.com"
+       class="site-link js-gps-track"
+       data-id="182"
+       data-gps-track="
+            site.switch({ target_site:182, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-dba" title="Database Administrators"></div>
+        Database Administrators
+            <span class="rep-score">101</span>
+    </a>
+
+                    </li>
+            </ul>
+                <div class="pinned-site-editor-container" style="display: none;">
+                    <input id="js-site-search-txt"
+                           type="text"
+                           class="site-filter-input"
+                           value=""
+                           placeholder="Add a Stack Exchange community"/>
+                    <input type="submit" id="pin-site-btn" value="Add" disabled="disabled"/>
+                    <ul class="js-found-sites found-sites"></ul>
+                    <ul class="pinned-site-list sortable" data-custom-list="False">
+                    </ul>
+                    <input type="submit" value="Save" id="save-pinned-sites-btn" disabled="disabled"/>
+                    <a href="#" id="reset-pinned-sites">reset to default list</a>
+                </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="//stackexchange.com/sites">more stack exchange communities</a></h3>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+            
+            <a href="//stackexchange.com" 
+               class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track"
+               data-gps-track="site_switcher.show"
+               title="A list of all 123 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+            
+                <a href="#"
+                   class="topbar-icon icon-inbox yes-hover js-inbox-button"
+                   title="Recent inbox messages">
+                    <span class="hidden-text">Inbox</span>
+                    <span class="unread-count" style="display:none"></span>
+                </a>
+                <a href="#" 
+                    class="topbar-icon icon-achievements yes-hover js-achievements-button "
+                    data-unread-class=""
+                    title="Recent achievements: reputation, badges, and privileges earned">
+                    <span class="hidden-text">Reputation and Badges</span>
+                    <span class="unread-count" style="display:none">
+                        
+                    </span>
+                </a>
+        </div>
+
+        <div class="topbar-links">
+            
+                <a href="/users/528263/crashthatch" class="profile-me">
+			        <div title="Crashthatch"><img src="https://www.gravatar.com/avatar/0a316cb7257b3407ac4233633345499c?s=24&d=identicon&r=PG" alt="" width="24" height="24" class="avatar-me js-avatar-me"></div>
+                    <div class="links-container topbar-flair">
+
+                        <span class="reputation" title="your reputation: 535">
+                            535
+                        </span>
+<span title="4 silver badges"><span class="badge2"></span><span class="badgecount">4</span></span><span title="11 bronze badges"><span class="badge3"></span><span class="badgecount">11</span></span>                    </div>
+			    </a>
+                <div class="links-container">
+                    <span class="topbar-menu-links">
+                        
+                        
+                            <a href="/review" title="Review queues - help improve the site">
+                                review
+                            </a>
+
+    <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                <li>
+                    <a href="/tour"     class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })"
+>
+                        Tour
+                        <span class="item-summary">
+                            Start here for a quick overview of the site
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/help"     class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })"
+>
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="//meta.stackoverflow.com"     class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })"
+>
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+                        
+                    </span>
+                </div>
+
+			<div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="search" value="" tabindex="1" autocomplete="off" maxlength="240" />
+                </form>
+			</div>
+            	
+        </div>      
+    </div> 
+</div>
+<script>
+    StackExchange.ready(function () {
+        //topbar.init();
+        StackExchange.topbar.init();
+    });
+</script>
+    <div class="container">
+        <div id="header" >
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs ">
+                    <ul>
+                            <li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                            <li><a id="nav-tags" href="/tags">Tags</a></li>
+                            <li><a id="nav-users" href="/users">Users</a></li>
+                            <li><a id="nav-badges" href="/help/badges">Badges</a></li>
+                            <li><a id="nav-unanswered" href="/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion"  href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope itemtype="http://schema.org/Article">
+	<link itemprop="image" href="//cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+			<div id="question-header">
+			<h1 itemprop="name"><a href="/questions/2420096/what-collections-unmodifiableset-does" class="question-hyperlink">What Collections.unmodifiableSet does?</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="2420096"  id="question">
+    
+        <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="2420096">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear (click again to undo)">up vote</a>
+    <span class="vote-count-post ">12</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful (click again to undo)">down vote</a>
+    
+    <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>2</b></div>   
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="description">
+
+        <p><a href="http://java.sun.com/j2se/1.4.2/docs/api/java/util/Collections.html">Here</a> I can see that "Collections.unmodifiableSet" returns an unmodifiable view of the specified set. But I do not understand why we cannot just use <code>final</code> modifier to create an unmodifiable set.</p>
+
+<p>In my understanding <code>final</code> declare a constant (i.e. something that cannot be modified). So, if a set is declared as a constant it cannot be modified (nothing can be removed from the set, nothing can be added to the set). </p>
+
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/java" class="post-tag" title="show questions tagged &#39;java&#39;" rel="tag">java</a> <a href="/questions/tagged/final" class="post-tag" title="show questions tagged &#39;final&#39;" rel="tag">final</a> <a href="/questions/tagged/unmodifiable" class="post-tag" title="show questions tagged &#39;unmodifiable&#39;" rel="tag">unmodifiable</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/q/2420096/528263" title="short permalink to this question" class="short-link" id="link-post-2420096">share</a><span class="lsep">|</span><a href="/posts/2420096/edit" class="suggest-edit-post" title="revise and improve this post">edit</a><span class="lsep">|</span><a href="#"
+       class="flag-post-link"
+       title="flag this post for serious problems or moderator attention"
+       data-postid="2420096">flag</a></div>        
+    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2010-03-10 19:57:58Z" class="relativetime">Mar 10 '10 at 19:57</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/245549/roman"><div><img src="https://www.gravatar.com/avatar/eec7e09c7d0731a44e91b403dd0bc347?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/245549/roman">Roman</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">7,309</span><span title="40 gold badges"><span class="badge1"></span><span class="badgecount">40</span></span><span title="120 silver badges"><span class="badge2"></span><span class="badgecount">120</span></span><span title="197 bronze badges"><span class="badge3"></span><span class="badgecount">197</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+        </tr>
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-2420096" class="comments dno" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" 
+			           data-addlink-html="add comment" 
+			           data-addlink-disabled="false">
+					    <tr><td></td><td></td></tr>
+			    </tbody>
+				    <tfoot>
+					    <tr>
+						    <td></td>
+						    <td class="comment-form">
+							    <form id="add-comment-2420096" 
+							          class="" 
+							          data-placeholdertext="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."></form>
+						    </td>
+					    </tr>
+				    </tfoot>
+		    </table>
+	    </div>
+			<a id="comments-link-2420096" 
+			   class="comments-link " 
+			   title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments." 
+				href=#>add comment</a>
+    </td>
+</tr>                  <tr class="bounty-notification">
+          <td class="votecell"></td>
+          <td>
+          <div style="margin-top:20px">
+            <a class="bounty-link bounty" title="offer some of your reputation for better answers">
+                start a bounty
+            </a>
+          </div>
+          </td>
+          </tr>
+    </table>    
+</div>
+
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								4 Answers
+						</h2>
+						<div>
+							<div id="tabs">
+        <a class="youarehere" href="/questions/2420096/what-collections-unmodifiableset-does?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+        <a href="/questions/2420096/what-collections-unmodifiableset-does?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+        <a href="/questions/2420096/what-collections-unmodifiableset-does?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="2420153"></a>
+<div id="answer-2420153" class="answer accepted-answer" data-answerid="2420153" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="2420153">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">20</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+            <p><code>final</code> declares an object reference that can't be modified, e.g.</p>
+
+<pre><code>private final Foo something = new Foo();
+</code></pre>
+
+<p>creates a new <code>Foo</code> and places the reference in <code>something</code>. Thereafter, it's not possible to alter <code>something</code> to point to a different instance of <code>Foo</code>.</p>
+
+<p>This does <em>not</em> prevent modification of the internal state of the object. I can still call whatever methods on <code>Foo</code> there are accessible to the relevant scope. If one or more of those methods modifies the internal state of that object, then <code>final</code> won't prevent that.</p>
+
+<p>As such, the following:</p>
+
+<pre><code>private final Set&lt;String&gt; fixed = new HashSet&lt;String&gt;();
+</code></pre>
+
+<p>does <em>not</em> create a <code>Set</code> that can't be added to or otherwise altered; it just means that <code>fixed</code> will only ever reference that instance.</p>
+
+<p>By contrast, doing:</p>
+
+<pre><code>private Set&lt;String&gt; fixed = Collections.unmodifiableSet( new HashSet&lt;String&gt;() );
+</code></pre>
+
+<p>creates an instance of a <code>Set</code> which will throw <code>UnsupportedOperationException</code> if one attempts to call <code>fixed.add()</code> or <code>fixed.remove()</code>, for example - the object itself will protect its internal state and prevent it from being modified.</p>
+
+<p>For completeness sake:</p>
+
+<pre><code>private final Set&lt;String&gt; fixed = Collections.unmodifiableSet( new HashSet&lt;String&gt;() );
+</code></pre>
+
+<p>creates an instance of a <code>Set</code> which won't allow its internal state to be changed, and also means that <code>fixed</code> will only ever point to an instance of that set.</p>
+
+<p>The reason that <code>final</code> can be used to create constants of primitives is based on the fact that the value can't be changed. Remember that <code>fixed</code> above was just a reference - a variable containing an address that can't be changed. Well, for primitives, e.g.</p>
+
+<pre><code>private final int ANSWER = 42;
+</code></pre>
+
+<p>the value of <code>ANSWER</code> is that 42. Since <code>ANSWER</code> can't be changed, it will only ever have the value 42.</p>
+
+<p>An example that blurs all the lines would be this:</p>
+
+<pre><code>private final String QUESTION = "The ultimate question";
+</code></pre>
+
+<p>Per the rules above, <code>QUESTION</code> contains the address of an instance of <code>String</code> which represents "The ultimate question", and that address can't be changed. The thing to remember here is that <code>String</code> itself is immutable - you can't do anything to an instance of <code>String</code> which changes it, and any operations which would otherwise do so (such as <code>replace</code>, <code>substring</code>, etc.) return references to entirely different instances of <code>String</code>.</p>
+
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/2420153/528263" title="short permalink to this answer" class="short-link" id="link-post-2420153">share</a><span class="lsep">|</span><a href="/posts/2420153/edit" class="suggest-edit-post" title="revise and improve this post">edit</a><span class="lsep">|</span><a href="#"
+       class="flag-post-link"
+       title="flag this post for serious problems or moderator attention"
+       data-postid="2420153">flag</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2010-03-10 20:03:29Z" class="relativetime">Mar 10 '10 at 20:03</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/3542/rob"><div><img src="https://www.gravatar.com/avatar/f1463ac968a26c990eccf12ac6cc8eb4?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/3542/rob">Rob</a><br>
+        <span class="reputation-score" title="reputation score 30723" dir="ltr">30.7k</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="38 silver badges"><span class="badge2"></span><span class="badgecount">38</span></span><span title="78 bronze badges"><span class="badge3"></span><span class="badgecount">78</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-2420153" class="comments dno" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" 
+			           data-addlink-html="add comment" 
+			           data-addlink-disabled="false">
+					    <tr><td></td><td></td></tr>
+			    </tbody>
+				    <tfoot>
+					    <tr>
+						    <td></td>
+						    <td class="comment-form">
+							    <form id="add-comment-2420153" 
+							          class="" 
+							          data-placeholdertext="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></form>
+						    </td>
+					    </tr>
+				    </tfoot>
+		    </table>
+	    </div>
+			<a id="comments-link-2420153" 
+			   class="comments-link " 
+			   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”." 
+				href=#>add comment</a>
+    </td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="22536318"></a>
+<div id="answer-22536318" class="answer" data-answerid="22536318" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="22536318">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+            <p>The <code>Collections.unmodifiableSet(Set&lt;? extends T&gt;)</code> will create wrapper on the original set. This wrapper set can not be modified. but still the original set can be modified.</p>
+
+<p><strong>Example:</strong></p>
+
+<pre><code> Set&lt;String&gt; actualSet=new HashSet&lt;String&gt;(); //Creating set
+</code></pre>
+
+<p>Adding some elements</p>
+
+<pre><code>actualSet.add("aaa");
+actualSet.add("bbb");
+</code></pre>
+
+<p>Printing added elements</p>
+
+<pre><code>System.out.println(actualSet);   //[aaa, bbb]
+</code></pre>
+
+<p>Put the <code>actualSet</code> into unmodifiable set and assigned to new reference(<code>wrapperSet</code>).</p>
+
+<pre><code>Set&lt;String&gt; wrapperSet=Collections.unmodifiableSet(orginalSet);
+</code></pre>
+
+<p>Print the wrapperSet. so it will have <code>actualSet</code> Values</p>
+
+<pre><code>System.out.println(wrapperSet);   //[aaa, bbb]
+</code></pre>
+
+<p>lets try to remove/add one element on <code>wrapperSet</code>.</p>
+
+<pre><code>wrapperSet.remove("aaa");   //UnSupportedOperationException 
+</code></pre>
+
+<p>Add one more element in <code>actualSet</code></p>
+
+<pre><code>    actualSet .add("ccc");
+</code></pre>
+
+<p>Print <code>actualSet</code> and <code>wrapperSet</code>. both sets values are same. so If you add/remove any elements on actual set the changes will be reflected on wrapper set as well.</p>
+
+<pre><code>    System.out.println(actualSet);  //[aaa, ccc, bbb]
+    System.out.println(wrapperSet);  // [aaa, ccc, bbb]
+</code></pre>
+
+<p><strong>Usage:</strong></p>
+
+<p>This  <code>Collections.unmodifiableSet(Set&lt;? extends T&gt;)</code> is used to prevent modification of Set's getter method of any object. let say</p>
+
+<pre><code>public class Department{
+
+    private Set&lt;User&gt; users=new HashSet&lt;User&gt;();
+
+    public Set&lt;User&gt; getUsers(){
+        return Collections.unmodifiableSet(users); 
+    }
+}
+</code></pre>
+
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/22536318/528263" title="short permalink to this answer" class="short-link" id="link-post-22536318">share</a><span class="lsep">|</span><a href="/posts/22536318/edit" class="suggest-edit-post" title="revise and improve this post">edit</a><span class="lsep">|</span><a href="#"
+       class="flag-post-link"
+       title="flag this post for serious problems or moderator attention"
+       data-postid="22536318">flag</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-03-20 14:39:44Z" class="relativetime">Mar 20 at 14:39</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2377836/maa"><div><img src="https://www.gravatar.com/avatar/b1c2ba038bc2d318d4c8eaf8b1a91b95?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2377836/maa">MAA</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">131</span><span title="7 bronze badges"><span class="badge3"></span><span class="badgecount">7</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-22536318" class="comments dno" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" 
+			           data-addlink-html="add comment" 
+			           data-addlink-disabled="false">
+					    <tr><td></td><td></td></tr>
+			    </tbody>
+				    <tfoot>
+					    <tr>
+						    <td></td>
+						    <td class="comment-form">
+							    <form id="add-comment-22536318" 
+							          class="" 
+							          data-placeholdertext="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></form>
+						    </td>
+					    </tr>
+				    </tfoot>
+		    </table>
+	    </div>
+			<a id="comments-link-22536318" 
+			   class="comments-link " 
+			   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”." 
+				href=#>add comment</a>
+    </td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="2420139"></a>
+<div id="answer-2420139" class="answer" data-answerid="2420139" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="2420139">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">13</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+            <p><code>final</code> only guarantees that the <strong>reference</strong> to the object the variable represents can't be changed it doesn't do anything for the instance of the object and its mutability. </p>
+
+<p><code>final Set s = new Set();</code> just guarantees you can't do <code>s = new Set();</code> again. It doesn't make the set unmodifiable, it if did you couldn't add anything to it to begin with. So to make it really clear, <code>final</code> only affects the variable <strong>reference</strong> not the object the reference points to.</p>
+
+<p>I can do the following:</p>
+
+<pre><code>final List&lt;String&gt; l = new ArrayList&lt;String&gt;();
+l.add("hello");
+l.add("world");
+l.remove(0);
+</code></pre>
+
+<p>but I can't do this.</p>
+
+<pre><code>l = new ArrayList&lt;String&gt;();
+</code></pre>
+
+<p>again because of the <code>final</code> I can't modify what the variable l points to.</p>
+
+<p>you have to do one of the following three things to make a Collection container thread safe.</p>
+
+<pre><code>java.util.Collections.syncronizedXXX();
+</code></pre>
+
+<p>or</p>
+
+<pre><code>java.util.Collections.unmodifiableXXX();
+</code></pre>
+
+<p>or
+use one of the appropriate containers from <code>java.util.concurrency.* package</code>.</p>
+
+<p>if I had a <code>Person</code> object and did <code>final Person p = new Person("me");</code> it means I can't reassign <code>p</code> to point to another <code>Person</code> object. I can still do <code>p.setFirstName("you");</code> </p>
+
+<p>What confuses the situation is that </p>
+
+<pre><code>final int PI = 3.14;
+final String greeting = "Hello World!";
+</code></pre>
+
+<p>look like <code>const</code> in C++, when in fact the objects that they point to are immutable/unmodifiable by nature. Containers or objects with mutator methods that can alter the internal state of the object are not <code>const</code> just the <strong>reference</strong> to those objects are <code>final</code> and can't be reassigned to <strong>reference</strong> another object.</p>
+
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/2420139/528263" title="short permalink to this answer" class="short-link" id="link-post-2420139">share</a><span class="lsep">|</span><a href="/posts/2420139/edit" class="suggest-edit-post" title="revise and improve this post">edit</a><span class="lsep">|</span><a href="#"
+       class="flag-post-link"
+       title="flag this post for serious problems or moderator attention"
+       data-postid="2420139">flag</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/2420139/revisions" title="show all edits to this post">edited <span title="2010-03-10 20:14:16Z" class="relativetime">Mar 10 '10 at 20:14</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2010-03-10 20:01:58Z" class="relativetime">Mar 10 '10 at 20:01</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/177800/jarrod-roberson"><div><img src="https://www.gravatar.com/avatar/12356ae4540e9286f4984eb7beef801e?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/177800/jarrod-roberson">Jarrod Roberson</a><br>
+        <span class="reputation-score" title="reputation score 30521" dir="ltr">30.5k</span><span title="9 gold badges"><span class="badge1"></span><span class="badgecount">9</span></span><span title="54 silver badges"><span class="badge2"></span><span class="badgecount">54</span></span><span title="116 bronze badges"><span class="badge3"></span><span class="badgecount">116</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-2420139" class="comments" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" 
+			           data-addlink-html="add comment" 
+			           data-addlink-disabled="false">
+
+    <tr id="comment-2402452" class="comment">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                <a class="comment-up comment-up-off" title="this comment adds something useful to the post">upvote</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <a class="comment-flag" title="flag this comment as unconstructive, offensive, or spam">flag</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Good post. In short, the <i>reference</i> can&#39;t be changed but the <i>contents</i> of the object <i>can</i>.</span>
+                &ndash;&nbsp;
+                    <a href="/users/24582/extraneon"
+                       title="13044 reputation"
+                       class="comment-user">extraneon</a>
+                <span class="comment-date" dir="ltr"><span title="2010-03-10 20:20:35Z" class="relativetime-clean">Mar 10 '10 at 20:20</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+			    </tbody>
+				    <tfoot>
+					    <tr>
+						    <td></td>
+						    <td class="comment-form">
+							    <form id="add-comment-2420139" 
+							          class="" 
+							          data-placeholdertext="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></form>
+						    </td>
+					    </tr>
+				    </tfoot>
+		    </table>
+	    </div>
+			<a id="comments-link-2420139" 
+			   class="comments-link " 
+			   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”." 
+				href=#>add comment</a>
+    </td>
+</tr>
+    </table>
+</div>
+
+  
+<a name="2420158"></a>
+<div id="answer-2420158" class="answer" data-answerid="2420158" >
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="2420158">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">3</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+            <p><code>final</code> is not (C++-style) <code>const</code>. Unlike C++, Java does not have <code>const</code>-methods or anything like that, and methods that can change the object can be called via a <code>final</code> reference.</p>
+
+<p><code>Collections.unmodifiable*</code> is a wrapper that enforces (at run time only, not at compile time) the read-only-ness for the collection concerned.</p>
+
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/2420158/528263" title="short permalink to this answer" class="short-link" id="link-post-2420158">share</a><span class="lsep">|</span><a href="/posts/2420158/edit" class="suggest-edit-post" title="revise and improve this post">edit</a><span class="lsep">|</span><a href="#"
+       class="flag-post-link"
+       title="flag this post for serious problems or moderator attention"
+       data-postid="2420158">flag</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2010-03-10 20:03:53Z" class="relativetime">Mar 10 '10 at 20:03</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/13/chris-jester-young"><div><img src="https://www.gravatar.com/avatar/729442eea8d8548842a6e0947e333c7b?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/13/chris-jester-young">Chris Jester-Young</a><br>
+        <span class="reputation-score" title="reputation score 98269" dir="ltr">98.3k</span><span title="16 gold badges"><span class="badge1"></span><span class="badgecount">16</span></span><span title="198 silver badges"><span class="badge2"></span><span class="badgecount">198</span></span><span title="278 bronze badges"><span class="badge3"></span><span class="badgecount">278</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-2420158" class="comments dno" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" 
+			           data-addlink-html="add comment" 
+			           data-addlink-disabled="false">
+					    <tr><td></td><td></td></tr>
+			    </tbody>
+				    <tfoot>
+					    <tr>
+						    <td></td>
+						    <td class="comment-form">
+							    <form id="add-comment-2420158" 
+							          class="" 
+							          data-placeholdertext="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></form>
+						    </td>
+					    </tr>
+				    </tfoot>
+		    </table>
+	    </div>
+			<a id="comments-link-2420158" 
+			   class="comments-link " 
+			   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”." 
+				href=#>add comment</a>
+    </td>
+</tr>
+    </table>
+</div>
+									<a name='new-answer'></a>
+						<form id="post-form" action="/questions/2420096/answer/submit" method="post"  class="post-form">
+							<input type="hidden" id="post-id" value="2420096" />
+							<h2 class="space">Your Answer</h2>
+
+
+
+    
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+         
+        prepareEditor({
+            heartbeatType: 'answer',
+            bindNavPrevention: true,
+            postfix: "",
+            onDemand: false,
+            discardSelector: ".discard-answer"
+            
+        });
+        
+
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+    <div class="community-option">
+        <input id="communitymode" name="communitymode" type="checkbox" >
+        <label for="communitymode" title="Marking an answer community wiki encourages others to edit it by lowering the reputation barrier required to edit. However, you will not gain any upvote reputation from it. This cannot be undone.">community wiki</label>
+    </div>
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="08a9712b065a87f44597dc6f0fc0272b">
+        <input id="author" name="author" type="text">
+    </div>
+</div>
+							<div style="position: relative;">
+								
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="#" class="discard-answer dno">discard</a>
+								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice">
+Not the answer you&#39;re looking for?							Browse other questions tagged <a href="/questions/tagged/java" class="post-tag" title="show questions tagged &#39;java&#39;" rel="tag">java</a> <a href="/questions/tagged/final" class="post-tag" title="show questions tagged &#39;final&#39;" rel="tag">final</a> <a href="/questions/tagged/unmodifiable" class="post-tag" title="show questions tagged &#39;unmodifiable&#39;" rel="tag">unmodifiable</a>  or <a href="/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2010-03-10 19:57:58Z"><b>4 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>7713 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2014-03-20 14:39:44Z">1 month ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </table>
+			    </div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <h4>Community Bulletin</h4>
+    <div class="related">
+
+            <div class="spacer">
+                <div class="bulletin-item-type"><a href="http://meta.stackoverflow.com" class="event-date" target="_blank">meta</a></div>
+                <div class="bulletin-item-content">
+                    <a href="http://meta.stackoverflow.com/questions/252826/is-asking-reasons-for-downvote-in-comments-non-constructive" class="question-hyperlink" target="_blank">Is asking reasons for downvote in comments non-constructive?</a>
+                </div>
+                <br class="cbt" />
+            </div>
+            <div class="spacer">
+                <div class="bulletin-item-type"><a href="http://meta.stackoverflow.com" class="event-date" target="_blank">meta</a></div>
+                <div class="bulletin-item-content">
+                    <a href="http://meta.stackoverflow.com/questions/252754/does-stack-overflow-need-to-reward-edits-with-2-points" class="question-hyperlink" target="_blank">Does Stack Overflow need to reward edits with +2 points?</a>
+                </div>
+                <br class="cbt" />
+            </div>
+            <div class="spacer">
+                <div class="bulletin-item-type"><a href="http://meta.stackoverflow.com" class="event-date" target="_blank">meta</a></div>
+                <div class="bulletin-item-content">
+                    <a href="http://meta.stackoverflow.com/questions/252760/burninate-the-run-tag" class="question-hyperlink" target="_blank">Burninate the [run] tag</a>
+                </div>
+                <br class="cbt" />
+            </div>
+            <div class="spacer">
+                <div class="bulletin-item-type"><a href="http://meta.stackoverflow.com" class="event-date" target="_blank">meta</a></div>
+                <div class="bulletin-item-content">
+                    <a href="http://meta.stackoverflow.com/questions/253081/remove-the-manager" class="question-hyperlink" target="_blank">Remove the [manager]</a>
+                </div>
+                <br class="cbt" />
+            </div>
+    </div>
+</div>			
+			<script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk138945840",17).setZone(45) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk138945840">
+            </div>  
+    <div id="hireme">
+        <script>
+window.careers_adurl="//careers.stackoverflow.com/gethired/js",window.careers_cssurl="//cdn-careers.sstatic.net/careers/gethired/sidebar.min.css?v=c886aec35a12",window.careers_leaderboardcssurl="{leaderboardcssurl}",window.careers_companycssurl="//cdn-careers.sstatic.net/careers/gethired/company",window.careers_adselector="div#hireme",StackExchange.ready(function(){$.ajax({url:"//cdn-careers.sstatic.net/careers/gethired/loader.min.js?v=ffc1e27a5763",dataType:"script",cache:!0})});        </script>
+    </div>
+			  
+    
+            
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer">
+<a href="/q/88036" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">11
+    </div>
+</a><a href="/questions/88036/does-the-unmodifiable-wrapper-for-java-collections-make-them-thread-safe" class="question-hyperlink">Does the unmodifiable wrapper for java collections make them thread safe?</a>
+</div>
+<div class="spacer">
+<a href="/q/2297226" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">2
+    </div>
+</a><a href="/questions/2297226/does-a-passed-final-variable-in-java-stay-final-on-the-other-side" class="question-hyperlink">Does a passed final variable in Java stay final on the other side?</a>
+</div>
+<div class="spacer">
+<a href="/q/3737769" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">5
+    </div>
+</a><a href="/questions/3737769/java-unmodifiable-array" class="question-hyperlink">Java unmodifiable array</a>
+</div>
+<div class="spacer">
+<a href="/q/5181578" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">94
+    </div>
+</a><a href="/questions/5181578/use-of-final-class-in-java" class="question-hyperlink">Use of final class in Java</a>
+</div>
+<div class="spacer">
+<a href="/q/7066618" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">6
+    </div>
+</a><a href="/questions/7066618/returning-an-unmodifiable-map" class="question-hyperlink">Returning an unmodifiable map</a>
+</div>
+<div class="spacer">
+<a href="/q/10756241" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">4
+    </div>
+</a><a href="/questions/10756241/what-does-final-do-in-java-hard-version" class="question-hyperlink">What does final do in Java? - Hard Version</a>
+</div>
+<div class="spacer">
+<a href="/q/13235559" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">50
+    </div>
+</a><a href="/questions/13235559/why-does-the-java-compiler-not-understand-this-variable-is-always-initialized" class="question-hyperlink">Why does the Java compiler not understand this variable is always initialized?</a>
+</div>
+<div class="spacer">
+<a href="/q/15111073" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">7
+    </div>
+</a><a href="/questions/15111073/collections-unmodifiablelist-and-defensive-copy" class="question-hyperlink">Collections.unmodifiableList and defensive copy</a>
+</div>
+<div class="spacer">
+<a href="/q/19008993" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="/questions/19008993/java-how-to-declare-that-method-is-returning-collections-unmodifiablemap" class="question-hyperlink">Java: How to declare that method is returning Collections.unmodifiableMap</a>
+</div>
+<div class="spacer">
+<a href="/q/19418427" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted large">172
+    </div>
+</a><a href="/questions/19418427/comparing-strings-with-which-are-declared-final-in-java" class="question-hyperlink">Comparing strings with == which are declared final in Java</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="//stackexchange.com/questions?tab=hot" 
+           class="js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li >
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/36993/what-etiquette-should-a-new-player-observe-at-the-gaming-table" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What etiquette should a new player observe at the gaming table?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-cstheory" title="Theoretical Computer Science Stack Exchange"></div><a href="http://cstheory.stackexchange.com/questions/22354/the-unreasonable-power-of-non-uniformity" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:114 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    The unreasonable power of non-uniformity
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-superuser" title="Super User"></div><a href="http://superuser.com/questions/747244/why-do-ssds-have-weird-sizes" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:3 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why do SSDs have weird sizes?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-mathematica" title="Mathematica Stack Exchange"></div><a href="http://mathematica.stackexchange.com/questions/47155/how-to-exchange-two-arguments" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:387 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to exchange two arguments?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/167104/singular-of-dice" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Singular of &quot;dice&quot;
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="http://electronics.stackexchange.com/questions/108893/global-variable-in-avr-interrupt-routine" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Global variable in AVR interrupt routine
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-mathematica" title="Mathematica Stack Exchange"></div><a href="http://mathematica.stackexchange.com/questions/47164/labeling-a-grid" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:387 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Labeling a grid
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/37024/how-attached-should-players-be-to-the-characters-they-make" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How attached should players be to the characters they make?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-poker" title="Poker Stack Exchange"></div><a href="http://poker.stackexchange.com/questions/2918/unexpected-aggression-and-a-premium-hand" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:379 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Unexpected aggression and a premium hand
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/56863/what-is-the-purpose-of-gibberish-comments-posted-to-my-blog" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the purpose of &quot;gibberish&quot; comments posted to my blog?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/174772/cant-find-the-documentation-for-tikzstyle-or-operator-in-tikz" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can&#39;t find the documentation for \tikzstyle or `+=` operator in tikz
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-philosophy" title="Philosophy Stack Exchange"></div><a href="http://philosophy.stackexchange.com/questions/11201/can-we-see-our-future" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:265 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can we see our future?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/3683/question-about-a-missed-approach-procedure" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Question about a missed approach procedure
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="http://electronics.stackexchange.com/questions/108772/how-is-signal-discarded" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How is signal &#39;discarded&#39;?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/23388/do-i-have-to-relinquish-my-pc-password-to-my-former-boss" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Do I have to relinquish my PC password to my former boss?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/19952/how-to-handle-a-colleague-who-hasnt-pulled-their-weight" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to handle a colleague who hasn&#39;t pulled their weight
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/20084/is-using-the-phrase-is-left-as-an-exercise-for-the-reader-considered-good" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is using the phrase &quot;... is left as an exercise for the reader&quot; considered good style in academic papers/theses?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/55400/why-was-toothless-toothless" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why was Toothless toothless?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/26669/carrying-my-bass-guitar-on-board-a-flight" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Carrying my bass guitar on board a flight?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/26388/avoid-the-evil-integers" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Avoid the evil integers!
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-history" title="History Stack Exchange"></div><a href="http://history.stackexchange.com/questions/12677/was-there-ever-any-doubt-which-side-the-usa-would-join" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:324 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Was there ever any doubt which side the USA would join?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-salesforce" title="Salesforce Stack Exchange"></div><a href="http://salesforce.stackexchange.com/questions/34217/is-synchronized-keyword-available-in-apex" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:459 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is Synchronized keyword available in apex?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/26323/how-slow-is-python-really-or-how-fast-is-your-language" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How slow is python really? (Or how fast is your language?)
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codereview" title="Code Review Stack Exchange"></div><a href="http://codereview.stackexchange.com/questions/48728/pacman-game-implementation-in-java" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:196 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Pacman game implementation in Java
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="#" 
+           class="show-more js-show-more js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="/feeds/question/2420096" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/2420096/ivc/1c32');});
+</script>
+<noscript>
+    <div><img src="/posts/2420096/ivc/1c32" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang">lang-java</div></div>
+
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="/about">about</a>
+                    <a href="/help">help</a>
+                    <a href="http://blog.stackoverflow.com?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com">chat</a>
+                    <a href="http://data.stackexchange.com">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/about/hiring">jobs</a>
+                    <a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6MjAsImNtIjo5NTQsImNoIjoxMTc4LCJjciI6Mjc3NiwiZG0iOjQsImZjIjoyODYyLCJmbCI6Mjc1MSwibnciOjIyLCJydiI6MCwicHIiOjExNSwic3QiOjAsInVyIjoiaHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2Fib3V0L2NvbnRhY3QiLCJyZSI6MX0&s=hRods5B22XvRBwWIwtIMekcyNF8">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tr>
+            <th colspan=3>
+                Technology
+            </th>
+            <th >
+                Life / Arts
+            </th>
+            <th >
+                Culture / Recreation
+            </th>
+            <th >
+                Science
+            </th>
+            <th >
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com" title="professional system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com" title="users of Linux, FreeBSD and other Un*x-like operating systems.">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com" title="Information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com" title="users of Mathematica">Mathematica</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (14)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com" title="professional graphic designers and non-designers trying to do their own graphic design">Graphic Design</a></li>
+                        <li><a href="http://cooking.stackexchange.com" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (10)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://gaming.stackexchange.com" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://mathoverflow.net" title="professional mathematicians">MathOverflow</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackexchange.com" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://area51.stackexchange.com" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo &#169; 2014 stack exchange inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2014.4.30.1585
+            </div>
+            
+        </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    ados.run.push(function () { ados_setKeywords('java,final,unmodifiable,x-user-registered,x-200plus-rep');; ados_load(); });         
+</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-1');        
+        ga('set', 'dimension1', '251112');         
+        ga('set', 'dimension2', '|java|final|unmodifiable|');         
+        ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>        
+    
+    </body>
+</html>

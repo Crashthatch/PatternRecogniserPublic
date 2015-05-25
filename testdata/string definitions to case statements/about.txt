@@ -1,0 +1,4 @@
+This example was submitted to the website, (1422962169565). But with 2 spaces after the = in the first line of the output,
+so the output was unreachable and it failed.
+
+The submitter started with a more complex example (including leading tabs etc.), then refined it to remove them, but must have missed the 2 spaces.

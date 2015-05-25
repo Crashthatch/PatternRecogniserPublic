@@ -1,0 +1,52 @@
+[
+    {
+        "a": 0,
+        "c": "Weston Post Office, Trafalgar Road, Weston, Bath, c.1910?",
+        "d": "1910",
+        "g": -2.390999,
+        "F": 19100101,
+        "i": 235047,
+        "lo": "/channels/img/5852/logo/1/dim/46x46/",
+        "tp": 0,
+        "G": "2 Trafalgar Road, Bath, Bath and North East Somerset BA1 4EW, UK",
+        "s": 1,
+        "u": "Bath in Time",
+        "T": 19101231,
+        "V": 48,
+        "U": 5852,
+        "t": 51.396212
+    },
+    {
+        "a": 0,
+        "c": "Clearing up after flood, Montrose Cottages, Weston",
+        "d": "11 July 1968",
+        "g": -2.3871539999999998,
+        "F": 19680711,
+        "i": 26036,
+        "lo": "/channels/img/5852/logo/1/dim/46x46/",
+        "tp": 0,
+        "G": "Weston Ln, Bath, Bath and North East Somerset BA1 4, UK",
+        "s": 1,
+        "u": "Bath in Time",
+        "T": 19680711,
+        "V": 193,
+        "U": 5852,
+        "t": 51.392126
+    },{
+    "a": 0,
+    "c": "Hungerford Road, Bath April 1942",
+    "d": "1942",
+    "g": -2.3831899999999999,
+    "F": 19420101,
+    "i": 24961,
+    "lo": "/channels/img/5852/logo/1/dim/46x46/",
+    "tp": 0,
+    "G": "77 Hungerford Rd, Bath, Bath and North East Somerset BA1, UK",
+    "s": 1,
+    "u": "Bath in Time",
+    "T": 19420101,
+    "V": 248,
+    "U": 5852,
+    "t": 51.384751000000001
+}
+]

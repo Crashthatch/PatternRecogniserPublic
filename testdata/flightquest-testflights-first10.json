@@ -1,0 +1,101 @@
+[
+  {
+    "flight_history_id":280774878,
+    "departure_airport_code":"SJC",
+    "arrival_airport_code":"LAX",
+    "published_departure":"MISSING",
+    "published_arrival":"MISSING",
+    "scheduled_gate_departure":"2012-11-19 17:05:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 18:25:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 17:05:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 18:25:00+00:00"
+  },
+  {
+    "flight_history_id":280778857,
+    "departure_airport_code":"SNA",
+    "arrival_airport_code":"DFW",
+    "published_departure":"MISSING",
+    "published_arrival":"MISSING",
+    "scheduled_gate_departure":"2012-11-19 15:30:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 18:30:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 15:44:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 18:42:00+00:00"
+  },
+  {
+    "flight_history_id":280779459,
+    "departure_airport_code":"SNA",
+    "arrival_airport_code":"DFW",
+    "published_departure":"MISSING",
+    "published_arrival":"MISSING",
+    "scheduled_gate_departure":"2012-11-19 16:50:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 19:40:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 17:03:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 19:51:00+00:00"
+  },
+  {
+    "flight_history_id":280864926,
+    "departure_airport_code":"BFI",
+    "arrival_airport_code":"DFW",
+    "published_departure":"MISSING",
+    "published_arrival":"MISSING",
+    "scheduled_gate_departure":"2012-11-19 17:30:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 21:15:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 17:39:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 21:25:00+00:00"
+  },
+  {
+    "flight_history_id":280787758,
+    "departure_airport_code":"BNA",
+    "arrival_airport_code":"IAH",
+    "published_departure":"2012-11-19 16:59:00+00:00",
+    "published_arrival":"2012-11-19 19:20:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 16:59:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 19:20:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 17:09:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 18:50:00+00:00"
+  },
+  {
+    "flight_history_id":280795375,
+    "departure_airport_code":"CLE",
+    "arrival_airport_code":"DUJ",
+    "published_departure":"2012-11-19 17:15:00+00:00",
+    "published_arrival":"2012-11-19 18:20:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 17:15:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 18:20:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 17:26:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 18:04:00+00:00"
+  },
+  {
+    "flight_history_id":280799228,
+    "departure_airport_code":"DAL",
+    "arrival_airport_code":"HOU",
+    "published_departure":"2012-11-19 17:00:00+00:00",
+    "published_arrival":"2012-11-19 18:05:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 17:00:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 18:05:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 17:10:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 17:57:00+00:00"
+  },
+  {
+    "flight_history_id":280837988,
+    "departure_airport_code":"ORD",
+    "arrival_airport_code":"OMA",
+    "published_departure":"2012-11-19 15:50:00+00:00",
+    "published_arrival":"2012-11-19 17:25:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 15:50:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 17:25:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 16:06:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 17:28:00+00:00"
+  },
+  {
+    "flight_history_id":280824156,
+    "departure_airport_code":"LGA",
+    "arrival_airport_code":"DTW",
+    "published_departure":"2012-11-19 15:50:00+00:00",
+    "published_arrival":"2012-11-19 17:50:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 15:50:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 17:50:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 16:17:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 17:58:00+00:00"
+  }
+]

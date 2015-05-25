@@ -1,0 +1,14 @@
+INSERT INTO `myTable` (`myCol`) VALUES ('Awesome');
+INSERT INTO `myTable` (`myCol`) VALUES ('Apple');
+INSERT INTO `myTable` (`myCol`) VALUES ('Amber');
+INSERT INTO `myTable` (`myCol`) VALUES ('Alien');
+INSERT INTO `myTable` (`myCol`) VALUES ('Axe');
+INSERT INTO `myTable` (`myCol`) VALUES ('Atom');
+INSERT INTO `myTable` (`myCol`) VALUES ('Asia');
+INSERT INTO `myTable` (`myCol`) VALUES ('Angel');
+INSERT INTO `myTable` (`myCol`) VALUES ('Apron');
+INSERT INTO `myTable` (`myCol`) VALUES ('Acorn');
+INSERT INTO `myTable` (`myCol`) VALUES ('Armadillo');
+INSERT INTO `myTable` (`myCol`) VALUES ('Anchor');
+INSERT INTO `myTable` (`myCol`) VALUES ('Always');
+INSERT INTO `myTable` (`myCol`) VALUES ('Awkwardly');

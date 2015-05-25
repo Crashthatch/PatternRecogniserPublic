@@ -1,0 +1,35 @@
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAB2KR9eJ3CJZA0ItlZAPXEQ1W' WHERE fbid='355318';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBtZBDLiByOMHUfUiXZB' WHERE fbid='583245832756';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBACq0AWis1iGtIPMj4dIDP7e' WHERE fbid='436677679747429';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBANKtZCThiR4gcUHb8hRqlPIO' WHERE fbid='484846368237877';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAAFakEe63nybH7JCfJd8itVE5' WHERE fbid='348398285261651';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBALl0iw5AjDMPHHNREfjC7W2D' WHERE fbid='517074785006141';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAJLDNiaYKGsBFtZC' WHERE fbid='496801580379431';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAHtoThQKMRnZB1' WHERE fbid='3032342223';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAE1OHJKe5HkMos5U9pZC' WHERE fbid='43804324325609';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAAxfQyu9QcOD6uIDRl2crI2rlr8uih' WHERE fbid='4837267543625';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBYNqhphsAP9v53' WHERE fbid='134472576592105';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAB4RnQIzmAcUALz2uZC5NEV8S5R5M' WHERE fbid='57237854932';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBADZBCqtlQXApebsvb0' WHERE fbid='4231110305';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBALeycMWRA4NvLhNqH' WHERE fbid='421222354427';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAJ4q93MQU7Uz' WHERE fbid='248765438885';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAC0OBT2u' WHERE fbid='1284873218';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBAMI7ZA2UHFepUxYhFVtESa' WHERE fbid='34980940';
+
+UPDATE `pagetokens` SET access_token='CAACBIRLMwqYBADExof6w1atO2l0ZCBqWDFcswN' WHERE fbid='1370984';

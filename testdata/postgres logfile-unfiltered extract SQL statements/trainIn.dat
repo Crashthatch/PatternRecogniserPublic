@@ -1,0 +1,22 @@
+2014-08-28 09:43:17.484 BST,,,1788,,53feeba5.6fc,1,,2014-08-28 09:43:17 BST,,0,LOG,00000,"ending log output to stderr",,"Future log output will go to log destination ""csvlog"".",,,,,,,""
+2014-08-28 09:43:17.554 BST,,,2192,,53feeba5.890,1,,2014-08-28 09:43:17 BST,,0,LOG,00000,"database system was interrupted; last known up at 2014-08-27 10:04:26 BST",,,,,,,,,""
+2014-08-28 09:43:17.564 BST,,,2192,,53feeba5.890,2,,2014-08-28 09:43:17 BST,,0,LOG,00000,"database system was not properly shut down; automatic recovery in progress",,,,,,,,,""
+2014-08-28 09:43:17.594 BST,,,2192,,53feeba5.890,3,,2014-08-28 09:43:17 BST,,0,LOG,00000,"record with zero length at 4/97B3DD98",,,,,,,,,""
+2014-08-28 09:43:17.594 BST,,,2192,,53feeba5.890,4,,2014-08-28 09:43:17 BST,,0,LOG,00000,"redo is not required",,,,,,,,,""
+2014-08-28 09:43:17.644 BST,,,1788,,53feeba5.6fc,2,,2014-08-28 09:43:17 BST,,0,LOG,00000,"database system is ready to accept connections",,,,,,,,,""
+2014-08-28 09:43:17.716 BST,,,2340,,53feeba5.924,1,,2014-08-28 09:43:17 BST,,0,LOG,00000,"autovacuum launcher started",,,,,,,,,""
+2014-08-28 10:11:38.974 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,1,"idle",2014-08-28 10:11:38 BST,2/3,0,LOG,00000,"statement: SELECT version();",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:38.986 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,2,"idle",2014-08-28 10:11:38 BST,2/4,0,LOG,00000,"statement: SET DateStyle=ISO;
+SET client_min_messages=notice;
+SET bytea_output=escape;
+SELECT oid, pg_encoding_to_char(encoding) AS encoding, datlastsysoid
+  FROM pg_database WHERE datname='postgres'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:38.997 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,3,"idle",2014-08-28 10:11:38 BST,2/5,0,LOG,00000,"statement: set client_encoding to 'UNICODE'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:38.997 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,4,"idle",2014-08-28 10:11:38 BST,2/6,0,LOG,00000,"statement: SELECT usecreatedb, usesuper, CASE WHEN usesuper THEN pg_postmaster_start_time() ELSE NULL END as upsince, CASE WHEN usesuper THEN pg_conf_load_time() ELSE NULL END as confloadedsince, CASE WHEN usesuper THEN pg_is_in_recovery() ELSE NULL END as inrecovery, CASE WHEN usesuper THEN pg_last_xlog_receive_location() ELSE NULL END as receiveloc, CASE WHEN usesuper THEN pg_last_xlog_replay_location() ELSE NULL END as replayloc, CASE WHEN usesuper THEN pg_last_xact_replay_timestamp() ELSE NULL END as replay_timestamp, CASE WHEN usesuper AND pg_is_in_recovery() THEN pg_is_xlog_replay_paused() ELSE NULL END as isreplaypaused
+  FROM pg_user WHERE usename=current_user",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.005 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,5,"idle",2014-08-28 10:11:38 BST,2/7,0,LOG,00000,"statement: SELECT rolcreaterole, rolcreatedb FROM pg_roles WHERE rolname = current_user;",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.384 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,50,"idle",2014-08-28 10:11:38 BST,2/52,0,LOG,00000,"statement: SELECT pg_encoding_to_char(26)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:14:00.534 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,5,"INSERT",2014-08-28 10:13:46 BST,4/11,0,ERROR,42P00,"relation ""ttt"" does not exist",,,,,,"INSERT INTO ttt VALUES (2,""bob"", 65)",13,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:08.180 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,6,"idle",2014-08-28 10:13:46 BST,4/12,0,LOG,00000,"statement: INSERT INTO schemey.ttt VALUES (2,""bob"", 65)",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:08.180 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,7,"INSERT",2014-08-28 10:13:46 BST,4/12,0,ERROR,42700,"column ""bob"" does not exist",,,,,,"INSERT INTO schemey.ttt VALUES (2,""bob"", 65)",35,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:35.655 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,10,"idle",2014-08-28 10:13:46 BST,4/15,0,LOG,00000,"statement: INSERT INTO schemey.ttt VALUES (9, 'joe', 85)",,,,,,,,,"pgAdmin III - Query Tool"

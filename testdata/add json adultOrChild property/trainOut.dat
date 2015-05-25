@@ -1,0 +1,6 @@
+[{"name": "Bob", "age":14, "ageClass":"child"},
+{"name": "Jim", "age":17, "ageClass":"child"},
+{"name": "Harry", "age":18, "ageClass":"adult"},
+{"name": "Tim", "age":22, "ageClass":"adult"},
+{"name": "Joe", "age":43, "ageClass":"adult"},
+{"name": "Jane", "age":12, "ageClass":"child"}]

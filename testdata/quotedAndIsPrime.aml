@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="quotedAndIsPrime.dat" encoding="windows-1252">
+  <attribute name="a" sourcecol="1" valuetype="nominal"/>
+  <attribute name="b" sourcecol="2" valuetype="integer"/>
+</attributeset>

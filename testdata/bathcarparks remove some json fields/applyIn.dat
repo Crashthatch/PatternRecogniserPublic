@@ -1,0 +1,128 @@
+[{
+"id" : "9ccbd729fd0d4ce7c32622151f5c26e3",
+"lastupdate" : "2014-11-25T00:00:00",
+"location" : {
+"needs_recoding" : false,
+"longitude" : "-2.36860892385",
+"latitude" : "51.3843384358",
+"human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+},
+"percentage" : "6",
+"status" : "Emptying",
+"description" : "Charlotte Street CP / A4 Charlotte Street / Marlbourgh Buildings / CP / Bath",
+"name" : "Charlotte Street CP",
+"capacity" : "1056",
+"occupancy" : "59",
+"dateuploaded" : "2014-11-25T00:00:01",
+"northing" : "165097",
+"easting" : "374445"
+}
+, {
+"id" : "d546fc6129490cef4ef3bfbc1086b550",
+"lastupdate" : "2014-11-25T00:00:00",
+"location" : {
+"needs_recoding" : false,
+"longitude" : "-2.36225609279",
+"latitude" : "51.3787114813",
+"human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+},
+"percentage" : "3",
+"status" : "Static",
+"description" : "Avon Street CP / A367 Green Park Road / Corn Street / CP / Bath",
+"name" : "Avon Street CP",
+"capacity" : "630",
+"occupancy" : "19",
+"dateuploaded" : "2014-11-25T00:00:01",
+"northing" : "164469",
+"easting" : "374884"
+}
+, {
+"id" : "8c9bb941b4b4cc1bdd42e51db1eedced",
+"lastupdate" : "2014-11-25T00:04:25",
+"location" : {
+"needs_recoding" : false,
+"longitude" : "-2.38389427175",
+"latitude" : "51.352935229",
+"human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+},
+"percentage" : "0",
+"status" : "Static",
+"description" : "Odd Down P+R / A367 / P+R / Bath",
+"name" : "Odd Down P+R",
+"capacity" : "1252",
+"occupancy" : "6",
+"dateuploaded" : "2014-11-25T00:05:01",
+"northing" : "161610",
+"easting" : "373363"
+}
+, {
+"id" : "95348cbdeefd9ab63a76c4e269899439",
+"lastupdate" : "2014-11-25T00:04:23",
+"location" : {
+"needs_recoding" : false,
+"longitude" : "-2.38697144144",
+"latitude" : "51.4113171399",
+"human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+},
+"percentage" : "1",
+"status" : "Static",
+"description" : "Lansdown P+R / Lansdown Road / P+R / Lansdown",
+"name" : "Lansdown P+R",
+"capacity" : "827",
+"occupancy" : "9",
+"dateuploaded" : "2014-11-25T00:05:01",
+"northing" : "168104",
+"easting" : "373183"
+}
+, {
+"id" : "941c4321aa5dfb28e514125932c8e35b",
+"lastupdate" : "2014-11-25T00:01:24",
+"location" : {
+"needs_recoding" : false,
+"longitude" : "-2.35939373665",
+"latitude" : "51.3783156754",
+"human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+},
+"percentage" : "29",
+"status" : "Static",
+"description" : "SouthGate Rail CP / A367 St James Parade / Dorchester Street / CP / Bath",
+"name" : "SouthGate Rail CP",
+"capacity" : "140",
+"occupancy" : "41",
+"dateuploaded" : "2014-11-25T00:05:01",
+"northing" : "164424",
+"easting" : "375083"
+}
+, {
+"id" : "27d24b7fd9e1ce44a540dfc1a9f2980b",
+"lastupdate" : "2014-11-25T00:01:24",
+"location" : {
+"needs_recoding" : false,
+"longitude" : "-2.35893376096",
+"latitude" : "51.3782901111",
+"human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+},
+"percentage" : "1",
+"status" : "Static",
+"description" : "SouthGate General CP / A367 St James Parade / Dorchester Street / CP / Bath",
+"name" : "SouthGate General CP",
+"capacity" : "720",
+"occupancy" : "10",
+"dateuploaded" : "2014-11-25T00:05:01",
+"northing" : "164421",
+"easting" : "375115"
+}
+, {
+"id" : "6b4eb8edfe06880aba27338f0605b7e7",
+"lastupdate" : "2014-11-25T00:02:05",
+"percentage" : "8",
+"status" : "Static",
+"description" : "Podium CP / Walcot Street / CP / Bath",
+"name" : "Podium CP",
+"capacity" : "521",
+"occupancy" : "44",
+"dateuploaded" : "2014-11-25T00:05:01",
+"northing" : "165083",
+"easting" : "375109"
+}
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "a": 0,
+        "c": "SomeLocation, Somewhere, BA2 4KW",
+        "d": "11 July 1968",
+        "g": -2.123,
+        "F": 1234567,
+        "i": 22222,
+        "lo": "/channels/img/5852/logo/1/dim/46x46/",
+        "tp": 0,
+        "G": "Weston Ln, Bath, Bath and North East Somerset BA1 4, UK",
+        "s": 1,
+        "u": "Bath in Time",
+        "T": 1234567,
+        "V": 193,
+        "U": 5852,
+        "t": 51.123
+    },
+    {
+        "a": 0,
+        "c": "AnotherPlace, Somewhere, BA2 5OK",
+        "d": "11 July 1968",
+        "g": -2.987,
+        "F": 1111111,
+        "i": 23456,
+        "lo": "/channels/img/5852/logo/1/dim/46x46/",
+        "tp": 0,
+        "G": "Weston Ln, Bath, Bath and North East Somerset BA1 4, UK",
+        "s": 1,
+        "u": "Bath in Time",
+        "T": 1111111,
+        "V": 193,
+        "U": 5852,
+        "t": 51.987
+    }
+]

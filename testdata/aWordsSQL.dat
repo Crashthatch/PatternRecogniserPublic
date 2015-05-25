@@ -1,0 +1,17 @@
+INSERT INTO `myTable` (`myCol`) VALUES ('Aardvark');
+INSERT INTO `myTable` (`myCol`) VALUES ('Abacus');
+INSERT INTO `myTable` (`myCol`) VALUES ('Actor');
+INSERT INTO `myTable` (`myCol`) VALUES ('Address');
+INSERT INTO `myTable` (`myCol`) VALUES ('Adult');
+INSERT INTO `myTable` (`myCol`) VALUES ('Africa');
+INSERT INTO `myTable` (`myCol`) VALUES ('Air');
+INSERT INTO `myTable` (`myCol`) VALUES ('Airplane');
+INSERT INTO `myTable` (`myCol`) VALUES ('Alabama');
+INSERT INTO `myTable` (`myCol`) VALUES ('Alaska');
+INSERT INTO `myTable` (`myCol`) VALUES ('Albatross');
+INSERT INTO `myTable` (`myCol`) VALUES ('All');
+INSERT INTO `myTable` (`myCol`) VALUES ('Ambulance');
+INSERT INTO `myTable` (`myCol`) VALUES ('Angry');
+INSERT INTO `myTable` (`myCol`) VALUES ('Ankle');
+INSERT INTO `myTable` (`myCol`) VALUES ('Ant');
+INSERT INTO `myTable` (`myCol`) VALUES ('Apple');

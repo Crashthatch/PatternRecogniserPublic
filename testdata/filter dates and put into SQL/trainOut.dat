@@ -1,0 +1,7 @@
+INSERT INTO 'holidays' VALUES ('02/09/2013',1);
+INSERT INTO 'holidays' VALUES ('03/09/2013',1);
+INSERT INTO 'holidays' VALUES ('04/09/2013',1);
+INSERT INTO 'holidays' VALUES ('05/09/2013',1);
+INSERT INTO 'holidays' VALUES ('06/09/2013',1);
+INSERT INTO 'holidays' VALUES ('09/09/2013',1);
+INSERT INTO 'holidays' VALUES ('10/09/2013',1);

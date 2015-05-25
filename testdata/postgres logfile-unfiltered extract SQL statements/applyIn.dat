@@ -1,0 +1,1081 @@
+2014-08-28 09:43:17.484 BST,,,1788,,53feeba5.6fc,1,,2014-08-28 09:43:17 BST,,0,LOG,00000,"ending log output to stderr",,"Future log output will go to log destination ""csvlog"".",,,,,,,""
+2014-08-28 09:43:17.554 BST,,,2192,,53feeba5.890,1,,2014-08-28 09:43:17 BST,,0,LOG,00000,"database system was interrupted; last known up at 2014-08-27 10:04:26 BST",,,,,,,,,""
+2014-08-28 09:43:17.564 BST,,,2192,,53feeba5.890,2,,2014-08-28 09:43:17 BST,,0,LOG,00000,"database system was not properly shut down; automatic recovery in progress",,,,,,,,,""
+2014-08-28 09:43:17.594 BST,,,2192,,53feeba5.890,3,,2014-08-28 09:43:17 BST,,0,LOG,00000,"record with zero length at 4/97B3DD98",,,,,,,,,""
+2014-08-28 09:43:17.594 BST,,,2192,,53feeba5.890,4,,2014-08-28 09:43:17 BST,,0,LOG,00000,"redo is not required",,,,,,,,,""
+2014-08-28 09:43:17.644 BST,,,1788,,53feeba5.6fc,2,,2014-08-28 09:43:17 BST,,0,LOG,00000,"database system is ready to accept connections",,,,,,,,,""
+2014-08-28 09:43:17.716 BST,,,2340,,53feeba5.924,1,,2014-08-28 09:43:17 BST,,0,LOG,00000,"autovacuum launcher started",,,,,,,,,""
+2014-08-28 10:11:38.974 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,1,"idle",2014-08-28 10:11:38 BST,2/3,0,LOG,00000,"statement: SELECT version();",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:38.986 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,2,"idle",2014-08-28 10:11:38 BST,2/4,0,LOG,00000,"statement: SET DateStyle=ISO;
+SET client_min_messages=notice;
+SET bytea_output=escape;
+SELECT oid, pg_encoding_to_char(encoding) AS encoding, datlastsysoid
+  FROM pg_database WHERE datname='postgres'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:38.997 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,3,"idle",2014-08-28 10:11:38 BST,2/5,0,LOG,00000,"statement: set client_encoding to 'UNICODE'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:38.997 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,4,"idle",2014-08-28 10:11:38 BST,2/6,0,LOG,00000,"statement: SELECT usecreatedb, usesuper, CASE WHEN usesuper THEN pg_postmaster_start_time() ELSE NULL END as upsince, CASE WHEN usesuper THEN pg_conf_load_time() ELSE NULL END as confloadedsince, CASE WHEN usesuper THEN pg_is_in_recovery() ELSE NULL END as inrecovery, CASE WHEN usesuper THEN pg_last_xlog_receive_location() ELSE NULL END as receiveloc, CASE WHEN usesuper THEN pg_last_xlog_replay_location() ELSE NULL END as replayloc, CASE WHEN usesuper THEN pg_last_xact_replay_timestamp() ELSE NULL END as replay_timestamp, CASE WHEN usesuper AND pg_is_in_recovery() THEN pg_is_xlog_replay_paused() ELSE NULL END as isreplaypaused
+  FROM pg_user WHERE usename=current_user",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.005 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,5,"idle",2014-08-28 10:11:38 BST,2/7,0,LOG,00000,"statement: SELECT rolcreaterole, rolcreatedb FROM pg_roles WHERE rolname = current_user;",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.008 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,6,"idle",2014-08-28 10:11:38 BST,2/8,0,LOG,00000,"statement: SELECT db.oid, datname, db.dattablespace AS spcoid, spcname, datallowconn, datacl, pg_encoding_to_char(encoding) AS serverencoding, pg_get_userbyid(datdba) AS datowner,has_database_privilege(db.oid, 'CREATE') as cancreate, 
+current_setting('default_tablespace') AS default_tablespace, 
+descr.description
+, db.datconnlimit as connectionlimit, db.datcollate as collate, db.datctype as ctype,
+(SELECT array_agg(label) FROM pg_shseclabel sl1 WHERE sl1.objoid=db.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_shseclabel sl2 WHERE sl2.objoid=db.oid) AS providers  FROM pg_database db
+  LEFT OUTER JOIN pg_tablespace ta ON db.dattablespace=ta.OID
+  LEFT OUTER JOIN pg_shdescription descr ON (db.oid=descr.objoid AND descr.classoid='pg_database'::regclass)
+ ORDER BY datname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.019 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,7,"idle",2014-08-28 10:11:38 BST,2/9,0,LOG,00000,"statement: SELECT ts.oid, spcname, pg_catalog.pg_tablespace_location(ts.oid) AS spclocation, spcoptions, pg_get_userbyid(spcowner) as spcuser, spcacl, pg_catalog.shobj_description(oid, 'pg_tablespace') AS description, (SELECT array_agg(label) FROM pg_shseclabel sl1 WHERE sl1.objoid=ts.oid) AS labels, (SELECT array_agg(provider) FROM pg_shseclabel sl2 WHERE sl2.objoid=ts.oid) AS providers FROM pg_tablespace ts
+ ORDER BY spcname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.021 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,8,"idle",2014-08-28 10:11:38 BST,2/10,0,LOG,00000,"statement: SELECT cl.oid FROM pg_class cl JOIN pg_namespace ns ON ns.oid=relnamespace
+ WHERE relname='pga_job' AND nspname='pgagent'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.022 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,9,"idle",2014-08-28 10:11:38 BST,2/11,0,LOG,00000,"statement: SELECT has_table_privilege('pg_authid', 'SELECT')",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.023 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,10,"idle",2014-08-28 10:11:38 BST,2/12,0,LOG,00000,"statement: SELECT tab.oid, tab.*, pg_catalog.shobj_description(tab.oid, 'pg_authid') AS description,
+(SELECT array_agg(label) FROM pg_shseclabel sl1 WHERE sl1.objoid=tab.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_shseclabel sl2 WHERE sl2.objoid=tab.oid) AS providers FROM pg_authid tab WHERE NOT rolcanlogin ORDER BY rolname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.024 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,11,"idle",2014-08-28 10:11:38 BST,2/13,0,LOG,00000,"statement: SELECT has_table_privilege('pg_authid', 'SELECT')",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.024 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,12,"idle",2014-08-28 10:11:38 BST,2/14,0,LOG,00000,"statement: SELECT tab.oid, tab.*, pg_catalog.shobj_description(tab.oid, 'pg_authid') AS description,
+(SELECT array_agg(label) FROM pg_shseclabel sl1 WHERE sl1.objoid=tab.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_shseclabel sl2 WHERE sl2.objoid=tab.oid) AS providers FROM pg_authid tab WHERE rolcanlogin ORDER BY rolname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.025 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,13,"idle",2014-08-28 10:11:38 BST,2/15,0,LOG,00000,"statement: SELECT setting FROM pg_settings WHERE name IN ('autovacuum', 'track_counts')",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.028 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,14,"idle",2014-08-28 10:11:38 BST,2/16,0,LOG,00000,"statement: SELECT version();",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.148 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,15,"idle",2014-08-28 10:11:38 BST,2/17,0,LOG,00000,"statement: SELECT proname, pronargs, proargtypes[0] AS arg0, proargtypes[1] AS arg1, proargtypes[2] AS arg2
+  FROM pg_proc
+  JOIN pg_namespace n ON n.oid=pronamespace
+ WHERE proname IN ('pg_tablespace_size', 'pg_file_read', 'pg_logfile_rotate', 'pg_postmaster_starttime', 'pg_terminate_backend', 'pg_reload_conf', 'pgstattuple', 'pgstatindex')
+   AND nspname IN ('pg_catalog', 'public')",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:39.151 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,16,"idle",2014-08-28 10:11:38 BST,2/18,0,LOG,00000,"statement: SELECT count(*) FROM pg_attribute WHERE attrelid = 'pg_catalog.pg_proc'::regclass AND attname = 'proargdefaults'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.273 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,17,"idle",2014-08-28 10:11:38 BST,2/19,0,LOG,00000,"statement: SELECT 1;",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.329 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,18,"idle",2014-08-28 10:11:38 BST,2/20,0,LOG,00000,"statement: SELECT rolname FROM pg_roles WHERE rolcanlogin ORDER BY 1",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.331 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,19,"idle",2014-08-28 10:11:38 BST,2/21,0,LOG,00000,"statement: SELECT name, vartype, min_val, max_val
+  FROM pg_settings WHERE context in ('user', 'superuser')",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.359 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,20,"idle",2014-08-28 10:11:38 BST,2/22,0,LOG,00000,"statement: SELECT oid, spcname FROM pg_tablespace WHERE spcname <> 'pg_global' ORDER BY spcname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.360 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,21,"idle",2014-08-28 10:11:38 BST,2/23,0,LOG,00000,"statement: SELECT current_setting('default_tablespace');",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.361 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,22,"idle",2014-08-28 10:11:38 BST,2/24,0,LOG,00000,"statement: SELECT datname FROM pg_database ORDER BY datname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.362 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,23,"idle",2014-08-28 10:11:38 BST,2/25,0,LOG,00000,"statement: select DISTINCT(datctype) from pg_database UNION SELECT DISTINCT(datcollate) from pg_database",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.365 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,24,"idle",2014-08-28 10:11:38 BST,2/26,0,LOG,00000,"statement: SELECT pg_encoding_to_char(0)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.365 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,25,"idle",2014-08-28 10:11:38 BST,2/27,0,LOG,00000,"statement: SELECT pg_encoding_to_char(1)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.366 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,26,"idle",2014-08-28 10:11:38 BST,2/28,0,LOG,00000,"statement: SELECT pg_encoding_to_char(2)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.367 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,27,"idle",2014-08-28 10:11:38 BST,2/29,0,LOG,00000,"statement: SELECT pg_encoding_to_char(3)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.367 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,28,"idle",2014-08-28 10:11:38 BST,2/30,0,LOG,00000,"statement: SELECT pg_encoding_to_char(4)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.368 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,29,"idle",2014-08-28 10:11:38 BST,2/31,0,LOG,00000,"statement: SELECT pg_encoding_to_char(5)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.369 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,30,"idle",2014-08-28 10:11:38 BST,2/32,0,LOG,00000,"statement: SELECT pg_encoding_to_char(6)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.370 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,31,"idle",2014-08-28 10:11:38 BST,2/33,0,LOG,00000,"statement: SELECT pg_encoding_to_char(7)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.370 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,32,"idle",2014-08-28 10:11:38 BST,2/34,0,LOG,00000,"statement: SELECT pg_encoding_to_char(8)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.371 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,33,"idle",2014-08-28 10:11:38 BST,2/35,0,LOG,00000,"statement: SELECT pg_encoding_to_char(9)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.372 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,34,"idle",2014-08-28 10:11:38 BST,2/36,0,LOG,00000,"statement: SELECT pg_encoding_to_char(10)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.373 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,35,"idle",2014-08-28 10:11:38 BST,2/37,0,LOG,00000,"statement: SELECT pg_encoding_to_char(11)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.373 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,36,"idle",2014-08-28 10:11:38 BST,2/38,0,LOG,00000,"statement: SELECT pg_encoding_to_char(12)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.374 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,37,"idle",2014-08-28 10:11:38 BST,2/39,0,LOG,00000,"statement: SELECT pg_encoding_to_char(13)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.375 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,38,"idle",2014-08-28 10:11:38 BST,2/40,0,LOG,00000,"statement: SELECT pg_encoding_to_char(14)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.376 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,39,"idle",2014-08-28 10:11:38 BST,2/41,0,LOG,00000,"statement: SELECT pg_encoding_to_char(15)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.376 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,40,"idle",2014-08-28 10:11:38 BST,2/42,0,LOG,00000,"statement: SELECT pg_encoding_to_char(16)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.377 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,41,"idle",2014-08-28 10:11:38 BST,2/43,0,LOG,00000,"statement: SELECT pg_encoding_to_char(17)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.378 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,42,"idle",2014-08-28 10:11:38 BST,2/44,0,LOG,00000,"statement: SELECT pg_encoding_to_char(18)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.378 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,43,"idle",2014-08-28 10:11:38 BST,2/45,0,LOG,00000,"statement: SELECT pg_encoding_to_char(19)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.379 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,44,"idle",2014-08-28 10:11:38 BST,2/46,0,LOG,00000,"statement: SELECT pg_encoding_to_char(20)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.380 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,45,"idle",2014-08-28 10:11:38 BST,2/47,0,LOG,00000,"statement: SELECT pg_encoding_to_char(21)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.381 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,46,"idle",2014-08-28 10:11:38 BST,2/48,0,LOG,00000,"statement: SELECT pg_encoding_to_char(22)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.382 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,47,"idle",2014-08-28 10:11:38 BST,2/49,0,LOG,00000,"statement: SELECT pg_encoding_to_char(23)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.383 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,48,"idle",2014-08-28 10:11:38 BST,2/50,0,LOG,00000,"statement: SELECT pg_encoding_to_char(24)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.383 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,49,"idle",2014-08-28 10:11:38 BST,2/51,0,LOG,00000,"statement: SELECT pg_encoding_to_char(25)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.384 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,50,"idle",2014-08-28 10:11:38 BST,2/52,0,LOG,00000,"statement: SELECT pg_encoding_to_char(26)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.385 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,51,"idle",2014-08-28 10:11:38 BST,2/53,0,LOG,00000,"statement: SELECT pg_encoding_to_char(27)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.386 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,52,"idle",2014-08-28 10:11:38 BST,2/54,0,LOG,00000,"statement: SELECT pg_encoding_to_char(28)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.386 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,53,"idle",2014-08-28 10:11:38 BST,2/55,0,LOG,00000,"statement: SELECT pg_encoding_to_char(29)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.387 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,54,"idle",2014-08-28 10:11:38 BST,2/56,0,LOG,00000,"statement: SELECT pg_encoding_to_char(30)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.388 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,55,"idle",2014-08-28 10:11:38 BST,2/57,0,LOG,00000,"statement: SELECT pg_encoding_to_char(31)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.388 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,56,"idle",2014-08-28 10:11:38 BST,2/58,0,LOG,00000,"statement: SELECT pg_encoding_to_char(32)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.389 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,57,"idle",2014-08-28 10:11:38 BST,2/59,0,LOG,00000,"statement: SELECT pg_encoding_to_char(33)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.389 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,58,"idle",2014-08-28 10:11:38 BST,2/60,0,LOG,00000,"statement: SELECT pg_encoding_to_char(34)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.389 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,59,"idle",2014-08-28 10:11:38 BST,2/61,0,LOG,00000,"statement: SELECT pg_encoding_to_char(35)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.389 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,60,"idle",2014-08-28 10:11:38 BST,2/62,0,LOG,00000,"statement: SELECT pg_encoding_to_char(36)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.390 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,61,"idle",2014-08-28 10:11:38 BST,2/63,0,LOG,00000,"statement: SELECT pg_encoding_to_char(37)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.390 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,62,"idle",2014-08-28 10:11:38 BST,2/64,0,LOG,00000,"statement: SELECT pg_encoding_to_char(38)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.390 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,63,"idle",2014-08-28 10:11:38 BST,2/65,0,LOG,00000,"statement: SELECT pg_encoding_to_char(39)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.390 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,64,"idle",2014-08-28 10:11:38 BST,2/66,0,LOG,00000,"statement: SELECT pg_encoding_to_char(40)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.390 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,65,"idle",2014-08-28 10:11:38 BST,2/67,0,LOG,00000,"statement: SELECT pg_encoding_to_char(41)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.391 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,66,"idle",2014-08-28 10:11:38 BST,2/68,0,LOG,00000,"statement: SELECT pg_encoding_to_char(42)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.391 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,67,"idle",2014-08-28 10:11:38 BST,2/69,0,LOG,00000,"statement: SELECT pg_encoding_to_char(encoding) FROM pg_database WHERE datname = 'template0'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.392 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,68,"idle",2014-08-28 10:11:38 BST,2/70,0,LOG,00000,"statement: SELECT groname FROM pg_group ORDER BY groname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:45.392 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,69,"idle",2014-08-28 10:11:38 BST,2/71,0,LOG,00000,"statement: SELECT rolname FROM pg_roles WHERE rolcanlogin ORDER BY 1",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:48.582 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,70,"idle",2014-08-28 10:11:38 BST,2/72,0,LOG,00000,"statement: CREATE DATABASE tom1
+  WITH ENCODING='UTF8'
+       CONNECTION LIMIT=-1;
+",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:50.647 BST,"postgres","postgres",9584,"::1:51366",53fef24a.2570,71,"idle",2014-08-28 10:11:38 BST,2/73,0,LOG,00000,"statement: SELECT db.oid, datname, db.dattablespace AS spcoid, spcname, datallowconn, datacl, pg_encoding_to_char(encoding) AS serverencoding, pg_get_userbyid(datdba) AS datowner,has_database_privilege(db.oid, 'CREATE') as cancreate, 
+current_setting('default_tablespace') AS default_tablespace, 
+descr.description
+, db.datconnlimit as connectionlimit, db.datcollate as collate, db.datctype as ctype,
+(SELECT array_agg(label) FROM pg_shseclabel sl1 WHERE sl1.objoid=db.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_shseclabel sl2 WHERE sl2.objoid=db.oid) AS providers  FROM pg_database db
+  LEFT OUTER JOIN pg_tablespace ta ON db.dattablespace=ta.OID
+  LEFT OUTER JOIN pg_shdescription descr ON (db.oid=descr.objoid AND descr.classoid='pg_database'::regclass)
+ ORDER BY datname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.330 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,1,"idle",2014-08-28 10:11:52 BST,3/4,0,LOG,00000,"statement: SELECT version();",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.330 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,2,"idle",2014-08-28 10:11:52 BST,3/5,0,LOG,00000,"statement: SET DateStyle=ISO;
+SET client_min_messages=notice;
+SET bytea_output=escape;
+SELECT oid, pg_encoding_to_char(encoding) AS encoding, datlastsysoid
+  FROM pg_database WHERE oid = 4356684",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.332 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,3,"idle",2014-08-28 10:11:52 BST,3/6,0,LOG,00000,"statement: set client_encoding to 'UNICODE'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.332 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,4,"idle",2014-08-28 10:11:52 BST,3/7,0,LOG,00000,"statement: SELECT proname FROM pg_proc WHERE proname='pg_get_viewdef' AND proargtypes[1]=16",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.333 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,5,"idle",2014-08-28 10:11:52 BST,3/8,0,LOG,00000,"statement: SHOW search_path",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.333 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,6,"idle",2014-08-28 10:11:52 BST,3/9,0,LOG,00000,"statement: SELECT nspname, session_user=nspname AS isuser FROM pg_namespace",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.333 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,7,"idle",2014-08-28 10:11:52 BST,3/10,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 0::OID AND defaclobjtype='r'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.334 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,8,"idle",2014-08-28 10:11:52 BST,3/11,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 0::OID AND defaclobjtype='S'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.334 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,9,"idle",2014-08-28 10:11:52 BST,3/12,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 0::OID AND defaclobjtype='f'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.334 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,10,"idle",2014-08-28 10:11:52 BST,3/13,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 0::OID AND defaclobjtype='T'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.336 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,11,"idle",2014-08-28 10:11:52 BST,3/14,0,LOG,00000,"statement: SELECT 2 AS nsptyp,
+       nsp.nspname, nsp.oid, pg_get_userbyid(nspowner) AS namespaceowner, nspacl, description,       FALSE as cancreate
+  FROM pg_namespace nsp
+  LEFT OUTER JOIN pg_description des ON (des.objoid=nsp.oid AND des.classoid='pg_namespace'::regclass)
+ WHERE ((nspname = 'pg_catalog' AND EXISTS (SELECT 1 FROM pg_class WHERE relname = 'pg_class' AND relnamespace = nsp.oid LIMIT 1)) OR
+(nspname = 'pgagent' AND EXISTS (SELECT 1 FROM pg_class WHERE relname = 'pga_job' AND relnamespace = nsp.oid LIMIT 1)) OR
+(nspname = 'information_schema' AND EXISTS (SELECT 1 FROM pg_class WHERE relname = 'tables' AND relnamespace = nsp.oid LIMIT 1)) OR
+(nspname LIKE '_%' AND EXISTS (SELECT 1 FROM pg_proc WHERE proname='slonyversion' AND pronamespace = nsp.oid LIMIT 1))
+)  AND nspname NOT LIKE E'pg\\_temp\\_%'AND nspname NOT LIKE E'pg\\_toast_temp\\_%' ORDER BY 1, nspname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.338 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,12,"idle",2014-08-28 10:11:52 BST,3/15,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 11480::oid AND defaclobjtype='r'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.339 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,13,"idle",2014-08-28 10:11:52 BST,3/16,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 11480::oid AND defaclobjtype='S'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.339 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,14,"idle",2014-08-28 10:11:52 BST,3/17,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 11480::oid AND defaclobjtype='f'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.339 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,15,"idle",2014-08-28 10:11:52 BST,3/18,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 11480::oid AND defaclobjtype='T'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.339 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,16,"idle",2014-08-28 10:11:52 BST,3/19,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 11::oid AND defaclobjtype='r'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.340 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,17,"idle",2014-08-28 10:11:52 BST,3/20,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 11::oid AND defaclobjtype='S'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.340 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,18,"idle",2014-08-28 10:11:52 BST,3/21,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 11::oid AND defaclobjtype='f'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.340 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,19,"idle",2014-08-28 10:11:52 BST,3/22,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 11::oid AND defaclobjtype='T'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.341 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,20,"idle",2014-08-28 10:11:52 BST,3/23,0,LOG,00000,"statement: SELECT e.oid, e.xmin, e.evtname AS name, REPLACE(e.evtevent, '_', ' ') AS eventname, pg_catalog.pg_get_userbyid(e.evtowner) AS eventowner,  CASE e.evtenabled WHEN 'O' THEN 'enabled' WHEN 'R' THEN 'replica' WHEN 'A' THEN 'always' WHEN 'D' THEN 'disabled' END AS enabled,  e.evtfoid AS eventfuncoid, e.evtfoid::regproc AS eventfunname, array_to_string(array(select quote_literal(x) from unnest(evttags) as t(x)), ', ') AS when,  pg_catalog.obj_description(e.oid, 'pg_event_trigger') AS comment,  p.prosrc AS source, p.pronamespace AS schemaoid, l.lanname AS language FROM pg_event_trigger e
+ LEFT OUTER JOIN pg_proc p ON p.oid=e.evtfoid
+ LEFT OUTER JOIN pg_language l ON l.oid=p.prolang
+ WHERE 1=1  ORDER BY e.evtname ",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.343 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,21,"idle",2014-08-28 10:11:52 BST,3/24,0,LOG,00000,"statement: select x.oid, pg_get_userbyid(extowner) AS owner, x.extname, n.nspname, x.extrelocatable, x.extversion, e.comment  FROM pg_extension x
+  JOIN pg_namespace n on x.extnamespace=n.oid
+  join pg_available_extensions() e(name, default_version, comment) ON x.extname=e.name
+
+ ORDER BY x.extname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.355 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,22,"idle",2014-08-28 10:11:52 BST,3/25,0,LOG,00000,"statement: SELECT CASE WHEN nspname LIKE E'pg\\_temp\\_%' THEN 1
+            WHEN (nspname LIKE E'pg\\_%') THEN 0
+            ELSE 3 END AS nsptyp,
+       nsp.nspname, nsp.oid, pg_get_userbyid(nspowner) AS namespaceowner, nspacl, description,       has_schema_privilege(nsp.oid, 'CREATE') as cancreate,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=nsp.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=nsp.oid) AS providers
+  FROM pg_namespace nsp
+  LEFT OUTER JOIN pg_description des ON (des.objoid=nsp.oid AND des.classoid='pg_namespace'::regclass)
+ WHERE NOT ((nspname = 'pg_catalog' AND EXISTS (SELECT 1 FROM pg_class WHERE relname = 'pg_class' AND relnamespace = nsp.oid LIMIT 1)) OR
+(nspname = 'pgagent' AND EXISTS (SELECT 1 FROM pg_class WHERE relname = 'pga_job' AND relnamespace = nsp.oid LIMIT 1)) OR
+(nspname = 'information_schema' AND EXISTS (SELECT 1 FROM pg_class WHERE relname = 'tables' AND relnamespace = nsp.oid LIMIT 1)) OR
+(nspname LIKE '_%' AND EXISTS (SELECT 1 FROM pg_proc WHERE proname='slonyversion' AND pronamespace = nsp.oid LIMIT 1))
+)  AND nspname NOT LIKE E'pg\\_temp\\_%'AND nspname NOT LIKE E'pg\\_toast_temp\\_%' ORDER BY 1, nspname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.367 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,23,"idle",2014-08-28 10:11:52 BST,3/26,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 2200::oid AND defaclobjtype='r'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.367 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,24,"idle",2014-08-28 10:11:52 BST,3/27,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 2200::oid AND defaclobjtype='S'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.367 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,25,"idle",2014-08-28 10:11:52 BST,3/28,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 2200::oid AND defaclobjtype='f'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.368 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,26,"idle",2014-08-28 10:11:52 BST,3/29,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 2200::oid AND defaclobjtype='T'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.368 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,27,"idle",2014-08-28 10:11:52 BST,3/30,0,LOG,00000,"statement: SELECT nsp.oid, substr(nspname, 2) as clustername, nspname, pg_get_userbyid(nspowner) AS namespaceowner, description
+  FROM pg_namespace nsp
+  LEFT OUTER JOIN pg_description des ON des.objoid=nsp.oid
+  JOIN pg_proc pro ON pronamespace=nsp.oid AND proname = 'slonyversion'
+ ORDER BY nspname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.369 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,28,"idle",2014-08-28 10:11:52 BST,3/31,0,LOG,00000,"statement: SELECT COUNT(*) FROM
+   (SELECT tgargs from pg_trigger tr
+      LEFT JOIN pg_depend dep ON dep.objid=tr.oid AND deptype = 'i'
+      LEFT JOIN pg_constraint co ON refobjid = co.oid AND contype = 'f'
+     WHERE 
+tgisinternal
+     AND co.oid IS NULL
+     GROUP BY tgargs
+    HAVING count(1) = 3) AS foo",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:52.371 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,29,"idle",2014-08-28 10:11:52 BST,3/32,0,LOG,00000,"statement: WITH configs AS (SELECT rolname, unnest(setconfig) AS config FROM pg_db_role_setting s LEFT JOIN pg_roles r ON r.oid=s.setrole WHERE s.setdatabase=4356684)
+SELECT rolname, split_part(config, '=', 1) AS variable,        replace(config, split_part(config, '=', 1) || '=', '') AS value
+FROM configs",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:56.170 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,30,"idle",2014-08-28 10:11:52 BST,3/33,0,LOG,00000,"statement: SELECT 1;",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:56.197 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,31,"idle",2014-08-28 10:11:52 BST,3/34,0,LOG,00000,"statement: SELECT groname FROM pg_group ORDER BY groname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:56.197 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,32,"idle",2014-08-28 10:11:52 BST,3/35,0,LOG,00000,"statement: SELECT rolname FROM pg_roles WHERE rolcanlogin ORDER BY 1",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.443 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,33,"idle",2014-08-28 10:11:52 BST,3/36,0,LOG,00000,"statement: CREATE SCHEMA schemey;
+",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.447 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,34,"idle",2014-08-28 10:11:52 BST,3/37,0,LOG,00000,"statement: SELECT CASE WHEN nspname LIKE E'pg\\_temp\\_%' THEN 1
+            WHEN (nspname LIKE E'pg\\_%') THEN 0
+            ELSE 3 END AS nsptyp,
+       nsp.nspname, nsp.oid, pg_get_userbyid(nspowner) AS namespaceowner, nspacl, description,       has_schema_privilege(nsp.oid, 'CREATE') as cancreate,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=nsp.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=nsp.oid) AS providers
+  FROM pg_namespace nsp
+  LEFT OUTER JOIN pg_description des ON (des.objoid=nsp.oid AND des.classoid='pg_namespace'::regclass)
+ WHERE NOT ((nspname = 'pg_catalog' AND EXISTS (SELECT 1 FROM pg_class WHERE relname = 'pg_class' AND relnamespace = nsp.oid LIMIT 1)) OR
+(nspname = 'pgagent' AND EXISTS (SELECT 1 FROM pg_class WHERE relname = 'pga_job' AND relnamespace = nsp.oid LIMIT 1)) OR
+(nspname = 'information_schema' AND EXISTS (SELECT 1 FROM pg_class WHERE relname = 'tables' AND relnamespace = nsp.oid LIMIT 1)) OR
+(nspname LIKE '_%' AND EXISTS (SELECT 1 FROM pg_proc WHERE proname='slonyversion' AND pronamespace = nsp.oid LIMIT 1))
+)  AND nspname NOT LIKE E'pg\\_temp\\_%'AND nspname NOT LIKE E'pg\\_toast_temp\\_%' ORDER BY 1, nspname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.456 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,35,"idle",2014-08-28 10:11:52 BST,3/38,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 2200::oid AND defaclobjtype='r'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.456 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,36,"idle",2014-08-28 10:11:52 BST,3/39,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 2200::oid AND defaclobjtype='S'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.456 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,37,"idle",2014-08-28 10:11:52 BST,3/40,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 2200::oid AND defaclobjtype='f'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.457 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,38,"idle",2014-08-28 10:11:52 BST,3/41,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 2200::oid AND defaclobjtype='T'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.457 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,39,"idle",2014-08-28 10:11:52 BST,3/42,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 4356685::oid AND defaclobjtype='r'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.457 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,40,"idle",2014-08-28 10:11:52 BST,3/43,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 4356685::oid AND defaclobjtype='S'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.457 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,41,"idle",2014-08-28 10:11:52 BST,3/44,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 4356685::oid AND defaclobjtype='f'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:11:59.458 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,42,"idle",2014-08-28 10:11:52 BST,3/45,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 4356685::oid AND defaclobjtype='T'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.446 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,43,"idle",2014-08-28 10:11:52 BST,3/46,0,LOG,00000,"statement: SELECT c.oid, c.collname, c.collcollate, c.collctype, 
+       pg_get_userbyid(c.collowner) as cowner, description
+  FROM pg_collation c
+  JOIN pg_namespace n ON n.oid=c.collnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=c.oid AND des.classoid='pg_collation'::regclass)
+ WHERE c.collnamespace = 4356685::oid
+ ORDER BY c.collname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.447 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,44,"idle",2014-08-28 10:11:52 BST,3/47,0,LOG,00000,"statement: SELECT d.oid, d.typname as domname, d.typbasetype, format_type(b.oid,NULL) as basetype, pg_get_userbyid(d.typowner) as domainowner, 
+c.oid AS colloid, c.collname, cn.nspname as collnspname, 
+       d.typlen, d.typtypmod, d.typnotnull, d.typdefault, d.typndims, d.typdelim, bn.nspname as basensp,
+       description, (SELECT COUNT(1) FROM pg_type t2 WHERE t2.typname=d.typname) > 1 AS domisdup,
+       (SELECT COUNT(1) FROM pg_type t3 WHERE t3.typname=b.typname) > 1 AS baseisdup,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=d.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=d.oid) AS providers
+   FROM pg_type d
+  JOIN pg_type b ON b.oid = d.typbasetype
+  JOIN pg_namespace bn ON bn.oid=b.typnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=d.oid AND des.classoid='pg_type'::regclass)
+  LEFT OUTER JOIN pg_collation c ON d.typcollation=c.oid
+  LEFT OUTER JOIN pg_namespace cn ON c.collnamespace=cn.oid
+ WHERE d.typtype = 'd' AND d.typnamespace = 4356685::oid
+ ORDER BY d.typname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.455 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,45,"idle",2014-08-28 10:11:52 BST,3/48,0,LOG,00000,"statement: SELECT cfg.oid, cfg.cfgname, pg_get_userbyid(cfg.cfgowner) as cfgowner, cfg.cfgparser, parser.prsname as parsername, description
+  FROM pg_ts_config cfg
+  LEFT OUTER JOIN pg_ts_parser parser ON parser.oid=cfg.cfgparser
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cfg.oid AND des.classoid='pg_ts_config'::regclass)
+ WHERE cfg.cfgnamespace = 4356685::oid
+ ORDER BY cfg.cfgname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.456 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,46,"idle",2014-08-28 10:11:52 BST,3/49,0,LOG,00000,"statement: SELECT dict.oid, dict.dictname, pg_get_userbyid(dict.dictowner) as dictowner, t.tmplname, dict.dictinitoption, description
+  FROM pg_ts_dict dict
+  LEFT OUTER JOIN pg_ts_template t ON t.oid=dict.dicttemplate
+  LEFT OUTER JOIN pg_description des ON (des.objoid=dict.oid AND des.classoid='pg_ts_dict'::regclass)
+ WHERE dict.dictnamespace = 4356685::oid
+ ORDER BY dict.dictname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.457 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,47,"idle",2014-08-28 10:11:52 BST,3/50,0,LOG,00000,"statement: SELECT prs.oid, prs.prsname, prs.prsstart, prs.prstoken, prs.prsend, prs.prslextype, prs.prsheadline, description
+  FROM pg_ts_parser prs
+  LEFT OUTER JOIN pg_description des ON (des.objoid=prs.oid AND des.classoid='pg_ts_parser'::regclass)
+ WHERE prs.prsnamespace = 4356685::oid
+ ORDER BY prs.prsname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.458 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,48,"idle",2014-08-28 10:11:52 BST,3/51,0,LOG,00000,"statement: SELECT tmpl.oid, tmpl.tmplname, tmpl.tmplinit, tmpl.tmpllexize, description
+  FROM pg_ts_template tmpl
+  LEFT OUTER JOIN pg_description des ON (des.objoid=tmpl.oid AND des.classoid='pg_ts_template'::regclass)
+ WHERE tmpl.tmplnamespace = 4356685::oid
+ ORDER BY tmpl.tmplname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.458 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,49,"idle",2014-08-28 10:11:52 BST,3/52,0,LOG,00000,"statement: SELECT proname, pronargs, proargtypes[0] AS arg0, proargtypes[1] AS arg1, proargtypes[2] AS arg2
+  FROM pg_proc
+  JOIN pg_namespace n ON n.oid=pronamespace
+ WHERE proname IN ('pg_tablespace_size', 'pg_file_read', 'pg_logfile_rotate', 'pg_postmaster_starttime', 'pg_terminate_backend', 'pg_reload_conf', 'pgstattuple', 'pgstatindex')
+   AND nspname IN ('pg_catalog', 'public')",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.459 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,50,"idle",2014-08-28 10:11:52 BST,3/53,0,LOG,00000,"statement: SELECT count(*) FROM pg_attribute WHERE attrelid = 'pg_catalog.pg_proc'::regclass AND attname = 'proargdefaults'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.459 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,51,"idle",2014-08-28 10:11:52 BST,3/54,0,LOG,00000,"statement: SELECT pr.oid, pr.xmin, pr.*, format_type(TYP.oid, NULL) AS typname, typns.nspname AS typnsp, lanname, proargnames, pg_get_expr(proargdefaults, 'pg_catalog.pg_class'::regclass) AS proargdefaultvals, pronargdefaults, proconfig,        pg_get_userbyid(proowner) as funcowner, description,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=pr.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=pr.oid) AS providers
+  FROM pg_proc pr
+  JOIN pg_type typ ON typ.oid=prorettype
+  JOIN pg_namespace typns ON typns.oid=typ.typnamespace
+  JOIN pg_language lng ON lng.oid=prolang
+  LEFT OUTER JOIN pg_description des ON (des.objoid=pr.oid AND des.classoid='pg_proc'::regclass)
+ WHERE proisagg = FALSE AND pronamespace = 4356685::oid
+   AND typname NOT IN ('trigger', 'event_trigger') 
+ ORDER BY proname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.470 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,52,"idle",2014-08-28 10:11:52 BST,3/55,0,LOG,00000,"statement: SELECT oid, format_type(oid, NULL) AS typname FROM pg_type",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.475 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,53,"idle",2014-08-28 10:11:52 BST,3/56,0,LOG,00000,"statement: SELECT cl.oid, relname, pg_get_userbyid(relowner) AS seqowner, relacl, description,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=cl.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=cl.oid) AS providers
+  FROM pg_class cl
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cl.oid AND des.classoid='pg_class'::regclass)
+ WHERE relkind = 'S' AND relnamespace  = 4356685::oid
+ ORDER BY relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.483 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,54,"idle",2014-08-28 10:11:52 BST,3/57,0,LOG,00000,"statement: SELECT rel.oid, rel.relname, rel.reltablespace AS spcoid, spc.spcname, pg_get_userbyid(rel.relowner) AS relowner, rel.relacl, rel.relhasoids, rel.relhassubclass, rel.reltuples, des.description, con.conname, con.conkey,
+       EXISTS(select 1 FROM pg_trigger
+                       JOIN pg_proc pt ON pt.oid=tgfoid AND pt.proname='logtrigger'
+                       JOIN pg_proc pc ON pc.pronamespace=pt.pronamespace AND pc.proname='slonyversion'
+                     WHERE tgrelid=rel.oid) AS isrepl,
+       (select count(*) FROM pg_trigger
+                     WHERE tgrelid=rel.oid AND tgisinternal = FALSE) AS triggercount
+, rel.relpersistence 
+, substring(array_to_string(rel.reloptions, ',') FROM 'fillfactor=([0-9]*)') AS fillfactor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS autovacuum_enabled 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS autovacuum_vacuum_threshold 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_vacuum_scale_factor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS autovacuum_analyze_threshold 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_analyze_scale_factor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS autovacuum_vacuum_cost_delay 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS autovacuum_vacuum_cost_limit 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS autovacuum_freeze_min_age 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS autovacuum_freeze_max_age 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS autovacuum_freeze_table_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS toast_autovacuum_enabled 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS toast_autovacuum_vacuum_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_vacuum_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS toast_autovacuum_analyze_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_analyze_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS toast_autovacuum_vacuum_cost_delay 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS toast_autovacuum_vacuum_cost_limit 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS toast_autovacuum_freeze_min_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS toast_autovacuum_freeze_max_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS toast_autovacuum_freeze_table_age 
+, rel.reloptions AS reloptions, tst.reloptions AS toast_reloptions 
+, (CASE WHEN rel.reltoastrelid = 0 THEN false ELSE true END) AS hastoasttable
+, rel.reloftype, typ.typname
+,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=rel.oid AND sl1.objsubid=0) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=rel.oid AND sl2.objsubid=0) AS providers  FROM pg_class rel
+  LEFT OUTER JOIN pg_tablespace spc on spc.oid=rel.reltablespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=rel.oid AND des.objsubid=0 AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_constraint con ON con.conrelid=rel.oid AND con.contype='p'
+  LEFT OUTER JOIN pg_class tst ON tst.oid = rel.reltoastrelid
+LEFT JOIN pg_type typ ON rel.reloftype=typ.oid
+ WHERE rel.relkind IN ('r','s','t') AND rel.relnamespace = 4356685::oid
+ ORDER BY rel.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.491 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,55,"idle",2014-08-28 10:11:52 BST,3/58,0,LOG,00000,"statement: SELECT pr.oid, pr.xmin, pr.*, format_type(TYP.oid, NULL) AS typname, typns.nspname AS typnsp, lanname, proargnames, pg_get_expr(proargdefaults, 'pg_catalog.pg_class'::regclass) AS proargdefaultvals, pronargdefaults, proconfig,        pg_get_userbyid(proowner) as funcowner, description,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=pr.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=pr.oid) AS providers
+  FROM pg_proc pr
+  JOIN pg_type typ ON typ.oid=prorettype
+  JOIN pg_namespace typns ON typns.oid=typ.typnamespace
+  JOIN pg_language lng ON lng.oid=prolang
+  LEFT OUTER JOIN pg_description des ON (des.objoid=pr.oid AND des.classoid='pg_proc'::regclass)
+ WHERE proisagg = FALSE AND pronamespace = 4356685::oid
+AND (typname IN ('trigger', 'event_trigger') 
+AND lanname NOT IN ('edbspl', 'sql', 'internal')) ORDER BY proname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.498 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,56,"idle",2014-08-28 10:11:52 BST,3/59,0,LOG,00000,"statement: SELECT oid, format_type(oid, NULL) AS typname FROM pg_type",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.500 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,57,"idle",2014-08-28 10:11:52 BST,3/60,0,LOG,00000,"statement: SELECT t.oid, t.*, format_type(t.oid, null) AS alias,
+pg_get_userbyid(t.typowner) as typeowner, e.typname as element,
+description, ct.oid AS taboid,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=t.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=t.oid) AS providers
+  FROM pg_type t
+  LEFT OUTER JOIN pg_type e ON e.oid=t.typelem
+  LEFT OUTER JOIN pg_class ct ON ct.oid=t.typrelid AND ct.relkind <> 'c'
+  LEFT OUTER JOIN pg_description des ON (des.objoid=t.oid AND des.classoid='pg_type'::regclass)
+ WHERE t.typtype != 'd' AND t.typname NOT LIKE E'\\_%' AND t.typnamespace = 4356685::oid
+   AND ct.oid IS NULL
+ ORDER BY t.typname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.508 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,58,"idle",2014-08-28 10:11:52 BST,3/61,0,LOG,00000,"statement: SELECT c.oid, c.xmin, c.relname,c.reltablespace AS spcoid, c.relkind, c.relispopulated AS ispopulated,spc.spcname, pg_get_userbyid(c.relowner) AS viewowner, c.relacl, description, pg_get_viewdef(c.oid, true) AS definition,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=c.oid AND sl1.objsubid=0) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=c.oid AND sl2.objsubid=0) AS providers,
+substring(array_to_string(c.reloptions, ',') FROM 'security_barrier=([a-z|0-9]*)') AS security_barrier, substring(array_to_string(c.reloptions, ',') FROM 'fillfactor=([0-9]*)') AS fillfactor 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS autovacuum_enabled 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS autovacuum_vacuum_threshold 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_vacuum_scale_factor 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS autovacuum_analyze_threshold 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_analyze_scale_factor 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS autovacuum_vacuum_cost_delay 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS autovacuum_vacuum_cost_limit 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS autovacuum_freeze_min_age 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS autovacuum_freeze_max_age 
+, substring(array_to_string(c.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS autovacuum_freeze_table_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS toast_autovacuum_enabled 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS toast_autovacuum_vacuum_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_vacuum_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS toast_autovacuum_analyze_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_analyze_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS toast_autovacuum_vacuum_cost_delay 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS toast_autovacuum_vacuum_cost_limit 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS toast_autovacuum_freeze_min_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS toast_autovacuum_freeze_max_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS toast_autovacuum_freeze_table_age 
+, c.reloptions AS reloptions, tst.reloptions AS toast_reloptions 
+, (CASE WHEN c.reltoastrelid = 0 THEN false ELSE true END) AS hastoasttable
+
+  FROM pg_class c
+  LEFT OUTER JOIN pg_tablespace spc on spc.oid=c.reltablespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=c.oid and des.objsubid=0 AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_class tst ON tst.oid = c.reltoastrelid
+ WHERE ((c.relhasrules AND (EXISTS (
+           SELECT r.rulename FROM pg_rewrite r
+            WHERE ((r.ev_class = c.oid)
+              AND (bpchar(r.ev_type) = '1'::bpchar)) ))) OR (c.relkind = 'v'::char))
+   AND c.relnamespace = 4356685::oid
+ ORDER BY relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.516 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,59,"idle",2014-08-28 10:11:52 BST,3/62,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 4356685::oid AND defaclobjtype='r'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.517 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,60,"idle",2014-08-28 10:11:52 BST,3/63,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 4356685::oid AND defaclobjtype='S'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.517 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,61,"idle",2014-08-28 10:11:52 BST,3/64,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 4356685::oid AND defaclobjtype='f'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:00.517 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,62,"idle",2014-08-28 10:11:52 BST,3/65,0,LOG,00000,"statement: SELECT defaclacl FROM pg_catalog.pg_default_acl dacl WHERE dacl.defaclnamespace = 4356685::oid AND defaclobjtype='T'",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:08.735 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,63,"idle",2014-08-28 10:11:52 BST,3/66,0,LOG,00000,"statement: SELECT rel.oid, rel.relname, rel.reltablespace AS spcoid, spc.spcname, pg_get_userbyid(rel.relowner) AS relowner, rel.relacl, rel.relhasoids, rel.relhassubclass, rel.reltuples, des.description, con.conname, con.conkey,
+       EXISTS(select 1 FROM pg_trigger
+                       JOIN pg_proc pt ON pt.oid=tgfoid AND pt.proname='logtrigger'
+                       JOIN pg_proc pc ON pc.pronamespace=pt.pronamespace AND pc.proname='slonyversion'
+                     WHERE tgrelid=rel.oid) AS isrepl,
+       (select count(*) FROM pg_trigger
+                     WHERE tgrelid=rel.oid AND tgisinternal = FALSE) AS triggercount
+, rel.relpersistence 
+, substring(array_to_string(rel.reloptions, ',') FROM 'fillfactor=([0-9]*)') AS fillfactor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS autovacuum_enabled 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS autovacuum_vacuum_threshold 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_vacuum_scale_factor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS autovacuum_analyze_threshold 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_analyze_scale_factor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS autovacuum_vacuum_cost_delay 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS autovacuum_vacuum_cost_limit 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS autovacuum_freeze_min_age 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS autovacuum_freeze_max_age 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS autovacuum_freeze_table_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS toast_autovacuum_enabled 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS toast_autovacuum_vacuum_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_vacuum_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS toast_autovacuum_analyze_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_analyze_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS toast_autovacuum_vacuum_cost_delay 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS toast_autovacuum_vacuum_cost_limit 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS toast_autovacuum_freeze_min_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS toast_autovacuum_freeze_max_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS toast_autovacuum_freeze_table_age 
+, rel.reloptions AS reloptions, tst.reloptions AS toast_reloptions 
+, (CASE WHEN rel.reltoastrelid = 0 THEN false ELSE true END) AS hastoasttable
+, rel.reloftype, typ.typname
+,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=rel.oid AND sl1.objsubid=0) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=rel.oid AND sl2.objsubid=0) AS providers  FROM pg_class rel
+  LEFT OUTER JOIN pg_tablespace spc on spc.oid=rel.reltablespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=rel.oid AND des.objsubid=0 AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_constraint con ON con.conrelid=rel.oid AND con.contype='p'
+  LEFT OUTER JOIN pg_class tst ON tst.oid = rel.reltoastrelid
+LEFT JOIN pg_type typ ON rel.reloftype=typ.oid
+ WHERE rel.relkind IN ('r','s','t') AND rel.relnamespace = 4356685::oid
+ ORDER BY rel.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:09.917 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,64,"idle",2014-08-28 10:11:52 BST,3/67,0,LOG,00000,"statement: SELECT 1;",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:09.993 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,65,"idle",2014-08-28 10:11:52 BST,3/68,0,LOG,00000,"statement: SELECT oid, spcname FROM pg_tablespace WHERE spcname <> 'pg_global' ORDER BY spcname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:09.994 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,66,"idle",2014-08-28 10:11:52 BST,3/69,0,LOG,00000,"statement: SELECT * FROM (SELECT format_type(t.oid,NULL) AS typname, CASE WHEN typelem > 0 THEN typelem ELSE t.oid END as elemoid, typlen, typtype, t.oid, nspname,
+       (SELECT COUNT(1) FROM pg_type t2 WHERE t2.typname = t.typname) > 1 AS isdup
+  FROM pg_type t
+  JOIN pg_namespace nsp ON typnamespace=nsp.oid
+ WHERE (NOT (typname = 'unknown' AND nspname = 'pg_catalog')) AND typisdefined AND typtype IN ('b', 'c', 'd', 'e', 'r')AND NOT EXISTS (select 1 from pg_class where relnamespace=typnamespace and relname = typname and relkind != 'c') AND (typname not like '_%' OR NOT EXISTS (select 1 from pg_class where relnamespace=typnamespace and relname = substring(typname from 2)::name and relkind != 'c'))  AND nsp.nspname != 'information_schema'
+ UNION SELECT 'smallserial', 0, 2, 'b', 0, 'pg_catalog', false
+ UNION SELECT 'bigserial', 0, 8, 'b', 0, 'pg_catalog', false
+ UNION SELECT 'serial', 0, 4, 'b', 0, 'pg_catalog', false
+  ) AS dummy ORDER BY nspname <> 'pg_catalog', nspname <> 'public', nspname, 1",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:10.000 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,67,"idle",2014-08-28 10:11:52 BST,3/70,0,LOG,00000,"statement: SELECT t.oid, t.typname FROM pg_type t, pg_namespace n WHERE t.typtype='c' AND t.typnamespace=n.oid AND NOT (n.nspname like 'pg_%' OR n.nspname='information_schema') ORDER BY typname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:10.001 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,68,"idle",2014-08-28 10:11:52 BST,3/71,0,LOG,00000,"statement: SELECT nspname FROM pg_namespace nsp
+  JOIN pg_proc pr ON pronamespace=nsp.oid
+ WHERE proname IN ('slonyversion')",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:10.001 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,69,"idle",2014-08-28 10:11:52 BST,3/72,0,LOG,00000,"statement: SELECT c.oid, quote_ident(n.nspname)||'.'||quote_ident(c.relname) FROM pg_class c, pg_namespace n WHERE c.relnamespace=n.oid AND c.relkind IN ('r', 'v', 'f') AND (n.nspname NOT LIKE E'pg\_%' AND n.nspname NOT in ('information_schema')) ORDER BY 1",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:10.002 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,70,"idle",2014-08-28 10:11:52 BST,3/73,0,LOG,00000,"statement: SELECT c.oid, c.relname , nspname
+  FROM pg_class c
+  JOIN pg_namespace n ON n.oid=c.relnamespace
+ WHERE relkind='r'
+   AND (n.nspname NOT LIKE E'pg\_%' AND n.nspname NOT in ('information_schema')) ORDER BY relnamespace, c.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:10.004 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,71,"idle",2014-08-28 10:11:52 BST,3/74,0,LOG,00000,"statement: SELECT name, setting FROM pg_settings WHERE name like '%vacuum%' ORDER BY name",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:10.022 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,72,"idle",2014-08-28 10:11:52 BST,3/75,0,LOG,00000,"statement: SELECT groname FROM pg_group ORDER BY groname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:10.022 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,73,"idle",2014-08-28 10:11:52 BST,3/76,0,LOG,00000,"statement: SELECT rolname FROM pg_roles WHERE rolcanlogin ORDER BY 1",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:10.042 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,74,"idle",2014-08-28 10:11:52 BST,3/77,0,LOG,00000,"statement: SELECT nspname FROM pg_namespace WHERE nspname NOT LIKE E'pg\\_%' AND nspname != 'information_schema' ORDER BY nspname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:21.462 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,75,"idle",2014-08-28 10:11:52 BST,3/78,0,LOG,00000,"statement: SELECT nspname, collname
+  FROM pg_collation c, pg_namespace n
+  WHERE c.collnamespace=n.oid
+  ORDER BY nspname, collname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:27.838 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,76,"idle",2014-08-28 10:11:52 BST,3/79,0,LOG,00000,"statement: SELECT nspname, collname
+  FROM pg_collation c, pg_namespace n
+  WHERE c.collnamespace=n.oid
+  ORDER BY nspname, collname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:42.415 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,77,"idle",2014-08-28 10:11:52 BST,3/80,0,LOG,00000,"statement: SELECT nspname, collname
+  FROM pg_collation c, pg_namespace n
+  WHERE c.collnamespace=n.oid
+  ORDER BY nspname, collname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:12:53.147 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,78,"idle",2014-08-28 10:11:52 BST,3/81,0,LOG,00000,"statement: SELECT nspname, collname
+  FROM pg_collation c, pg_namespace n
+  WHERE c.collnamespace=n.oid
+  ORDER BY nspname, collname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:13:07.736 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,79,"idle",2014-08-28 10:11:52 BST,3/82,0,LOG,00000,"statement: SELECT oid, spcname FROM pg_tablespace WHERE spcname <> 'pg_global' ORDER BY spcname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:13:07.738 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,80,"idle",2014-08-28 10:11:52 BST,3/83,0,LOG,00000,"statement: SELECT oid, amname FROM pg_am WHERE EXISTS (SELECT 1 FROM pg_proc WHERE oid=amgettuple) ORDER BY amname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:13:13.882 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,81,"idle",2014-08-28 10:11:52 BST,3/84,0,LOG,00000,"statement: SELECT DISTINCT oprname FROM pg_operator 
+WHERE (    oprleft=25 OR oprright=25) AND oprcom > 0 
+ORDER BY oprname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:13:13.893 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,82,"idle",2014-08-28 10:11:52 BST,3/85,0,LOG,00000,"statement: SELECT opcname FROM pg_opclass WHERE opcmethod=403 AND NOT opcdefault ORDER BY 1",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:13:14.986 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,83,"idle",2014-08-28 10:11:52 BST,3/86,0,LOG,00000,"statement: SELECT DISTINCT oprname FROM pg_operator 
+WHERE (    oprleft=23 OR oprright=23) AND oprcom > 0 
+ORDER BY oprname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:13:14.996 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,84,"idle",2014-08-28 10:11:52 BST,3/87,0,LOG,00000,"statement: SELECT opcname FROM pg_opclass WHERE opcmethod=403 AND NOT opcdefault ORDER BY 1",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:13:17.473 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,85,"idle",2014-08-28 10:11:52 BST,3/88,0,LOG,00000,"statement: CREATE TABLE schemey.ttt
+(
+   id integer, 
+   name text, 
+   ""number"" integer, 
+   PRIMARY KEY (id)
+) 
+WITH (
+  OIDS = FALSE
+)
+;
+",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:13:17.493 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,86,"idle",2014-08-28 10:11:52 BST,3/89,0,LOG,00000,"statement: SELECT rel.oid, rel.relname, rel.reltablespace AS spcoid, spc.spcname, pg_get_userbyid(rel.relowner) AS relowner, rel.relacl, rel.relhasoids, rel.relhassubclass, rel.reltuples, des.description, con.conname, con.conkey,
+       EXISTS(select 1 FROM pg_trigger
+                       JOIN pg_proc pt ON pt.oid=tgfoid AND pt.proname='logtrigger'
+                       JOIN pg_proc pc ON pc.pronamespace=pt.pronamespace AND pc.proname='slonyversion'
+                     WHERE tgrelid=rel.oid) AS isrepl,
+       (select count(*) FROM pg_trigger
+                     WHERE tgrelid=rel.oid AND tgisinternal = FALSE) AS triggercount
+, rel.relpersistence 
+, substring(array_to_string(rel.reloptions, ',') FROM 'fillfactor=([0-9]*)') AS fillfactor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS autovacuum_enabled 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS autovacuum_vacuum_threshold 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_vacuum_scale_factor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS autovacuum_analyze_threshold 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_analyze_scale_factor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS autovacuum_vacuum_cost_delay 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS autovacuum_vacuum_cost_limit 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS autovacuum_freeze_min_age 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS autovacuum_freeze_max_age 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS autovacuum_freeze_table_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS toast_autovacuum_enabled 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS toast_autovacuum_vacuum_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_vacuum_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS toast_autovacuum_analyze_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_analyze_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS toast_autovacuum_vacuum_cost_delay 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS toast_autovacuum_vacuum_cost_limit 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS toast_autovacuum_freeze_min_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS toast_autovacuum_freeze_max_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS toast_autovacuum_freeze_table_age 
+, rel.reloptions AS reloptions, tst.reloptions AS toast_reloptions 
+, (CASE WHEN rel.reltoastrelid = 0 THEN false ELSE true END) AS hastoasttable
+, rel.reloftype, typ.typname
+,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=rel.oid AND sl1.objsubid=0) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=rel.oid AND sl2.objsubid=0) AS providers  FROM pg_class rel
+  LEFT OUTER JOIN pg_tablespace spc on spc.oid=rel.reltablespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=rel.oid AND des.objsubid=0 AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_constraint con ON con.conrelid=rel.oid AND con.contype='p'
+  LEFT OUTER JOIN pg_class tst ON tst.oid = rel.reltoastrelid
+LEFT JOIN pg_type typ ON rel.reloftype=typ.oid
+ WHERE rel.relkind IN ('r','s','t') AND rel.relnamespace = 4356685::oid
+ ORDER BY rel.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:13:46.094 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,1,"idle",2014-08-28 10:13:46 BST,4/8,0,LOG,00000,"statement: SELECT version();",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:13:46.094 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,2,"idle",2014-08-28 10:13:46 BST,4/9,0,LOG,00000,"statement: SET DateStyle=ISO;
+SET client_min_messages=notice;
+SET bytea_output=escape;
+SELECT oid, pg_encoding_to_char(encoding) AS encoding, datlastsysoid
+  FROM pg_database WHERE oid = 4356684",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:13:46.095 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,3,"idle",2014-08-28 10:13:46 BST,4/10,0,LOG,00000,"statement: set client_encoding to 'UNICODE'",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:00.531 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,4,"idle",2014-08-28 10:13:46 BST,4/11,0,LOG,00000,"statement: INSERT INTO ttt VALUES (2,""bob"", 65)",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:00.534 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,5,"INSERT",2014-08-28 10:13:46 BST,4/11,0,ERROR,42P00,"relation ""ttt"" does not exist",,,,,,"INSERT INTO ttt VALUES (2,""bob"", 65)",13,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:08.180 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,6,"idle",2014-08-28 10:13:46 BST,4/12,0,LOG,00000,"statement: INSERT INTO schemey.ttt VALUES (2,""bob"", 65)",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:08.180 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,7,"INSERT",2014-08-28 10:13:46 BST,4/12,0,ERROR,42700,"column ""bob"" does not exist",,,,,,"INSERT INTO schemey.ttt VALUES (2,""bob"", 65)",35,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:18.029 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,8,"idle",2014-08-28 10:13:46 BST,4/13,0,LOG,00000,"statement: INSERT INTO schemey.ttt VALUES (2, 'bob', 65)",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:25.242 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,9,"idle",2014-08-28 10:13:46 BST,4/14,0,LOG,00000,"statement: INSERT INTO schemey.ttt VALUES (3, 'tim', 95)",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:35.655 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,10,"idle",2014-08-28 10:13:46 BST,4/15,0,LOG,00000,"statement: INSERT INTO schemey.ttt VALUES (9, 'joe', 85)",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:45.064 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,11,"idle",2014-08-28 10:13:46 BST,4/16,0,LOG,00000,"statement: SELECT * FROM schemey.ttt;",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:45.080 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,12,"idle",2014-08-28 10:13:46 BST,4/17,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:45.081 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,13,"idle",2014-08-28 10:13:46 BST,4/18,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:45.081 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,14,"idle",2014-08-28 10:13:46 BST,4/19,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:45.081 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,15,"idle",2014-08-28 10:13:46 BST,4/20,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:45.082 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,16,"idle",2014-08-28 10:13:46 BST,4/21,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:45.082 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,17,"idle",2014-08-28 10:13:46 BST,4/22,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:46.546 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,18,"idle",2014-08-28 10:13:46 BST,4/23,0,LOG,00000,"statement: SELECT * FROM schemey.ttt;",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:46.561 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,19,"idle",2014-08-28 10:13:46 BST,4/24,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:46.561 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,20,"idle",2014-08-28 10:13:46 BST,4/25,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:46.562 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,21,"idle",2014-08-28 10:13:46 BST,4/26,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:46.562 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,22,"idle",2014-08-28 10:13:46 BST,4/27,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:46.562 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,23,"idle",2014-08-28 10:13:46 BST,4/28,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:46.562 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,24,"idle",2014-08-28 10:13:46 BST,4/29,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:47.233 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,25,"idle",2014-08-28 10:13:46 BST,4/30,0,LOG,00000,"statement: SELECT * FROM schemey.ttt;",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:47.247 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,26,"idle",2014-08-28 10:13:46 BST,4/31,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:47.248 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,27,"idle",2014-08-28 10:13:46 BST,4/32,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:47.248 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,28,"idle",2014-08-28 10:13:46 BST,4/33,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:47.248 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,29,"idle",2014-08-28 10:13:46 BST,4/34,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:47.248 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,30,"idle",2014-08-28 10:13:46 BST,4/35,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:47.249 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,31,"idle",2014-08-28 10:13:46 BST,4/36,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:56.220 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,32,"idle",2014-08-28 10:13:46 BST,4/37,0,LOG,00000,"statement: SELECT * FROM schemey.ttt WHERE id < 7;",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:56.235 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,33,"idle",2014-08-28 10:13:46 BST,4/38,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:56.236 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,34,"idle",2014-08-28 10:13:46 BST,4/39,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:56.236 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,35,"idle",2014-08-28 10:13:46 BST,4/40,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:56.237 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,36,"idle",2014-08-28 10:13:46 BST,4/41,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:56.237 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,37,"idle",2014-08-28 10:13:46 BST,4/42,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:14:56.237 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,38,"idle",2014-08-28 10:13:46 BST,4/43,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:01.211 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,39,"idle",2014-08-28 10:13:46 BST,4/44,0,LOG,00000,"statement: SELECT * FROM schemey.ttt WHERE id > 3;",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:01.225 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,40,"idle",2014-08-28 10:13:46 BST,4/45,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:01.226 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,41,"idle",2014-08-28 10:13:46 BST,4/46,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:01.226 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,42,"idle",2014-08-28 10:13:46 BST,4/47,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:01.226 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,43,"idle",2014-08-28 10:13:46 BST,4/48,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:01.226 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,44,"idle",2014-08-28 10:13:46 BST,4/49,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:01.227 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,45,"idle",2014-08-28 10:13:46 BST,4/50,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:05.156 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,46,"idle",2014-08-28 10:13:46 BST,4/51,0,LOG,00000,"statement: SELECT * FROM schemey.ttt WHERE id >= 3;",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:05.171 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,47,"idle",2014-08-28 10:13:46 BST,4/52,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:05.171 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,48,"idle",2014-08-28 10:13:46 BST,4/53,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:05.171 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,49,"idle",2014-08-28 10:13:46 BST,4/54,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:05.171 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,50,"idle",2014-08-28 10:13:46 BST,4/55,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:05.172 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,51,"idle",2014-08-28 10:13:46 BST,4/56,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:05.172 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,52,"idle",2014-08-28 10:13:46 BST,4/57,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:08.595 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,53,"idle",2014-08-28 10:13:46 BST,4/58,0,LOG,00000,"statement: SELECT * FROM schemey.ttt WHERE id >= 3;",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:08.609 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,54,"idle",2014-08-28 10:13:46 BST,4/59,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:08.609 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,55,"idle",2014-08-28 10:13:46 BST,4/60,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:08.610 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,56,"idle",2014-08-28 10:13:46 BST,4/61,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:08.610 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,57,"idle",2014-08-28 10:13:46 BST,4/62,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=25",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:08.610 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,58,"idle",2014-08-28 10:13:46 BST,4/63,0,LOG,00000,"statement: SELECT format_type(oid,-1) as typname FROM pg_type WHERE oid = 23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:08.610 BST,"postgres","tom1",6664,"::1:51554",53fef2ca.1a08,59,"idle",2014-08-28 10:13:46 BST,4/64,0,LOG,00000,"statement: SELECT CASE WHEN typbasetype=0 THEN oid else typbasetype END AS basetype
+  FROM pg_type WHERE oid=23",,,,,,,,,"pgAdmin III - Query Tool"
+2014-08-28 10:15:14.380 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,87,"idle",2014-08-28 10:11:52 BST,3/90,0,LOG,00000,"statement: SELECT pr.oid, pr.xmin, pr.*, format_type(TYP.oid, NULL) AS typname, typns.nspname AS typnsp, lanname, proargnames, pg_get_expr(proargdefaults, 'pg_catalog.pg_class'::regclass) AS proargdefaultvals, pronargdefaults, proconfig,        pg_get_userbyid(proowner) as funcowner, description,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=pr.oid) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=pr.oid) AS providers
+  FROM pg_proc pr
+  JOIN pg_type typ ON typ.oid=prorettype
+  JOIN pg_namespace typns ON typns.oid=typ.typnamespace
+  JOIN pg_language lng ON lng.oid=prolang
+  LEFT OUTER JOIN pg_description des ON (des.objoid=pr.oid AND des.classoid='pg_proc'::regclass)
+ WHERE proisagg = FALSE AND pronamespace = 4356685::oid
+AND (typname IN ('trigger', 'event_trigger') 
+AND lanname NOT IN ('edbspl', 'sql', 'internal')) ORDER BY proname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.392 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,88,"idle",2014-08-28 10:11:52 BST,3/91,0,LOG,00000,"statement: SELECT oid, format_type(oid, NULL) AS typname FROM pg_type",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.948 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,89,"idle",2014-08-28 10:11:52 BST,3/92,0,LOG,00000,"statement: SELECT inhparent::regclass AS inhrelname,
+  (SELECT count(*) FROM pg_attribute WHERE attrelid=inhparent AND attnum>0) AS colscount
+  FROM pg_inherits
+  WHERE inhrelid =  4356686::oid::oid
+  ORDER BY inhseqno",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.949 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,90,"idle",2014-08-28 10:11:52 BST,3/93,0,LOG,00000,"statement: SELECT att.*, def.*, pg_catalog.pg_get_expr(def.adbin, def.adrelid) AS defval, CASE WHEN att.attndims > 0 THEN 1 ELSE 0 END AS isarray, format_type(ty.oid,NULL) AS typname, format_type(ty.oid,att.atttypmod) AS displaytypname, tn.nspname as typnspname, et.typname as elemtypname,
+  ty.typstorage AS defaultstorage, cl.relname, na.nspname, att.attstattarget, description, cs.relname AS sername, ns.nspname AS serschema,
+  (SELECT count(1) FROM pg_type t2 WHERE t2.typname=ty.typname) > 1 AS isdup, indkey,
+  coll.collname, nspc.nspname as collnspname,
+  attoptions,
+  EXISTS(SELECT 1 FROM  pg_constraint WHERE conrelid=att.attrelid AND contype='f' AND att.attnum=ANY(conkey)) As isfk,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=att.attrelid AND sl1.objsubid=att.attnum) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=att.attrelid AND sl2.objsubid=att.attnum) AS providers
+  FROM pg_attribute att
+  JOIN pg_type ty ON ty.oid=atttypid
+  JOIN pg_namespace tn ON tn.oid=ty.typnamespace
+  JOIN pg_class cl ON cl.oid=att.attrelid
+  JOIN pg_namespace na ON na.oid=cl.relnamespace
+  LEFT OUTER JOIN pg_type et ON et.oid=ty.typelem
+  LEFT OUTER JOIN pg_attrdef def ON adrelid=att.attrelid AND adnum=att.attnum
+  LEFT OUTER JOIN pg_description des ON (des.objoid=att.attrelid AND des.objsubid=att.attnum AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN (pg_depend JOIN pg_class cs ON objid=cs.oid AND cs.relkind='S') ON refobjid=att.attrelid AND refobjsubid=att.attnum
+  LEFT OUTER JOIN pg_namespace ns ON ns.oid=cs.relnamespace
+  LEFT OUTER JOIN pg_index pi ON pi.indrelid=att.attrelid AND indisprimary
+  LEFT OUTER JOIN pg_collation coll ON att.attcollation=coll.oid
+  LEFT OUTER JOIN pg_namespace nspc ON coll.collnamespace=nspc.oid
+ WHERE att.attrelid = 4356686::oid
+   AND att.attnum > 0
+   AND att.attisdropped IS FALSE
+ ORDER BY att.attnum",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.961 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,91,"idle",2014-08-28 10:11:52 BST,3/94,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid   AND contype='p'
+
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.967 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,92,"idle",2014-08-28 10:11:52 BST,3/95,0,LOG,00000,"statement: SELECT ct.oid, conname, condeferrable, condeferred, confupdtype, confdeltype, confmatchtype, conkey, confkey, confrelid, nl.nspname as fknsp, cl.relname as fktab, nr.nspname as refnsp, cr.relname as reftab, description, convalidated
+  FROM pg_constraint ct
+  JOIN pg_class cl ON cl.oid=conrelid
+  JOIN pg_namespace nl ON nl.oid=cl.relnamespace
+  JOIN pg_class cr ON cr.oid=confrelid
+  JOIN pg_namespace nr ON nr.oid=cr.relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=ct.oid AND des.classoid='pg_constraint'::regclass)
+ WHERE contype='f' AND conrelid = 4356686::oid
+ ORDER BY conname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.968 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,93,"idle",2014-08-28 10:11:52 BST,3/96,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid   AND contype='x'
+
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.972 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,94,"idle",2014-08-28 10:11:52 BST,3/97,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid   AND contype='u'
+
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.976 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,95,"idle",2014-08-28 10:11:52 BST,3/98,0,LOG,00000,"statement: SELECT 'TABLE' AS objectkind, c.oid, conname, relname, nspname, description,
+       pg_get_expr(conbin, conrelid, true) as consrc
+, connoinherit, convalidated  FROM pg_constraint c
+  JOIN pg_class cl ON cl.oid=conrelid
+  JOIN pg_namespace nl ON nl.oid=relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=c.oid AND des.classoid='pg_constraint'::regclass)
+ WHERE contype = 'c' AND conrelid =  4356686::oid
+UNION
+SELECT 'DOMAIN' AS objectkind, c.oid, conname, typname as relname, nspname, description,
+       regexp_replace(pg_get_constraintdef(c.oid, true), E'CHECK \\((.*)\\).*', E'\\1') as consrc
+, connoinherit, convalidated  FROM pg_constraint c
+  JOIN pg_type t ON t.oid=contypid
+  JOIN pg_namespace nl ON nl.oid=typnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=t.oid AND des.classoid='pg_constraint'::regclass)
+ WHERE contype = 'c' AND contypid =  4356686::oid
+ ORDER BY conname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.977 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,96,"idle",2014-08-28 10:11:52 BST,3/99,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid
+   AND conname IS NULL
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.980 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,97,"idle",2014-08-28 10:11:52 BST,3/100,0,LOG,00000,"statement: SELECT rw.oid, rw.*, relname, CASE WHEN relkind = 'r' THEN TRUE ELSE FALSE END AS parentistable, nspname, description,
+       pg_get_ruledef(rw.oid, true) AS definition
+  FROM pg_rewrite rw
+  JOIN pg_class cl ON cl.oid=rw.ev_class
+  JOIN pg_namespace nsp ON nsp.oid=cl.relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=rw.oid AND des.classoid='pg_rewrite'::regclass)
+ WHERE ev_class = 4356686
+ ORDER BY rw.rulename",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.981 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,98,"idle",2014-08-28 10:11:52 BST,3/101,0,LOG,00000,"statement: SELECT t.oid, t.xmin, t.*, relname, CASE WHEN relkind = 'r' THEN TRUE ELSE FALSE END AS parentistable,   nspname, des.description, l.lanname, p.prosrc, 
+  substring(pg_get_triggerdef(t.oid), 'WHEN (.*) EXECUTE PROCEDURE') AS whenclause
+  FROM pg_trigger t
+  JOIN pg_class cl ON cl.oid=tgrelid
+  JOIN pg_namespace na ON na.oid=relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=t.oid AND des.classoid='pg_trigger'::regclass)
+  LEFT OUTER JOIN pg_proc p ON p.oid=t.tgfoid
+  LEFT OUTER JOIN pg_language l ON l.oid=p.prolang
+ WHERE NOT tgisinternal
+  AND tgrelid = 4356686::oid
+ ORDER BY tgname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.982 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,99,"idle",2014-08-28 10:11:52 BST,3/102,0,LOG,00000,"statement: SELECT attname
+  FROM pg_attribute
+ WHERE attrelid=4356686::oid AND attnum IN (1)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.983 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,100,"idle",2014-08-28 10:11:52 BST,3/103,0,LOG,00000,"statement: SELECT count(*) AS rows FROM ONLY schemey.ttt",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.983 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,101,"idle",2014-08-28 10:11:52 BST,3/104,0,LOG,00000,"statement: SELECT c.oid, c.relname , nspname
+  FROM pg_inherits i
+  JOIN pg_class c ON c.oid = i.inhparent
+  JOIN pg_namespace n ON n.oid=c.relnamespace
+ WHERE i.inhrelid = 4356686::oid
+ ORDER BY inhseqno",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.985 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,102,"idle",2014-08-28 10:11:52 BST,3/105,0,LOG,00000,"statement: SELECT
+  i.indoption[0] AS options,
+  pg_get_indexdef(i.indexrelid, 1, true) AS coldef,
+  op.oprname,
+  CASE WHEN (o.opcdefault = FALSE) THEN o.opcname ELSE null END AS opcname
+,
+  coll.collname, nspc.nspname as collnspname
+FROM pg_index i
+JOIN pg_attribute a ON (a.attrelid = i.indexrelid AND attnum = 1)
+LEFT OUTER JOIN pg_opclass o ON (o.oid = i.indclass[0])
+LEFT OUTER JOIN pg_constraint c ON (c.conindid = i.indexrelid) LEFT OUTER JOIN pg_operator op ON (op.oid = c.conexclop[1])
+LEFT OUTER JOIN pg_collation coll ON a.attcollation=coll.oid
+LEFT OUTER JOIN pg_namespace nspc ON coll.collnamespace=nspc.oid
+WHERE i.indexrelid = 4356692::oid",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.987 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,103,"idle",2014-08-28 10:11:52 BST,3/106,0,LOG,00000,"statement: SELECT opcname FROM pg_opclass WHERE oid=1978",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.987 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,104,"idle",2014-08-28 10:11:52 BST,3/107,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid
+   AND conname IS NULL
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.992 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,105,"idle",2014-08-28 10:11:52 BST,3/108,0,LOG,00000,"statement: SELECT rw.oid, rw.*, relname, CASE WHEN relkind = 'r' THEN TRUE ELSE FALSE END AS parentistable, nspname, description,
+       pg_get_ruledef(rw.oid, true) AS definition
+  FROM pg_rewrite rw
+  JOIN pg_class cl ON cl.oid=rw.ev_class
+  JOIN pg_namespace nsp ON nsp.oid=cl.relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=rw.oid AND des.classoid='pg_rewrite'::regclass)
+ WHERE ev_class = 4356686
+ ORDER BY rw.rulename",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:14.993 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,106,"idle",2014-08-28 10:11:52 BST,3/109,0,LOG,00000,"statement: SELECT t.oid, t.xmin, t.*, relname, CASE WHEN relkind = 'r' THEN TRUE ELSE FALSE END AS parentistable,   nspname, des.description, l.lanname, p.prosrc, 
+  substring(pg_get_triggerdef(t.oid), 'WHEN (.*) EXECUTE PROCEDURE') AS whenclause
+  FROM pg_trigger t
+  JOIN pg_class cl ON cl.oid=tgrelid
+  JOIN pg_namespace na ON na.oid=relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=t.oid AND des.classoid='pg_trigger'::regclass)
+  LEFT OUTER JOIN pg_proc p ON p.oid=t.tgfoid
+  LEFT OUTER JOIN pg_language l ON l.oid=p.prolang
+ WHERE NOT tgisinternal
+  AND tgrelid = 4356686::oid
+ ORDER BY tgname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.012 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,107,"idle",2014-08-28 10:11:52 BST,3/110,0,LOG,00000,"statement: SELECT rel.oid, rel.relname, rel.reltablespace AS spcoid, spc.spcname, pg_get_userbyid(rel.relowner) AS relowner, rel.relacl, rel.relhasoids, rel.relhassubclass, rel.reltuples, des.description, con.conname, con.conkey,
+       EXISTS(select 1 FROM pg_trigger
+                       JOIN pg_proc pt ON pt.oid=tgfoid AND pt.proname='logtrigger'
+                       JOIN pg_proc pc ON pc.pronamespace=pt.pronamespace AND pc.proname='slonyversion'
+                     WHERE tgrelid=rel.oid) AS isrepl,
+       (select count(*) FROM pg_trigger
+                     WHERE tgrelid=rel.oid AND tgisinternal = FALSE) AS triggercount
+, rel.relpersistence 
+, substring(array_to_string(rel.reloptions, ',') FROM 'fillfactor=([0-9]*)') AS fillfactor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS autovacuum_enabled 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS autovacuum_vacuum_threshold 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_vacuum_scale_factor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS autovacuum_analyze_threshold 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS autovacuum_analyze_scale_factor 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS autovacuum_vacuum_cost_delay 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS autovacuum_vacuum_cost_limit 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS autovacuum_freeze_min_age 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS autovacuum_freeze_max_age 
+, substring(array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS autovacuum_freeze_table_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)') AS toast_autovacuum_enabled 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS toast_autovacuum_vacuum_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_vacuum_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS toast_autovacuum_analyze_threshold 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.][0-9]*)') AS toast_autovacuum_analyze_scale_factor 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS toast_autovacuum_vacuum_cost_delay 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS toast_autovacuum_vacuum_cost_limit 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS toast_autovacuum_freeze_min_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS toast_autovacuum_freeze_max_age 
+, substring(array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS toast_autovacuum_freeze_table_age 
+, rel.reloptions AS reloptions, tst.reloptions AS toast_reloptions 
+, (CASE WHEN rel.reltoastrelid = 0 THEN false ELSE true END) AS hastoasttable
+, rel.reloftype, typ.typname
+,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=rel.oid AND sl1.objsubid=0) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=rel.oid AND sl2.objsubid=0) AS providers  FROM pg_class rel
+  LEFT OUTER JOIN pg_tablespace spc on spc.oid=rel.reltablespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=rel.oid AND des.objsubid=0 AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_constraint con ON con.conrelid=rel.oid AND con.contype='p'
+  LEFT OUTER JOIN pg_class tst ON tst.oid = rel.reltoastrelid
+LEFT JOIN pg_type typ ON rel.reloftype=typ.oid
+ WHERE rel.relkind IN ('r','s','t') AND rel.relnamespace = 4356685::oid
+
+   AND rel.oid=4356686::oid ORDER BY rel.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.022 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,108,"idle",2014-08-28 10:11:52 BST,3/111,0,LOG,00000,"statement: SELECT inhparent::regclass AS inhrelname,
+  (SELECT count(*) FROM pg_attribute WHERE attrelid=inhparent AND attnum>0) AS colscount
+  FROM pg_inherits
+  WHERE inhrelid =  4356686::oid::oid
+  ORDER BY inhseqno",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.023 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,109,"idle",2014-08-28 10:11:52 BST,3/112,0,LOG,00000,"statement: SELECT att.*, def.*, pg_catalog.pg_get_expr(def.adbin, def.adrelid) AS defval, CASE WHEN att.attndims > 0 THEN 1 ELSE 0 END AS isarray, format_type(ty.oid,NULL) AS typname, format_type(ty.oid,att.atttypmod) AS displaytypname, tn.nspname as typnspname, et.typname as elemtypname,
+  ty.typstorage AS defaultstorage, cl.relname, na.nspname, att.attstattarget, description, cs.relname AS sername, ns.nspname AS serschema,
+  (SELECT count(1) FROM pg_type t2 WHERE t2.typname=ty.typname) > 1 AS isdup, indkey,
+  coll.collname, nspc.nspname as collnspname,
+  attoptions,
+  EXISTS(SELECT 1 FROM  pg_constraint WHERE conrelid=att.attrelid AND contype='f' AND att.attnum=ANY(conkey)) As isfk,
+(SELECT array_agg(label) FROM pg_seclabels sl1 WHERE sl1.objoid=att.attrelid AND sl1.objsubid=att.attnum) AS labels,
+(SELECT array_agg(provider) FROM pg_seclabels sl2 WHERE sl2.objoid=att.attrelid AND sl2.objsubid=att.attnum) AS providers
+  FROM pg_attribute att
+  JOIN pg_type ty ON ty.oid=atttypid
+  JOIN pg_namespace tn ON tn.oid=ty.typnamespace
+  JOIN pg_class cl ON cl.oid=att.attrelid
+  JOIN pg_namespace na ON na.oid=cl.relnamespace
+  LEFT OUTER JOIN pg_type et ON et.oid=ty.typelem
+  LEFT OUTER JOIN pg_attrdef def ON adrelid=att.attrelid AND adnum=att.attnum
+  LEFT OUTER JOIN pg_description des ON (des.objoid=att.attrelid AND des.objsubid=att.attnum AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN (pg_depend JOIN pg_class cs ON objid=cs.oid AND cs.relkind='S') ON refobjid=att.attrelid AND refobjsubid=att.attnum
+  LEFT OUTER JOIN pg_namespace ns ON ns.oid=cs.relnamespace
+  LEFT OUTER JOIN pg_index pi ON pi.indrelid=att.attrelid AND indisprimary
+  LEFT OUTER JOIN pg_collation coll ON att.attcollation=coll.oid
+  LEFT OUTER JOIN pg_namespace nspc ON coll.collnamespace=nspc.oid
+ WHERE att.attrelid = 4356686::oid
+   AND att.attnum > 0
+   AND att.attisdropped IS FALSE
+ ORDER BY att.attnum",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.036 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,110,"idle",2014-08-28 10:11:52 BST,3/113,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid   AND contype='p'
+
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.041 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,111,"idle",2014-08-28 10:11:52 BST,3/114,0,LOG,00000,"statement: SELECT ct.oid, conname, condeferrable, condeferred, confupdtype, confdeltype, confmatchtype, conkey, confkey, confrelid, nl.nspname as fknsp, cl.relname as fktab, nr.nspname as refnsp, cr.relname as reftab, description, convalidated
+  FROM pg_constraint ct
+  JOIN pg_class cl ON cl.oid=conrelid
+  JOIN pg_namespace nl ON nl.oid=cl.relnamespace
+  JOIN pg_class cr ON cr.oid=confrelid
+  JOIN pg_namespace nr ON nr.oid=cr.relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=ct.oid AND des.classoid='pg_constraint'::regclass)
+ WHERE contype='f' AND conrelid = 4356686::oid
+ ORDER BY conname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.043 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,112,"idle",2014-08-28 10:11:52 BST,3/115,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid   AND contype='x'
+
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.048 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,113,"idle",2014-08-28 10:11:52 BST,3/116,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid   AND contype='u'
+
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.052 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,114,"idle",2014-08-28 10:11:52 BST,3/117,0,LOG,00000,"statement: SELECT 'TABLE' AS objectkind, c.oid, conname, relname, nspname, description,
+       pg_get_expr(conbin, conrelid, true) as consrc
+, connoinherit, convalidated  FROM pg_constraint c
+  JOIN pg_class cl ON cl.oid=conrelid
+  JOIN pg_namespace nl ON nl.oid=relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=c.oid AND des.classoid='pg_constraint'::regclass)
+ WHERE contype = 'c' AND conrelid =  4356686::oid
+UNION
+SELECT 'DOMAIN' AS objectkind, c.oid, conname, typname as relname, nspname, description,
+       regexp_replace(pg_get_constraintdef(c.oid, true), E'CHECK \\((.*)\\).*', E'\\1') as consrc
+, connoinherit, convalidated  FROM pg_constraint c
+  JOIN pg_type t ON t.oid=contypid
+  JOIN pg_namespace nl ON nl.oid=typnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=t.oid AND des.classoid='pg_constraint'::regclass)
+ WHERE contype = 'c' AND contypid =  4356686::oid
+ ORDER BY conname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.054 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,115,"idle",2014-08-28 10:11:52 BST,3/118,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid
+   AND conname IS NULL
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.058 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,116,"idle",2014-08-28 10:11:52 BST,3/119,0,LOG,00000,"statement: SELECT rw.oid, rw.*, relname, CASE WHEN relkind = 'r' THEN TRUE ELSE FALSE END AS parentistable, nspname, description,
+       pg_get_ruledef(rw.oid, true) AS definition
+  FROM pg_rewrite rw
+  JOIN pg_class cl ON cl.oid=rw.ev_class
+  JOIN pg_namespace nsp ON nsp.oid=cl.relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=rw.oid AND des.classoid='pg_rewrite'::regclass)
+ WHERE ev_class = 4356686
+ ORDER BY rw.rulename",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.059 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,117,"idle",2014-08-28 10:11:52 BST,3/120,0,LOG,00000,"statement: SELECT t.oid, t.xmin, t.*, relname, CASE WHEN relkind = 'r' THEN TRUE ELSE FALSE END AS parentistable,   nspname, des.description, l.lanname, p.prosrc, 
+  substring(pg_get_triggerdef(t.oid), 'WHEN (.*) EXECUTE PROCEDURE') AS whenclause
+  FROM pg_trigger t
+  JOIN pg_class cl ON cl.oid=tgrelid
+  JOIN pg_namespace na ON na.oid=relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=t.oid AND des.classoid='pg_trigger'::regclass)
+  LEFT OUTER JOIN pg_proc p ON p.oid=t.tgfoid
+  LEFT OUTER JOIN pg_language l ON l.oid=p.prolang
+ WHERE NOT tgisinternal
+  AND tgrelid = 4356686::oid
+ ORDER BY tgname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.060 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,118,"idle",2014-08-28 10:11:52 BST,3/121,0,LOG,00000,"statement: SELECT attname
+  FROM pg_attribute
+ WHERE attrelid=4356686::oid AND attnum IN (1)",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.061 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,119,"idle",2014-08-28 10:11:52 BST,3/122,0,LOG,00000,"statement: SELECT count(*) AS rows FROM ONLY schemey.ttt",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.061 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,120,"idle",2014-08-28 10:11:52 BST,3/123,0,LOG,00000,"statement: SELECT c.oid, c.relname , nspname
+  FROM pg_inherits i
+  JOIN pg_class c ON c.oid = i.inhparent
+  JOIN pg_namespace n ON n.oid=c.relnamespace
+ WHERE i.inhrelid = 4356686::oid
+ ORDER BY inhseqno",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.062 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,121,"idle",2014-08-28 10:11:52 BST,3/124,0,LOG,00000,"statement: SELECT
+  i.indoption[0] AS options,
+  pg_get_indexdef(i.indexrelid, 1, true) AS coldef,
+  op.oprname,
+  CASE WHEN (o.opcdefault = FALSE) THEN o.opcname ELSE null END AS opcname
+,
+  coll.collname, nspc.nspname as collnspname
+FROM pg_index i
+JOIN pg_attribute a ON (a.attrelid = i.indexrelid AND attnum = 1)
+LEFT OUTER JOIN pg_opclass o ON (o.oid = i.indclass[0])
+LEFT OUTER JOIN pg_constraint c ON (c.conindid = i.indexrelid) LEFT OUTER JOIN pg_operator op ON (op.oid = c.conexclop[1])
+LEFT OUTER JOIN pg_collation coll ON a.attcollation=coll.oid
+LEFT OUTER JOIN pg_namespace nspc ON coll.collnamespace=nspc.oid
+WHERE i.indexrelid = 4356692::oid",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.064 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,122,"idle",2014-08-28 10:11:52 BST,3/125,0,LOG,00000,"statement: SELECT opcname FROM pg_opclass WHERE oid=1978",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.064 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,123,"idle",2014-08-28 10:11:52 BST,3/126,0,LOG,00000,"statement: SELECT DISTINCT ON(cls.relname) cls.oid, cls.relname as idxname, indrelid, indkey, indisclustered, indisvalid, indisunique, indisprimary, n.nspname,
+       indnatts, cls.reltablespace AS spcoid, spcname, tab.relname as tabname, indclass, con.oid AS conoid, CASE contype WHEN 'p' THEN desp.description WHEN 'u' THEN desp.description WHEN 'x' THEN desp.description ELSE des.description END AS description,
+       pg_get_expr(indpred, indrelid, true) as indconstraint, contype, condeferrable, condeferred, amname
+, substring(array_to_string(cls.reloptions, ',') from 'fillfactor=([0-9]*)') AS fillfactor 
+  FROM pg_index idx
+  JOIN pg_class cls ON cls.oid=indexrelid
+  JOIN pg_class tab ON tab.oid=indrelid
+  LEFT OUTER JOIN pg_tablespace ta on ta.oid=cls.reltablespace
+  JOIN pg_namespace n ON n.oid=tab.relnamespace
+  JOIN pg_am am ON am.oid=cls.relam
+  LEFT JOIN pg_depend dep ON (dep.classid = cls.tableoid AND dep.objid = cls.oid AND dep.refobjsubid = '0' AND dep.refclassid=(SELECT oid FROM pg_class WHERE relname='pg_constraint') AND dep.deptype='i')
+  LEFT OUTER JOIN pg_constraint con ON (con.tableoid = dep.refclassid AND con.oid = dep.refobjid)
+  LEFT OUTER JOIN pg_description des ON (des.objoid=cls.oid AND des.classoid='pg_class'::regclass)
+  LEFT OUTER JOIN pg_description desp ON (desp.objoid=con.oid AND desp.objsubid = 0 AND desp.classoid='pg_constraint'::regclass)
+ WHERE indrelid = 4356686::oid
+   AND conname IS NULL
+ ORDER BY cls.relname",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.068 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,124,"idle",2014-08-28 10:11:52 BST,3/127,0,LOG,00000,"statement: SELECT rw.oid, rw.*, relname, CASE WHEN relkind = 'r' THEN TRUE ELSE FALSE END AS parentistable, nspname, description,
+       pg_get_ruledef(rw.oid, true) AS definition
+  FROM pg_rewrite rw
+  JOIN pg_class cl ON cl.oid=rw.ev_class
+  JOIN pg_namespace nsp ON nsp.oid=cl.relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=rw.oid AND des.classoid='pg_rewrite'::regclass)
+ WHERE ev_class = 4356686
+ ORDER BY rw.rulename",,,,,,,,,"pgAdmin III - Browser"
+2014-08-28 10:15:16.069 BST,"postgres","tom1",2144,"::1:51388",53fef258.860,125,"idle",2014-08-28 10:11:52 BST,3/128,0,LOG,00000,"statement: SELECT t.oid, t.xmin, t.*, relname, CASE WHEN relkind = 'r' THEN TRUE ELSE FALSE END AS parentistable,   nspname, des.description, l.lanname, p.prosrc, 
+  substring(pg_get_triggerdef(t.oid), 'WHEN (.*) EXECUTE PROCEDURE') AS whenclause
+  FROM pg_trigger t
+  JOIN pg_class cl ON cl.oid=tgrelid
+  JOIN pg_namespace na ON na.oid=relnamespace
+  LEFT OUTER JOIN pg_description des ON (des.objoid=t.oid AND des.classoid='pg_trigger'::regclass)
+  LEFT OUTER JOIN pg_proc p ON p.oid=t.tgfoid
+  LEFT OUTER JOIN pg_language l ON l.oid=p.prolang
+ WHERE NOT tgisinternal
+  AND tgrelid = 4356686::oid
+ ORDER BY tgname",,,,,,,,,"pgAdmin III - Browser"

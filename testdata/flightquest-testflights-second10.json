@@ -1,0 +1,101 @@
+[
+  {
+    "flight_history_id":280796031,
+    "departure_airport_code":"CLT",
+    "arrival_airport_code":"MIA",
+    "published_departure":"2012-11-19 15:55:00+00:00",
+    "published_arrival":"2012-11-19 18:00:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 15:55:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 18:00:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 16:13:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 18:09:00+00:00"
+  },
+  {
+    "flight_history_id":280823296,
+    "departure_airport_code":"LAX",
+    "arrival_airport_code":"STL",
+    "published_departure":"2012-11-19 15:00:00+00:00",
+    "published_arrival":"2012-11-19 18:40:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 15:00:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 18:40:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 15:21:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 18:45:00+00:00"
+  },
+  {
+    "flight_history_id":280857451,
+    "departure_airport_code":"TYS",
+    "arrival_airport_code":"DFW",
+    "published_departure":"2012-11-19 15:55:00+00:00",
+    "published_arrival":"2012-11-19 18:35:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 15:55:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 18:35:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 16:06:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 18:45:00+00:00"
+  },
+  {
+    "flight_history_id":280841086,
+    "departure_airport_code":"PHL",
+    "arrival_airport_code":"CHO",
+    "published_departure":"2012-11-19 16:15:00+00:00",
+    "published_arrival":"2012-11-19 17:25:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 16:15:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 17:25:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 16:22:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 17:17:00+00:00"
+  },
+  {
+    "flight_history_id":280830890,
+    "departure_airport_code":"MIA",
+    "arrival_airport_code":"BHM",
+    "published_departure":"2012-11-19 15:45:00+00:00",
+    "published_arrival":"2012-11-19 17:45:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 15:45:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 17:45:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 16:01:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 17:48:00+00:00"
+  },
+  {
+    "flight_history_id":280838110,
+    "departure_airport_code":"ORD",
+    "arrival_airport_code":"SAT",
+    "published_departure":"2012-11-19 16:30:00+00:00",
+    "published_arrival":"2012-11-19 19:20:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 16:30:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 19:20:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 16:46:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 19:23:00+00:00"
+  },
+  {
+    "flight_history_id":280823962,
+    "departure_airport_code":"LGA",
+    "arrival_airport_code":"ATL",
+    "published_departure":"2012-11-19 14:55:00+00:00",
+    "published_arrival":"2012-11-19 17:20:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 14:55:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 17:20:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 15:23:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 17:27:00+00:00"
+  },
+  {
+    "flight_history_id":280842182,
+    "departure_airport_code":"PIT",
+    "arrival_airport_code":"JFK",
+    "published_departure":"2012-11-19 16:20:00+00:00",
+    "published_arrival":"2012-11-19 17:50:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 16:20:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 17:50:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 16:31:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 17:57:00+00:00"
+  },
+  {
+    "flight_history_id":280801355,
+    "departure_airport_code":"DFW",
+    "arrival_airport_code":"GRK",
+    "published_departure":"2012-11-19 17:10:00+00:00",
+    "published_arrival":"2012-11-19 18:00:00+00:00",
+    "scheduled_gate_departure":"2012-11-19 17:10:00+00:00",
+    "scheduled_gate_arrival":"2012-11-19 18:00:00+00:00",
+    "scheduled_runway_departure":"2012-11-19 17:25:00+00:00",
+    "scheduled_runway_arrival":"2012-11-19 18:04:00+00:00"
+  }
+]

@@ -1,0 +1,8 @@
+/tmp
+.idea
+.classpath
+.project
+.settings
+.buildpath
+.vagrant
+target/

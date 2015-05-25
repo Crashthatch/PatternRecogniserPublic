@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/js/app/bower_components" />
+      <excludeFolder url="file://$MODULE_DIR$/js/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/src/database" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gui" />
+      <excludeFolder url="file://$MODULE_DIR$/src/junit" />
+      <excludeFolder url="file://$MODULE_DIR$/src/models" />
+      <excludeFolder url="file://$MODULE_DIR$/src/processors" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="jfxrt.jar">
+        <CLASSES>
+          <root url="jar://C:/Program Files (x86)/Oracle/JavaFX 2.0 SDK/rt/lib/jfxrt.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-math:2.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:1.3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-collections4:4.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:17.0" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.jung:jung-graph-impl:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.collections:collections-generic:4.01" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.jung:jung-api:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.jtidy:jtidy:r938" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.7.3" level="project" />
+    <orderEntry type="library" name="Maven: com.joestelmach:natty:0.8" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:antlr-runtime:3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:stringtemplate:3.2" level="project" />
+    <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.mnode.ical4j:ical4j:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" name="Maven: backport-util-concurrent:backport-util-concurrent:3.1" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.javacsv:javacsv:2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:rapidminer-dependencies:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:blas:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:collections-generic:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:colt:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:commons-codec-1.4:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:commons-collections:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:commons-httpclient-3.1:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:commons-lang-2.4:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:commons-logging-1.1:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:concurrent:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:dom4j-1.6.1:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:encog:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-export:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-graphics2d:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-graphicsio-emf:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-graphicsio-pdf:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-graphicsio-ps:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-graphicsio-svg:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-graphicsio-swf:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-graphicsio:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-io:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-swing:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-util:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:freehep-xml:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:groovy-all-1.7.7:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:hsqldb:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:iijdbc-10.0-4.0.6:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:itextpdf-5.3.3:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:ivy-2.2.0:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jama:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jcommon:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jep:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jfreechart:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jmathplot:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:joone-engine:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jtds-1.2.8:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jugpreview:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jung-algorithms:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jung-api:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jung-graph-impl:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jung-visualization:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:junit:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:jxl:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:kdb:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:launcher:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:looks:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:mail:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:microba:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:mysql-connector-java-5.1.24-bin:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:ojdbc14:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:poi-3.8-20120326:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:poi-excelant-3.8-20120326:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:poi-ooxml-3.8-20120326:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:poi-ooxml-schemas-3.8-20120326:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:poi-scratchpad-3.8-20120326:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:postgresql-9.2-1002.jdbc4:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:rapidminer:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:rm_doc:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:rsyntaxtextarea:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:SassyReader-0.5:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:swingx-all-1.6.4:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:vertica-jdk5-6.0.1-0:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:vldocking:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:ws-commons-util-1.0.2:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:xmlbeans-2.3.0:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:xmlpull:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:xmlrpc-client-3.1.3:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:xmlrpc-common-3.1.3:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:xpp3:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.rapid_i:xstream:5.3.013" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: nz.ac.waikato.cms.weka:weka-stable:3.6.11" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.squirrel-sql.thirdparty-non-maven:java-cup:0.11a" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.30" level="project" />
+    <orderEntry type="library" name="Maven: net.greghaines:jesque:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.3.1" level="project" />
+    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk:1.7.8.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: redis.clients:jedis:2.4.2" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.opencsv:opencsv:2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.opennlp:opennlp-tools:1.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.opennlp:opennlp-maxent:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.jwordnet:jwnl:1.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.7" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.11" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Maven: cpsuite:cpsuite:1.2.5" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.java-diff-utils:diffutils:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.5" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.2.10.v20150310" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:9.2.10.v20150310" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:9.2.10.v20150310" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:9.2.10.v20150310" level="project" />
+    <orderEntry type="library" name="Maven: org.jfree:jfreechart:1.0.19" level="project" />
+    <orderEntry type="library" name="Maven: org.jfree:jcommon:1.0.23" level="project" />
+  </component>
+</module>

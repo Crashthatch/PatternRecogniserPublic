@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<operator activated="true" class="discretize_by_bins" compatibility="5.0.11" expanded="true" height="94" name="Discretize" width="90" x="33" y="25">
+    <parameter key="return_preprocessing_model" value="false"/>
+    <parameter key="create_view" value="false"/>
+    <parameter key="attribute_filter_type" value="all"/>
+    <parameter key="attribute" value=""/>
+</operator>

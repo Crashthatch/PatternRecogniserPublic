@@ -1,0 +1,901 @@
+{
+"meta": {
+"view": {
+"id": "vnes-itp9",
+"name": "Bath & North East Somerset Postcodes",
+"attribution": "Ordnance Survey",
+"attributionLink": "http://data.ordnancesurvey.co.uk",
+"averageRating": 0,
+"category": "Government and Society",
+"createdAt": 1407136194,
+"description": "A list of postcodes within the B&NES Unitary Authority, including the lat/long of the centroid of the postcode and the name of the ward within which it is found. The data slso Includes links to the Ordnance Survey Linked Data",
+"displayType": "table",
+"downloadCount": 0,
+"indexUpdatedAt": 1407515064,
+"newBackend": false,
+"numberOfComments": 0,
+"oid": 14418,
+"publicationAppendEnabled": false,
+"publicationDate": 1407515059,
+"publicationGroup": 10623,
+"publicationStage": "published",
+"rowIdentifierColumnId": 163865,
+"rowsUpdatedAt": 1407515046,
+"rowsUpdatedBy": "22aw-9kr4",
+"tableId": 10697,
+"totalTimesRated": 0,
+"viewCount": 23,
+"viewLastModified": 1407515059,
+"viewType": "tabular",
+"columns": [
+{
+"id": -1,
+"name": "sid",
+"dataTypeName": "meta_data",
+"fieldName": ":sid",
+"position": 0,
+"renderTypeName": "meta_data",
+"format": {}
+},
+{
+"id": -1,
+"name": "id",
+"dataTypeName": "meta_data",
+"fieldName": ":id",
+"position": 0,
+"renderTypeName": "meta_data",
+"format": {}
+},
+{
+"id": -1,
+"name": "position",
+"dataTypeName": "meta_data",
+"fieldName": ":position",
+"position": 0,
+"renderTypeName": "meta_data",
+"format": {}
+},
+{
+"id": -1,
+"name": "created_at",
+"dataTypeName": "meta_data",
+"fieldName": ":created_at",
+"position": 0,
+"renderTypeName": "meta_data",
+"format": {}
+},
+{
+"id": -1,
+"name": "created_meta",
+"dataTypeName": "meta_data",
+"fieldName": ":created_meta",
+"position": 0,
+"renderTypeName": "meta_data",
+"format": {}
+},
+{
+"id": -1,
+"name": "updated_at",
+"dataTypeName": "meta_data",
+"fieldName": ":updated_at",
+"position": 0,
+"renderTypeName": "meta_data",
+"format": {}
+},
+{
+"id": -1,
+"name": "updated_meta",
+"dataTypeName": "meta_data",
+"fieldName": ":updated_meta",
+"position": 0,
+"renderTypeName": "meta_data",
+"format": {}
+},
+{
+"id": -1,
+"name": "meta",
+"dataTypeName": "meta_data",
+"fieldName": ":meta",
+"position": 0,
+"renderTypeName": "meta_data",
+"format": {}
+},
+{
+"id": 163864,
+"name": "uri",
+"dataTypeName": "url",
+"fieldName": "uri",
+"position": 2,
+"renderTypeName": "url",
+"tableColumnId": 109490,
+"width": 136,
+"cachedContents": {
+"non_null": 5750,
+"smallest": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BA10AG"
+},
+"null": 0,
+"largest": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS418NW"
+},
+"top": [
+{
+"count": 20,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS408YR"
+}
+},
+{
+"count": 19,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS408YS"
+}
+},
+{
+"count": 18,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS408YT"
+}
+},
+{
+"count": 17,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS408YW"
+}
+},
+{
+"count": 16,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS418NL"
+}
+},
+{
+"count": 15,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS418NN"
+}
+},
+{
+"count": 14,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS418NP"
+}
+},
+{
+"count": 13,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS418NQ"
+}
+},
+{
+"count": 12,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS418NR"
+}
+},
+{
+"count": 11,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/postcodeunit/BS418NW"
+}
+}
+]
+},
+"format": {},
+"subColumnTypes": [
+"url",
+"description"
+]
+},
+{
+"id": 163865,
+"name": "postcode",
+"dataTypeName": "text",
+"fieldName": "postcode",
+"position": 3,
+"renderTypeName": "text",
+"tableColumnId": 109491,
+"width": 196,
+"cachedContents": {
+"non_null": 5750,
+"smallest": "BA1 0AG",
+"null": 0,
+"largest": "BS41 8NW",
+"top": [
+{
+"count": 20,
+"item": "BS40 8YR"
+},
+{
+"count": 19,
+"item": "BS40 8YS"
+},
+{
+"count": 18,
+"item": "BS40 8YT"
+},
+{
+"count": 17,
+"item": "BS40 8YW"
+},
+{
+"count": 16,
+"item": "BS41 8NL"
+},
+{
+"count": 15,
+"item": "BS41 8NN"
+},
+{
+"count": 14,
+"item": "BS41 8NP"
+},
+{
+"count": 13,
+"item": "BS41 8NQ"
+},
+{
+"count": 12,
+"item": "BS41 8NR"
+},
+{
+"count": 11,
+"item": "BS41 8NW"
+}
+]
+},
+"format": {}
+},
+{
+"id": 163866,
+"name": "ward_uri",
+"dataTypeName": "url",
+"fieldName": "ward_uri",
+"position": 4,
+"renderTypeName": "url",
+"tableColumnId": 109492,
+"width": 196,
+"cachedContents": {
+"non_null": 5750,
+"smallest": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000499"
+},
+"null": 0,
+"largest": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000039082"
+},
+"top": [
+{
+"count": 20,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000585"
+}
+},
+{
+"count": 19,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000584"
+}
+},
+{
+"count": 18,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000590"
+}
+},
+{
+"count": 17,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000499"
+}
+},
+{
+"count": 16,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000595"
+}
+},
+{
+"count": 15,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000593"
+}
+},
+{
+"count": 14,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000025557"
+}
+},
+{
+"count": 13,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000592"
+}
+},
+{
+"count": 12,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000578"
+}
+},
+{
+"count": 11,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000025555"
+}
+},
+{
+"count": 10,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000529"
+}
+},
+{
+"count": 9,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000025532"
+}
+},
+{
+"count": 8,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000039082"
+}
+},
+{
+"count": 7,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000587"
+}
+},
+{
+"count": 6,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000588"
+}
+},
+{
+"count": 5,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000571"
+}
+},
+{
+"count": 4,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000573"
+}
+},
+{
+"count": 3,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000501"
+}
+},
+{
+"count": 2,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000508"
+}
+},
+{
+"count": 1,
+"item": {
+"url": "http://data.ordnancesurvey.co.uk/id/7000000000000589"
+}
+}
+]
+},
+"format": {},
+"subColumnTypes": [
+"url",
+"description"
+]
+},
+{
+"id": 163867,
+"name": "ward_name",
+"dataTypeName": "text",
+"description": "Name of the ward within which the postcode can be found",
+"fieldName": "ward_name",
+"position": 5,
+"rdfProperties": "",
+"renderTypeName": "text",
+"tableColumnId": 109493,
+"width": 208,
+"cachedContents": {
+"non_null": 5750,
+"smallest": "Abbey",
+"null": 0,
+"largest": "Widcombe",
+"top": [
+{
+"count": 20,
+"item": "Abbey"
+},
+{
+"count": 19,
+"item": "Kingsmead"
+},
+{
+"count": 18,
+"item": "Lansdown"
+},
+{
+"count": 17,
+"item": "Widcombe"
+},
+{
+"count": 16,
+"item": "Newbridge"
+},
+{
+"count": 15,
+"item": "Weston"
+},
+{
+"count": 14,
+"item": "Bathavon North"
+},
+{
+"count": 13,
+"item": "Walcot"
+},
+{
+"count": 12,
+"item": "Lambridge"
+},
+{
+"count": 11,
+"item": "Bathavon South"
+},
+{
+"count": 10,
+"item": "Timsbury"
+},
+{
+"count": 9,
+"item": "Farmborough"
+},
+{
+"count": 8,
+"item": "Bathavon West"
+},
+{
+"count": 7,
+"item": "Westmoreland"
+},
+{
+"count": 6,
+"item": "Oldfield"
+},
+{
+"count": 5,
+"item": "Twerton"
+},
+{
+"count": 4,
+"item": "Southdown"
+},
+{
+"count": 3,
+"item": "Lyncombe"
+},
+{
+"count": 2,
+"item": "Odd Down"
+},
+{
+"count": 1,
+"item": "Bathwick"
+}
+]
+},
+"format": {
+"rdf": "",
+"align": "left"
+}
+},
+{
+"id": 163868,
+"name": "centroid",
+"dataTypeName": "location",
+"fieldName": "centroid",
+"position": 6,
+"renderTypeName": "location",
+"tableColumnId": 109494,
+"width": 196,
+"cachedContents": {
+"non_null": 5750,
+"smallest": {
+"longitude": "-2.35556",
+"latitude": "51.378855"
+},
+"null": 0,
+"largest": {
+"longitude": "-2.613394",
+"latitude": "51.385891"
+},
+"top": [
+{
+"count": 20,
+"item": {
+"longitude": "-2.682487",
+"latitude": "51.334515"
+}
+},
+{
+"count": 19,
+"item": {
+"longitude": "-2.680255",
+"latitude": "51.337936"
+}
+},
+{
+"count": 18,
+"item": {
+"longitude": "-2.683311",
+"latitude": "51.33879"
+}
+},
+{
+"count": 17,
+"item": {
+"longitude": "-2.68247",
+"latitude": "51.339217"
+}
+},
+{
+"count": 16,
+"item": {
+"longitude": "-2.601169",
+"latitude": "51.3884"
+}
+},
+{
+"count": 15,
+"item": {
+"longitude": "-2.597349",
+"latitude": "51.386468"
+}
+},
+{
+"count": 14,
+"item": {
+"longitude": "-2.601804",
+"latitude": "51.386409"
+}
+},
+{
+"count": 13,
+"item": {
+"longitude": "-2.623957",
+"latitude": "51.385853"
+}
+},
+{
+"count": 12,
+"item": {
+"longitude": "-2.617543",
+"latitude": "51.388719"
+}
+},
+{
+"count": 11,
+"item": {
+"longitude": "-2.613394",
+"latitude": "51.385891"
+}
+}
+]
+},
+"format": {},
+"subColumnTypes": [
+"human_address",
+"latitude",
+"longitude",
+"machine_address",
+"needs_recoding"
+]
+}
+],
+"grants": [
+{
+"inherited": false,
+"type": "viewer",
+"flags": [
+"public"
+]
+}
+],
+"metadata": {
+"custom_fields": {
+"Additional Licence Detail": {
+"Licence URL": "http://www.ordnancesurvey.co.uk/oswebsite/docs/licences/os-opendata-licence.pdf",
+"Additional Licence Information": "OS Open Data Licence"
+}
+},
+"renderTypeConfig": {
+"visible": {
+"table": true
+}
+},
+"availableDisplayTypes": [
+"table",
+"fatrow",
+"page"
+],
+"rdfSubject": "0",
+"rowIdentifier": 163865
+},
+"owner": {
+"id": "22aw-9kr4",
+"displayName": "Leigh Dodds",
+"profileImageUrlLarge": "/api/users/22aw-9kr4/profile_images/LARGE",
+"profileImageUrlMedium": "/api/users/22aw-9kr4/profile_images/THUMB",
+"profileImageUrlSmall": "/api/users/22aw-9kr4/profile_images/TINY",
+"roleName": "designer",
+"screenName": "Leigh Dodds",
+"rights": [
+"create_datasets",
+"edit_sdp",
+"edit_site_theme",
+"feature_items",
+"change_configurations",
+"view_domain",
+"view_others_datasets",
+"create_pages"
+]
+},
+"query": {},
+"rights": [
+"read"
+],
+"tableAuthor": {
+"id": "22aw-9kr4",
+"displayName": "Leigh Dodds",
+"profileImageUrlLarge": "/api/users/22aw-9kr4/profile_images/LARGE",
+"profileImageUrlMedium": "/api/users/22aw-9kr4/profile_images/THUMB",
+"profileImageUrlSmall": "/api/users/22aw-9kr4/profile_images/TINY",
+"roleName": "designer",
+"screenName": "Leigh Dodds",
+"rights": [
+"create_datasets",
+"edit_sdp",
+"edit_site_theme",
+"feature_items",
+"change_configurations",
+"view_domain",
+"view_others_datasets",
+"create_pages"
+]
+},
+"tags": [
+"postcode",
+"ward"
+],
+"flags": [
+"default"
+]
+}
+},
+"data": [
+[
+11,
+"29848545-7BA7-4CFB-87F6-C825C75E812C",
+11,
+1407137536,
+"467",
+1407515046,
+"467",
+null,
+[
+"http://data.ordnancesurvey.co.uk/id/postcodeunit/BA10AG",
+null
+],
+"BA1 0AG",
+[
+"http://data.ordnancesurvey.co.uk/id/7000000000000585",
+null
+],
+"Abbey",
+[
+null,
+"51.378855",
+"-2.355560",
+null,
+false
+]
+],
+[
+12,
+"9D536A80-8AA5-4D0D-9878-A44DEA2F5D8C",
+12,
+1407137536,
+"467",
+1407137985,
+"467",
+null,
+[
+"http://data.ordnancesurvey.co.uk/id/postcodeunit/BA10AQ",
+null
+],
+"BA1 0AQ",
+[
+"http://data.ordnancesurvey.co.uk/id/7000000000000585",
+null
+],
+"Abbey",
+[
+null,
+"51.378855",
+"-2.355560",
+null,
+false
+]
+],
+[
+13,
+"8D1CA6DE-FE66-4DFB-AF61-922463508165",
+13,
+1407137536,
+"467",
+1407137985,
+"467",
+null,
+[
+"http://data.ordnancesurvey.co.uk/id/postcodeunit/BA10AR",
+null
+],
+"BA1 0AR",
+[
+"http://data.ordnancesurvey.co.uk/id/7000000000000585",
+null
+],
+"Abbey",
+[
+null,
+"51.378855",
+"-2.355560",
+null,
+false
+]
+],
+[
+14,
+"AC0E4681-49CA-4628-952D-0FA891C3127A",
+14,
+1407137536,
+"467",
+1407137985,
+"467",
+null,
+[
+"http://data.ordnancesurvey.co.uk/id/postcodeunit/BA10AY",
+null
+],
+"BA1 0AY",
+[
+"http://data.ordnancesurvey.co.uk/id/7000000000000585",
+null
+],
+"Abbey",
+[
+null,
+"51.378855",
+"-2.355560",
+null,
+false
+]
+],
+[
+15,
+"BE9E8E8E-CE2E-4006-894B-719B853E3EDD",
+15,
+1407137536,
+"467",
+1407137985,
+"467",
+null,
+[
+"http://data.ordnancesurvey.co.uk/id/postcodeunit/BA10AZ",
+null
+],
+"BA1 0AZ",
+[
+"http://data.ordnancesurvey.co.uk/id/7000000000000585",
+null
+],
+"Abbey",
+[
+null,
+"51.378855",
+"-2.355560",
+null,
+false
+]
+],
+[
+5759,
+"635D1149-9948-46BC-A085-E2652E08095C",
+5759,
+1407137550,
+"467",
+1407138014,
+"467",
+null,
+[
+"http://data.ordnancesurvey.co.uk/id/postcodeunit/BS418NR",
+null
+],
+"BS41 8NR",
+[
+"http://data.ordnancesurvey.co.uk/id/7000000000025513",
+null
+],
+"Chew Valley North",
+[
+null,
+"51.388719",
+"-2.617543",
+null,
+false
+]
+],
+[
+5761,
+"EBC911C6-3514-4B69-9C3B-E5F5C4603DA3",
+5761,
+1407138014,
+"467",
+1407138014,
+"467",
+null,
+[
+"http://data.ordnancesurvey.co.uk/id/postcodeunit/BS418NW",
+null
+],
+"BS41 8NW",
+[
+"http://data.ordnancesurvey.co.uk/id/7000000000025513",
+null
+],
+"Chew Valley North",
+[
+null,
+"51.385891",
+"-2.613394",
+null,
+false
+]
+],
+[
+3991,
+"7D845D8E-BF76-4448-858A-904EB2DC2BA4",
+3991,
+1407137545,
+"467",
+1407138005,
+"467",
+null,
+[
+"http://data.ordnancesurvey.co.uk/id/postcodeunit/BA33PE",
+null
+],
+"BA3 3PE",
+[
+"http://data.ordnancesurvey.co.uk/id/7000000000000882",
+null
+],
+"Radstock",
+[
+null,
+"51.289545",
+"-2.431018",
+null,
+false
+]
+]
+]
+}

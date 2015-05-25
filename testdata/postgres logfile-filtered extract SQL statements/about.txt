@@ -1,0 +1,2 @@
+Pg logfile with first few lines (startup non-query statements)
+ and "ERROR" lines removed (which are in a different format - eg. not preceeded by "Statement:").

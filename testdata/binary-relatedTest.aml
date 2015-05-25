@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="binary-relatedTest.dat" encoding="windows-1252">
+  <attribute name="attribute_0" sourcecol="1" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+  <attribute name="attribute_1" sourcecol="2" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+  <attribute name="attribute_2" sourcecol="3" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+  <attribute name="attribute_3" sourcecol="4" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+</attributeset>

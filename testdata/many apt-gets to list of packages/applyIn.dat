@@ -1,0 +1,9 @@
+sudo apt-get install git build-essential protobuf-compiler binutils
+sudo apt-get install libprotobuf8 libprotobuf-dev
+sudo apt-get install g++-4.9
+sudo apt-get install libc++abi1 clang-3.4 clang-format-3.4
+sudo apt-get install libboost-log1.55.0 libboost-program-options1.55.0
+sudo apt-get install libboost-log1.55-dev libboost-program-options1.55-dev
+sudo apt-get install libc++abi-dev libc++-dev libstdc++-4.8-dev
+sudo apt-get install libssl-dev
+sudo apt-get install libpqxx-dev libpqxx-4.0

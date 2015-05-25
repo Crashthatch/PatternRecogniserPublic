@@ -1,0 +1,49 @@
+6046168,05/18/2011 14:14:05,543315,09/17/2010 10:15:06,1,2,For Mongodb is it better to reference an object or use a natural String key?,"I am building a corpus of indexed sentences in different languages. I have a collection of Languages which have both an ObjectId and the ISO code as a key. Is it better to use a reference to the Language collection or store a key like ""en"" or ""fr""?
+
+I suppose it's a compromise between:
+
+ - ease of referencing the Language
+ - object in that collection
+ - speed in doing queries where the sentence has a certain language
+ - the size of the data on disk
+
+Any best practices that I should know of?",mongodb,,,,,,open
+4873911,02/02/2011 11:30,465076,10/03/2010 09:30,192,24,How to insert schemalocation in a xml document via DOM,"i create a xml document with JAXP and search a way to insert the schemalocation.
+At the moment my application produces:
+
+    <?xml version=""1.0"" encoding=""UTF-8""?>
+    <root>
+    ...
+    </root>
+
+But i need:
+
+    <?xml version=""1.0"" encoding=""UTF-8""?>
+    <root xmlns=""namespaceURL"" 
+    xmlns:xs=""http://www.w3.org/2001/XMLSchema-instance""
+    xs:schemaLocation=""namespaceURL pathToMySchema.xsd"">
+    ...
+    </root>
+
+My code:
+
+    StreamResult result = new StreamResult(writer);
+    Document doc = getDocument();
+
+    Transformer trans = transfac.newTransformer();
+    trans.setOutputProperty(OutputKeys.INDENT, ""yes"");
+    trans.setOutputProperty(OutputKeys.METHOD, ""xml"");
+    trans.setOutputProperty(OutputKeys.VERSION, ""1.0"");
+    trans.setOutputProperty(OutputKeys.ENCODING, ""UTF-8"");
+
+    DOMSource source = new DOMSource(depl.getAsElement(doc));
+    trans.transform(source, result);
+
+
+Thanks for your time,  
+Kasten",dom,xsd,jaxp,,,,open
+3311559,07/22/2010 17:21:54,406143,07/22/2010 16:58:20,1,0,Too many lookup tables ,"What are the adverse effects of having too many lookup tables in the database?
+
+ I have to incorportate too many Enumerations, based on the applications. 
+
+What would experts advice?",sql-server,database-design,enums,,,,open

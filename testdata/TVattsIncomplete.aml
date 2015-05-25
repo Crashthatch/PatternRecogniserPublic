@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="TVattsIncomplete.dat" encoding="windows-1252">
+  <attribute name="Lifeexpectancy" sourcecol="1" valuetype="real"/>
+  <attribute name="PeoplePerTV" sourcecol="2" valuetype="real"/>
+  <attribute name="PeoplePerphysician" sourcecol="3" valuetype="integer"/>
+  <attribute name="FemaleLifeExpectancy" sourcecol="4" valuetype="integer"/>
+  <attribute name="MaleLifeExpectancy" sourcecol="5" valuetype="integer"/>
+</attributeset>

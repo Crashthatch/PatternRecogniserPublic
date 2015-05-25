@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="sample-input.dat" encoding="windows-1252">
+  <attribute name="label_notNullRowsInTable" sourcecol="1" valuetype="integer"/>
+  <attribute name="label_uniqueRowsInTable" sourcecol="2" valuetype="integer"/>
+  <attribute name="label_nullRowsInTable" sourcecol="3" valuetype="integer"/>
+  <attribute name="label_numAncestorAtts" sourcecol="4" valuetype="integer"/>
+  <attribute name="label_isAlmostDuplicate" sourcecol="5" valuetype="integer"/>
+  <attribute name="rra_numRowsInTable" sourcecol="6" valuetype="integer"/>
+  <attribute name="rra_nullRowsInTable" sourcecol="7" valuetype="integer"/>
+  <attribute name="rra_numAncestorAtts" sourcecol="8" valuetype="integer"/>
+  <attribute name="rra_isAlmostDuplicate" sourcecol="9" valuetype="integer"/>
+  <attribute name="firstInput_notNullRowsInTable" sourcecol="10" valuetype="polynominal">
+    <value>5</value>
+    <value>12</value>
+    <value>NULL</value>
+    <value>6</value>
+    <value>10</value>
+    <value>3</value>
+    <value>9</value>
+    <value>16</value>
+    <value>7</value>
+    <value>4</value>
+    <value>17</value>
+    <value>111</value>
+    <value>15</value>
+    <value>23</value>
+    <value>13</value>
+    <value>20</value>
+    <value>39</value>
+    <value>81</value>
+    <value>47</value>
+    <value>11</value>
+    <value>105</value>
+    <value>89</value>
+    <value>60</value>
+    <value>44</value>
+    <value>18</value>
+    <value>30</value>
+    <value>45</value>
+    <value>70</value>
+    <value>1623</value>
+    <value>24</value>
+    <value>121</value>
+    <value>21</value>
+    <value>369</value>
+    <value>14</value>
+    <value>120</value>
+    <value>8</value>
+    <value>40</value>
+  </attribute>
+  <attribute name="firstInput_uniqueRowsInTable" sourcecol="11" valuetype="polynominal">
+    <value>5</value>
+    <value>12</value>
+    <value>NULL</value>
+    <value>6</value>
+    <value>10</value>
+    <value>8</value>
+    <value>9</value>
+    <value>3</value>
+    <value>4</value>
+    <value>16</value>
+    <value>2</value>
+    <value>7</value>
+    <value>17</value>
+    <value>111</value>
+    <value>27</value>
+    <value>15</value>
+    <value>23</value>
+    <value>13</value>
+    <value>20</value>
+    <value>39</value>
+    <value>81</value>
+    <value>59</value>
+    <value>47</value>
+    <value>35</value>
+    <value>11</value>
+    <value>105</value>
+    <value>89</value>
+    <value>60</value>
+    <value>19</value>
+    <value>24</value>
+    <value>45</value>
+    <value>70</value>
+    <value>1623</value>
+    <value>698</value>
+    <value>53</value>
+    <value>18</value>
+    <value>369</value>
+    <value>14</value>
+    <value>30</value>
+    <value>79</value>
+    <value>121</value>
+    <value>57</value>
+    <value>58</value>
+    <value>44</value>
+    <value>40</value>
+    <value>26</value>
+    <value>48</value>
+    <value>21</value>
+    <value>75</value>
+    <value>67</value>
+    <value>56</value>
+  </attribute>
+  <attribute name="firstInput_numRowsInTable" sourcecol="12" valuetype="polynominal">
+    <value>5</value>
+    <value>12</value>
+    <value>NULL</value>
+    <value>6</value>
+    <value>10</value>
+    <value>3</value>
+    <value>9</value>
+    <value>16</value>
+    <value>7</value>
+    <value>17</value>
+    <value>111</value>
+    <value>15</value>
+    <value>23</value>
+    <value>13</value>
+    <value>20</value>
+    <value>39</value>
+    <value>81</value>
+    <value>47</value>
+    <value>11</value>
+    <value>105</value>
+    <value>89</value>
+    <value>60</value>
+    <value>44</value>
+    <value>18</value>
+    <value>30</value>
+    <value>45</value>
+    <value>70</value>
+    <value>1623</value>
+    <value>121</value>
+    <value>21</value>
+    <value>369</value>
+    <value>4</value>
+    <value>40</value>
+    <value>8</value>
+    <value>24</value>
+  </attribute>
+  <attribute name="firstInput_nullRowsInTable" sourcecol="13" valuetype="binominal">
+    <value>0</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_numAncestorAtts" sourcecol="14" valuetype="polynominal">
+    <value>2</value>
+    <value>3</value>
+    <value>NULL</value>
+    <value>4</value>
+    <value>6</value>
+    <value>5</value>
+  </attribute>
+  <attribute name="firstInput_depth" sourcecol="15" valuetype="polynominal">
+    <value>5</value>
+    <value>7</value>
+    <value>NULL</value>
+    <value>9</value>
+    <value>13</value>
+    <value>11</value>
+  </attribute>
+  <attribute name="firstInput_guessedType" sourcecol="16" valuetype="binominal">
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_isDuplicate" sourcecol="17" valuetype="binominal">
+    <value>0</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_isAlmostDuplicate" sourcecol="18" valuetype="polynominal">
+    <value>0</value>
+    <value>1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_bestTargetAttRowsCovered" sourcecol="19" valuetype="binominal">
+    <value>-1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_bestPercentageOfTargetAttCovered" sourcecol="20" valuetype="binominal">
+    <value>-1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_bestTargetAttTotalLength" sourcecol="21" valuetype="binominal">
+    <value>-1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_bestTargetAttRows" sourcecol="22" valuetype="binominal">
+    <value>-1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_bestAimForScore" sourcecol="23" valuetype="binominal">
+    <value>-1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_totalLength" sourcecol="24" valuetype="binominal">
+    <value>0</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_firstRowLength" sourcecol="25" valuetype="binominal">
+    <value>-1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_averageRowLength" sourcecol="26" valuetype="binominal">
+    <value>-1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_numParents" sourcecol="27" valuetype="binominal">
+    <value>1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_generatedByConstantCreator" sourcecol="28" valuetype="binominal">
+    <value>0</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_bestCoveringRows" sourcecol="29" valuetype="binominal">
+    <value>-1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="firstInput_bestCoveringPercentageAvg" sourcecol="30" valuetype="binominal">
+    <value>-1</value>
+    <value>NULL</value>
+  </attribute>
+  <attribute name="modelLearnerName" sourcecol="31" valuetype="polynominal">
+    <value>BestColumnLearner</value>
+    <value>WekaLinearRegressionIntegerLearner</value>
+    <value>ZeroLearner</value>
+    <value>MostCommonValueLearner</value>
+    <value>FindReplaceLearnerSinglePass</value>
+    <value>WekaLinearRegressionLearner</value>
+    <value>RMLinearRegressionLearner</value>
+    <value>RMKNNLearner</value>
+  </attribute>
+  <label name="relationshipMadeAllCorrectPredictions" sourcecol="32" valuetype="binominal">
+    <value>false</value>
+    <value>true</value>
+  </label>
+</attributeset>

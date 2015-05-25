@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="aWords.dat" encoding="windows-1252">
+  <attribute name="a" sourcecol="1" valuetype="nominal">
+	<value>Aardvark</value>
+	<value>Abacus</value>
+	<value>Actor</value>
+	<value>Address</value>
+	<value>Adult</value>
+	<value>Africa</value>
+	<value>Air</value>
+	<value>Airplane</value>
+	<value>Alabama</value>
+	<value>Alaska</value>
+	<value>Albatross</value>
+	<value>All</value>
+	<value>Ambulance</value>
+	<value>Angry</value>
+	<value>Ankle</value>
+	<value>Ant</value>
+	<value>Apple</value>
+  </attribute>  
+</attributeset>

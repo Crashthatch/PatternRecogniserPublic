@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="quotedAbab.dat" encoding="windows-1252">
+  <attribute name="x" sourcecol="1" valuetype="nominal"/>
+  <attribute name="b" sourcecol="2" valuetype="binominal">
+    <value>1</value>
+    <value>0</value>
+  </attribute>
+</attributeset>

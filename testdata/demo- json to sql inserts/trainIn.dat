@@ -1,0 +1,43 @@
+[
+{"category": "Community",
+"name": "My Page",
+"access_token": "CAACBIRLMwqYBAB2KR9eJ3C4TTVCWhMstA0ItlZAPXEQ1W",
+"perms": [
+"ADMINISTER",
+"EDIT_PROFILE",
+"CREATE_CONTENT",
+"MODERATE_CONTENT",
+"CREATE_ADS",
+"BASIC_ADMIN"
+],
+"id": "3553723118"
+},
+{
+"category": "Community",
+"name": "My Second Page",
+"access_token": "CAACBIRLMwqYBAFdknv4KMDpzBMVHUfUiXZB",
+"perms": [
+"ADMINISTER",
+"EDIT_PROFILE",
+"CREATE_CONTENT",
+"MODERATE_CONTENT",
+"CREATE_ADS",
+"BASIC_ADMIN"
+],
+"id": "14558236489"
+},
+{
+"category": "App page",
+"name": "Friend Wheel",
+"access_token": "CAACBIRLMwqYBAAZBEYoTcONpC8SydOak3gb",
+"perms": [
+"ADMINISTER",
+"EDIT_PROFILE",
+"CREATE_CONTENT",
+"MODERATE_CONTENT",
+"CREATE_ADS",
+"BASIC_ADMIN"
+],
+"id": "85922088935"
+}
+]

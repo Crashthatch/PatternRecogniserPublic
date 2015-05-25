@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<attributeset default_source="primeslist.dat" encoding="windows-1252">
+  <attribute name="idx" sourcecol="1" valuetype="integer"/>
+  <attribute name="number" sourcecol="2" valuetype="integer"/>
+</attributeset>

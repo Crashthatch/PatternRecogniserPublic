@@ -1,0 +1,18 @@
+	 1	attName	text	utf8_general_ci		No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	Primary Primary	Unique Unique	Index Index	Spatial Spatial	Fulltext Fulltext
+	 2	attId	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 3	usedToMakeFinalPrediction	tinyint(1)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 4	numRows	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 5	uniqueRows	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 6	numAncestors	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 7	depth	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 8	guessedType	text	utf8_general_ci		No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	Primary Primary	Unique Unique	Index Index	Spatial Spatial	Fulltext Fulltext
+	 9	duplicate	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 10	almostDuplicate	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 11	coversOutputAttScore	double			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 12	lengthFirstRow	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 13	lengthTotal	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 14	lengthAverageRow	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 15	numNulls	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 16	targetAttsCovered	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 17	longestTargetAttCovered	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 18	mostRowsTargetAttCovered	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext

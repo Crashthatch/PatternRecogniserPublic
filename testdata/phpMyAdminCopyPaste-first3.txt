@@ -1,0 +1,3 @@
+	 1	attName	text	utf8_general_ci		No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	Primary Primary	Unique Unique	Index Index	Spatial Spatial	Fulltext Fulltext
+	 2	attId	int(11)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext
+	 3	usedToMakeFinalPrediction	tinyint(1)			No	None		 Change Change	 Drop Drop	 Browse distinct values Browse distinct values	 Primary Primary	 Unique Unique	 Index Index	Spatial Spatial	Fulltext Fulltext

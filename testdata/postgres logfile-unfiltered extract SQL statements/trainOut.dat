@@ -1,0 +1,20 @@
+SELECT version();
+
+SET DateStyle=ISO;
+SET client_min_messages=notice;
+SET bytea_output=escape;
+SELECT oid, pg_encoding_to_char(encoding) AS encoding, datlastsysoid
+  FROM pg_database WHERE datname='postgres'
+
+set client_encoding to 'UNICODE'
+
+SELECT usecreatedb, usesuper, CASE WHEN usesuper THEN pg_postmaster_start_time() ELSE NULL END as upsince, CASE WHEN usesuper THEN pg_conf_load_time() ELSE NULL END as confloadedsince, CASE WHEN usesuper THEN pg_is_in_recovery() ELSE NULL END as inrecovery, CASE WHEN usesuper THEN pg_last_xlog_receive_location() ELSE NULL END as receiveloc, CASE WHEN usesuper THEN pg_last_xlog_replay_location() ELSE NULL END as replayloc, CASE WHEN usesuper THEN pg_last_xact_replay_timestamp() ELSE NULL END as replay_timestamp, CASE WHEN usesuper AND pg_is_in_recovery() THEN pg_is_xlog_replay_paused() ELSE NULL END as isreplaypaused
+  FROM pg_user WHERE usename=current_user
+
+SELECT rolcreaterole, rolcreatedb FROM pg_roles WHERE rolname = current_user;
+
+SELECT pg_encoding_to_char(26)
+
+INSERT INTO schemey.ttt VALUES (2,"bob", 65)
+
+INSERT INTO schemey.ttt VALUES (9, 'joe', 85)
